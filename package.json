@@ -1,0 +1,16 @@
+{
+  "name": "rescript-unicons",
+  "version": "4.0.0",
+  "scripts": {
+    "dev:rescript": "rescript build -w -with-deps"
+  },
+  "devDependencies": {
+    "@rescript/react": "^0.10.3",
+    "rescript": "^9.1.4",
+    "humps": "^2.0.1"
+  },
+  "dependencies": {
+    "@iconscout/react-unicons": "^1.1.6"
+  },
+  "packageManager": "yarn@3.0.2"
+}

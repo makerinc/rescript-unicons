@@ -1,0 +1,44 @@
+#!/usr/bin/env node
+let fs = require("fs")
+let humps = require("humps")
+
+let dir = fs.readdirSync("./node_modules/@iconscout/react-unicons/icons")
+
+let invalidNames = [
+  "React",
+  "0Plus",
+  "10Plus",
+  "12Plus",
+  "13Plus",
+  "16Plus",
+  "17Plus",
+  "18Plus",
+  "21Plus",
+  "3Plus",
+  "500px",
+  "6Plus",
+]
+
+dir.forEach(fname => {
+  let moduleName = humps.pascalize(fname.slice(4, -3))
+
+  if (invalidNames.includes(moduleName)) {
+    moduleName = "_"+moduleName
+  }
+  
+  let code =  `
+module Impl = {
+  @react.component
+  @module("@iconscout/react-unicons/icons/${fname.slice(0, -3)}")
+  external make: (~className: string=?, ~size:int=?) => React.element = "default"
+}
+  
+
+@react.component
+let make = (~className: option<string>=?, ~size: option<int>=?) => {
+  <Impl ?className ?size />
+}
+`
+
+  fs.writeFileSync(`./src/${moduleName}.res`, code)
+})
