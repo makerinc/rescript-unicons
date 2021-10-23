@@ -6,8 +6,8 @@
   },
   "devDependencies": {
     "@rescript/react": "^0.10.3",
-    "rescript": "^9.1.4",
-    "humps": "^2.0.1"
+    "humps": "^2.0.1",
+    "rescript": "^9.1.4"
   },
   "dependencies": {
     "@iconscout/react-unicons": "^1.1.6"
