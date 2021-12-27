@@ -18,11 +18,11 @@ function ShoppingBag(Props) {
   return React.createElement(UilShoppingBag, tmp);
 }
 
-var make = ShoppingBag;
+var make = React.memo(ShoppingBag);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function UsdSquare(Props) {
   return React.createElement(UilUsdSquare, tmp);
 }
 
-var make = UsdSquare;
+var make = React.memo(UsdSquare);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

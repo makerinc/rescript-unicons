@@ -18,11 +18,11 @@ function Lightbulb(Props) {
   return React.createElement(UilLightbulb, tmp);
 }
 
-var make = Lightbulb;
+var make = React.memo(Lightbulb);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

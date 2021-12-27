@@ -18,11 +18,11 @@ function Cancel(Props) {
   return React.createElement(UilCancel, tmp);
 }
 
-var make = Cancel;
+var make = React.memo(Cancel);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function CommentAltSearch(Props) {
   return React.createElement(UilCommentAltSearch, tmp);
 }
 
-var make = CommentAltSearch;
+var make = React.memo(CommentAltSearch);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Moonset(Props) {
   return React.createElement(UilMoonset, tmp);
 }
 
-var make = Moonset;
+var make = React.memo(Moonset);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function CloudDatabaseTree(Props) {
   return React.createElement(UilCloudDatabaseTree, tmp);
 }
 
-var make = CloudDatabaseTree;
+var make = React.memo(CloudDatabaseTree);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

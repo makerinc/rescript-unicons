@@ -18,11 +18,11 @@ function StopCircle(Props) {
   return React.createElement(UilStopCircle, tmp);
 }
 
-var make = StopCircle;
+var make = React.memo(StopCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Bookmark(Props) {
   return React.createElement(UilBookmark, tmp);
 }
 
-var make = Bookmark;
+var make = React.memo(Bookmark);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Html5(Props) {
   return React.createElement(UilHtml5, tmp);
 }
 
-var make = Html5;
+var make = React.memo(Html5);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

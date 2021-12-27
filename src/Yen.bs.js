@@ -18,11 +18,11 @@ function Yen(Props) {
   return React.createElement(UilYen, tmp);
 }
 
-var make = Yen;
+var make = React.memo(Yen);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function FolderDownload(Props) {
   return React.createElement(UilFolderDownload, tmp);
 }
 
-var make = FolderDownload;
+var make = React.memo(FolderDownload);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

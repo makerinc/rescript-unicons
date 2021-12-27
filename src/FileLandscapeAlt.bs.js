@@ -18,11 +18,11 @@ function FileLandscapeAlt(Props) {
   return React.createElement(UilFileLandscapeAlt, tmp);
 }
 
-var make = FileLandscapeAlt;
+var make = React.memo(FileLandscapeAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

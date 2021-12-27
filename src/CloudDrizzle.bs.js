@@ -18,11 +18,11 @@ function CloudDrizzle(Props) {
   return React.createElement(UilCloudDrizzle, tmp);
 }
 
-var make = CloudDrizzle;
+var make = React.memo(CloudDrizzle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

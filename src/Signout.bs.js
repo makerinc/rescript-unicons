@@ -18,11 +18,11 @@ function Signout(Props) {
   return React.createElement(UilSignout, tmp);
 }
 
-var make = Signout;
+var make = React.memo(Signout);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

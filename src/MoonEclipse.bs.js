@@ -18,11 +18,11 @@ function MoonEclipse(Props) {
   return React.createElement(UilMoonEclipse, tmp);
 }
 
-var make = MoonEclipse;
+var make = React.memo(MoonEclipse);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

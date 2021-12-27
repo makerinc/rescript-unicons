@@ -18,11 +18,11 @@ function Feedback(Props) {
   return React.createElement(UilFeedback, tmp);
 }
 
-var make = Feedback;
+var make = React.memo(Feedback);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

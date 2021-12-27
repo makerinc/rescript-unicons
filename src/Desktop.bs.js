@@ -18,11 +18,11 @@ function Desktop(Props) {
   return React.createElement(UilDesktop, tmp);
 }
 
-var make = Desktop;
+var make = React.memo(Desktop);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

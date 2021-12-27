@@ -18,11 +18,11 @@ function Briefcase(Props) {
   return React.createElement(UilBriefcase, tmp);
 }
 
-var make = Briefcase;
+var make = React.memo(Briefcase);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

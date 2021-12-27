@@ -18,11 +18,11 @@ function Sunset(Props) {
   return React.createElement(UilSunset, tmp);
 }
 
-var make = Sunset;
+var make = React.memo(Sunset);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

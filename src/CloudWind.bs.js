@@ -18,11 +18,11 @@ function CloudWind(Props) {
   return React.createElement(UilCloudWind, tmp);
 }
 
-var make = CloudWind;
+var make = React.memo(CloudWind);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

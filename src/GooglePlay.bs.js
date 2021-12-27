@@ -18,11 +18,11 @@ function GooglePlay(Props) {
   return React.createElement(UilGooglePlay, tmp);
 }
 
-var make = GooglePlay;
+var make = React.memo(GooglePlay);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

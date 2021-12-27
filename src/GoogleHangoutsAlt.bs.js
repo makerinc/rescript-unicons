@@ -18,11 +18,11 @@ function GoogleHangoutsAlt(Props) {
   return React.createElement(UilGoogleHangoutsAlt, tmp);
 }
 
-var make = GoogleHangoutsAlt;
+var make = React.memo(GoogleHangoutsAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Trowel(Props) {
   return React.createElement(UilTrowel, tmp);
 }
 
-var make = Trowel;
+var make = React.memo(Trowel);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

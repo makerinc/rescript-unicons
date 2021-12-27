@@ -18,11 +18,11 @@ function CommentAltRedo(Props) {
   return React.createElement(UilCommentAltRedo, tmp);
 }
 
-var make = CommentAltRedo;
+var make = React.memo(CommentAltRedo);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

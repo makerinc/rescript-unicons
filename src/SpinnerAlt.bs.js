@@ -18,11 +18,11 @@ function SpinnerAlt(Props) {
   return React.createElement(UilSpinnerAlt, tmp);
 }
 
-var make = SpinnerAlt;
+var make = React.memo(SpinnerAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

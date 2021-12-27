@@ -18,11 +18,11 @@ function EnvelopeStar(Props) {
   return React.createElement(UilEnvelopeStar, tmp);
 }
 
-var make = EnvelopeStar;
+var make = React.memo(EnvelopeStar);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

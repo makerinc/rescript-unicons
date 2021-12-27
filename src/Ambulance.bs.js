@@ -18,11 +18,11 @@ function Ambulance(Props) {
   return React.createElement(UilAmbulance, tmp);
 }
 
-var make = Ambulance;
+var make = React.memo(Ambulance);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

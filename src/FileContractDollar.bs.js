@@ -18,11 +18,11 @@ function FileContractDollar(Props) {
   return React.createElement(UilFileContractDollar, tmp);
 }
 
-var make = FileContractDollar;
+var make = React.memo(FileContractDollar);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

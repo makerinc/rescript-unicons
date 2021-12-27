@@ -18,11 +18,11 @@ function Vk(Props) {
   return React.createElement(UilVk, tmp);
 }
 
-var make = Vk;
+var make = React.memo(Vk);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Atom(Props) {
   return React.createElement(UilAtom, tmp);
 }
 
-var make = Atom;
+var make = React.memo(Atom);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function YenCircle(Props) {
   return React.createElement(UilYenCircle, tmp);
 }
 
-var make = YenCircle;
+var make = React.memo(YenCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

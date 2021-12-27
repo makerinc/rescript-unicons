@@ -18,11 +18,11 @@ function TrafficBarrier(Props) {
   return React.createElement(UilTrafficBarrier, tmp);
 }
 
-var make = TrafficBarrier;
+var make = React.memo(TrafficBarrier);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

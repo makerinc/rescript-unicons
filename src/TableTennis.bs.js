@@ -18,11 +18,11 @@ function TableTennis(Props) {
   return React.createElement(UilTableTennis, tmp);
 }
 
-var make = TableTennis;
+var make = React.memo(TableTennis);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

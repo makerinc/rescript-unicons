@@ -18,11 +18,11 @@ function Link(Props) {
   return React.createElement(UilLink, tmp);
 }
 
-var make = Link;
+var make = React.memo(Link);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Analysis(Props) {
   return React.createElement(UilAnalysis, tmp);
 }
 
-var make = Analysis;
+var make = React.memo(Analysis);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function VoicemailRectangle(Props) {
   return React.createElement(UilVoicemailRectangle, tmp);
 }
 
-var make = VoicemailRectangle;
+var make = React.memo(VoicemailRectangle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

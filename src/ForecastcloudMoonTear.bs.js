@@ -18,11 +18,11 @@ function ForecastcloudMoonTear(Props) {
   return React.createElement(UilForecastcloudMoonTear, tmp);
 }
 
-var make = ForecastcloudMoonTear;
+var make = React.memo(ForecastcloudMoonTear);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

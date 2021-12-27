@@ -18,11 +18,11 @@ function HouseUser(Props) {
   return React.createElement(UilHouseUser, tmp);
 }
 
-var make = HouseUser;
+var make = React.memo(HouseUser);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

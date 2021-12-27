@@ -18,11 +18,11 @@ function CommentCheck(Props) {
   return React.createElement(UilCommentCheck, tmp);
 }
 
-var make = CommentCheck;
+var make = React.memo(CommentCheck);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

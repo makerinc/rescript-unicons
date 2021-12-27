@@ -18,11 +18,11 @@ function FileUpload(Props) {
   return React.createElement(UilFileUpload, tmp);
 }
 
-var make = FileUpload;
+var make = React.memo(FileUpload);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

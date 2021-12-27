@@ -18,11 +18,11 @@ function CalendarSlash(Props) {
   return React.createElement(UilCalendarSlash, tmp);
 }
 
-var make = CalendarSlash;
+var make = React.memo(CalendarSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

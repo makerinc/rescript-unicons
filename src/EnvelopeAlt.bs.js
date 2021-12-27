@@ -18,11 +18,11 @@ function EnvelopeAlt(Props) {
   return React.createElement(UilEnvelopeAlt, tmp);
 }
 
-var make = EnvelopeAlt;
+var make = React.memo(EnvelopeAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

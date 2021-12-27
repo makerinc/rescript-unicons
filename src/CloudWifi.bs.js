@@ -18,11 +18,11 @@ function CloudWifi(Props) {
   return React.createElement(UilCloudWifi, tmp);
 }
 
-var make = CloudWifi;
+var make = React.memo(CloudWifi);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

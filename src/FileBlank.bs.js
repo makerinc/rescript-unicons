@@ -18,11 +18,11 @@ function FileBlank(Props) {
   return React.createElement(UilFileBlank, tmp);
 }
 
-var make = FileBlank;
+var make = React.memo(FileBlank);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

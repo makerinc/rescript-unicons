@@ -18,11 +18,11 @@ function AlignCenterV(Props) {
   return React.createElement(UilAlignCenterV, tmp);
 }
 
-var make = AlignCenterV;
+var make = React.memo(AlignCenterV);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

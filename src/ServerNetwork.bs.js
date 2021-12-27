@@ -18,11 +18,11 @@ function ServerNetwork(Props) {
   return React.createElement(UilServerNetwork, tmp);
 }
 
-var make = ServerNetwork;
+var make = React.memo(ServerNetwork);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

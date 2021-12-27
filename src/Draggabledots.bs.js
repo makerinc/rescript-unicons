@@ -18,11 +18,11 @@ function Draggabledots(Props) {
   return React.createElement(UilDraggabledots, tmp);
 }
 
-var make = Draggabledots;
+var make = React.memo(Draggabledots);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

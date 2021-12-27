@@ -18,11 +18,11 @@ function LaptopCloud(Props) {
   return React.createElement(UilLaptopCloud, tmp);
 }
 
-var make = LaptopCloud;
+var make = React.memo(LaptopCloud);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

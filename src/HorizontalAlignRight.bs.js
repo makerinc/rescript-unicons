@@ -18,11 +18,11 @@ function HorizontalAlignRight(Props) {
   return React.createElement(UilHorizontalAlignRight, tmp);
 }
 
-var make = HorizontalAlignRight;
+var make = React.memo(HorizontalAlignRight);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

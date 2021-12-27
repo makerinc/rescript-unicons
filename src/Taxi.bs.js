@@ -18,11 +18,11 @@ function Taxi(Props) {
   return React.createElement(UilTaxi, tmp);
 }
 
-var make = Taxi;
+var make = React.memo(Taxi);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

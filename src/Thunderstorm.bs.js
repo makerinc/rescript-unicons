@@ -18,11 +18,11 @@ function Thunderstorm(Props) {
   return React.createElement(UilThunderstorm, tmp);
 }
 
-var make = Thunderstorm;
+var make = React.memo(Thunderstorm);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

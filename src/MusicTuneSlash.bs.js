@@ -18,11 +18,11 @@ function MusicTuneSlash(Props) {
   return React.createElement(UilMusicTuneSlash, tmp);
 }
 
-var make = MusicTuneSlash;
+var make = React.memo(MusicTuneSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

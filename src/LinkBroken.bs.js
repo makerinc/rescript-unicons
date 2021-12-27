@@ -18,11 +18,11 @@ function LinkBroken(Props) {
   return React.createElement(UilLinkBroken, tmp);
 }
 
-var make = LinkBroken;
+var make = React.memo(LinkBroken);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

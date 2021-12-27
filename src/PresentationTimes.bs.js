@@ -18,11 +18,11 @@ function PresentationTimes(Props) {
   return React.createElement(UilPresentationTimes, tmp);
 }
 
-var make = PresentationTimes;
+var make = React.memo(PresentationTimes);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

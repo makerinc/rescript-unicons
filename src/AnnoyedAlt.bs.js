@@ -18,11 +18,11 @@ function AnnoyedAlt(Props) {
   return React.createElement(UilAnnoyedAlt, tmp);
 }
 
-var make = AnnoyedAlt;
+var make = React.memo(AnnoyedAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

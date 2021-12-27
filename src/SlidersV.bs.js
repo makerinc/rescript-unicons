@@ -18,11 +18,11 @@ function SlidersV(Props) {
   return React.createElement(UilSlidersV, tmp);
 }
 
-var make = SlidersV;
+var make = React.memo(SlidersV);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

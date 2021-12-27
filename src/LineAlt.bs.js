@@ -18,11 +18,11 @@ function LineAlt(Props) {
   return React.createElement(UilLineAlt, tmp);
 }
 
-var make = LineAlt;
+var make = React.memo(LineAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

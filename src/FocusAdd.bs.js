@@ -18,11 +18,11 @@ function FocusAdd(Props) {
   return React.createElement(UilFocusAdd, tmp);
 }
 
-var make = FocusAdd;
+var make = React.memo(FocusAdd);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

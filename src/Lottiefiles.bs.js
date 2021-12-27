@@ -18,11 +18,11 @@ function Lottiefiles(Props) {
   return React.createElement(UilLottiefiles, tmp);
 }
 
-var make = Lottiefiles;
+var make = React.memo(Lottiefiles);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

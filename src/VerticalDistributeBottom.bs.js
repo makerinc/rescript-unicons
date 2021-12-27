@@ -18,11 +18,11 @@ function VerticalDistributeBottom(Props) {
   return React.createElement(UilVerticalDistributeBottom, tmp);
 }
 
-var make = VerticalDistributeBottom;
+var make = React.memo(VerticalDistributeBottom);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

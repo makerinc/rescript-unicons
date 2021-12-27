@@ -18,11 +18,11 @@ function Flower(Props) {
   return React.createElement(UilFlower, tmp);
 }
 
-var make = Flower;
+var make = React.memo(Flower);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function ImageEdit(Props) {
   return React.createElement(UilImageEdit, tmp);
 }
 
-var make = ImageEdit;
+var make = React.memo(ImageEdit);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

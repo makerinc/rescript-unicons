@@ -18,11 +18,11 @@ function MasterCard(Props) {
   return React.createElement(UilMasterCard, tmp);
 }
 
-var make = MasterCard;
+var make = React.memo(MasterCard);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

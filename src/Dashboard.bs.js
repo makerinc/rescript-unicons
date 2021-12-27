@@ -18,11 +18,11 @@ function Dashboard(Props) {
   return React.createElement(UilDashboard, tmp);
 }
 
-var make = Dashboard;
+var make = React.memo(Dashboard);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

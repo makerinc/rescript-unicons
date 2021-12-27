@@ -18,11 +18,11 @@ function CloudLock(Props) {
   return React.createElement(UilCloudLock, tmp);
 }
 
-var make = CloudLock;
+var make = React.memo(CloudLock);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

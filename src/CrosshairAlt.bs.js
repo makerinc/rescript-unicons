@@ -18,11 +18,11 @@ function CrosshairAlt(Props) {
   return React.createElement(UilCrosshairAlt, tmp);
 }
 
-var make = CrosshairAlt;
+var make = React.memo(CrosshairAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

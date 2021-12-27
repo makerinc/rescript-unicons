@@ -18,11 +18,11 @@ function Bell(Props) {
   return React.createElement(UilBell, tmp);
 }
 
-var make = Bell;
+var make = React.memo(Bell);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

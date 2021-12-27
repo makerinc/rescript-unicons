@@ -18,11 +18,11 @@ function EuroCircle(Props) {
   return React.createElement(UilEuroCircle, tmp);
 }
 
-var make = EuroCircle;
+var make = React.memo(EuroCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

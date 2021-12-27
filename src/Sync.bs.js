@@ -18,11 +18,11 @@ function Sync(Props) {
   return React.createElement(UilSync, tmp);
 }
 
-var make = Sync;
+var make = React.memo(Sync);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

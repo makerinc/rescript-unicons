@@ -18,11 +18,11 @@ function UserLocation(Props) {
   return React.createElement(UilUserLocation, tmp);
 }
 
-var make = UserLocation;
+var make = React.memo(UserLocation);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Grid(Props) {
   return React.createElement(UilGrid, tmp);
 }
 
-var make = Grid;
+var make = React.memo(Grid);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

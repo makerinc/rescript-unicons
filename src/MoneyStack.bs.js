@@ -18,11 +18,11 @@ function MoneyStack(Props) {
   return React.createElement(UilMoneyStack, tmp);
 }
 
-var make = MoneyStack;
+var make = React.memo(MoneyStack);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

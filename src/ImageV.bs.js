@@ -18,11 +18,11 @@ function ImageV(Props) {
   return React.createElement(UilImageV, tmp);
 }
 
-var make = ImageV;
+var make = React.memo(ImageV);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

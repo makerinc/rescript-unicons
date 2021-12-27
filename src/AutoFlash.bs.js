@@ -18,11 +18,11 @@ function AutoFlash(Props) {
   return React.createElement(UilAutoFlash, tmp);
 }
 
-var make = AutoFlash;
+var make = React.memo(AutoFlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function KeyboardHide(Props) {
   return React.createElement(UilKeyboardHide, tmp);
 }
 
-var make = KeyboardHide;
+var make = React.memo(KeyboardHide);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

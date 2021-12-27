@@ -18,11 +18,11 @@ function RopeWay(Props) {
   return React.createElement(UilRopeWay, tmp);
 }
 
-var make = RopeWay;
+var make = React.memo(RopeWay);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

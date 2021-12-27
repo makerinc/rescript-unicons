@@ -18,11 +18,11 @@ function YinYang(Props) {
   return React.createElement(UilYinYang, tmp);
 }
 
-var make = YinYang;
+var make = React.memo(YinYang);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

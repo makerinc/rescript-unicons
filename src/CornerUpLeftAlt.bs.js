@@ -18,11 +18,11 @@ function CornerUpLeftAlt(Props) {
   return React.createElement(UilCornerUpLeftAlt, tmp);
 }
 
-var make = CornerUpLeftAlt;
+var make = React.memo(CornerUpLeftAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

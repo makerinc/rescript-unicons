@@ -18,11 +18,11 @@ function Wallet(Props) {
   return React.createElement(UilWallet, tmp);
 }
 
-var make = Wallet;
+var make = React.memo(Wallet);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

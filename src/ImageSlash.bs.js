@@ -18,11 +18,11 @@ function ImageSlash(Props) {
   return React.createElement(UilImageSlash, tmp);
 }
 
-var make = ImageSlash;
+var make = React.memo(ImageSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

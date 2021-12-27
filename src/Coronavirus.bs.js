@@ -18,11 +18,11 @@ function Coronavirus(Props) {
   return React.createElement(UilCoronavirus, tmp);
 }
 
-var make = Coronavirus;
+var make = React.memo(Coronavirus);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

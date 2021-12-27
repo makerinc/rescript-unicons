@@ -18,11 +18,11 @@ function BandAid(Props) {
   return React.createElement(UilBandAid, tmp);
 }
 
-var make = BandAid;
+var make = React.memo(BandAid);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

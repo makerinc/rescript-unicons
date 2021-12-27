@@ -18,11 +18,11 @@ function Sorting(Props) {
   return React.createElement(UilSorting, tmp);
 }
 
-var make = Sorting;
+var make = React.memo(Sorting);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

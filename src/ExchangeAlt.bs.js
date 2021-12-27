@@ -18,11 +18,11 @@ function ExchangeAlt(Props) {
   return React.createElement(UilExchangeAlt, tmp);
 }
 
-var make = ExchangeAlt;
+var make = React.memo(ExchangeAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

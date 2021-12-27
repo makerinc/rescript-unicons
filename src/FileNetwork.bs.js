@@ -18,11 +18,11 @@ function FileNetwork(Props) {
   return React.createElement(UilFileNetwork, tmp);
 }
 
-var make = FileNetwork;
+var make = React.memo(FileNetwork);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Intercom(Props) {
   return React.createElement(UilIntercom, tmp);
 }
 
-var make = Intercom;
+var make = React.memo(Intercom);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

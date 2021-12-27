@@ -18,11 +18,11 @@ function MaximizeLeft(Props) {
   return React.createElement(UilMaximizeLeft, tmp);
 }
 
-var make = MaximizeLeft;
+var make = React.memo(MaximizeLeft);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

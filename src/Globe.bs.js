@@ -18,11 +18,11 @@ function Globe(Props) {
   return React.createElement(UilGlobe, tmp);
 }
 
-var make = Globe;
+var make = React.memo(Globe);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Parcel(Props) {
   return React.createElement(UilParcel, tmp);
 }
 
-var make = Parcel;
+var make = React.memo(Parcel);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

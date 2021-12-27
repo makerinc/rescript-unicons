@@ -18,11 +18,11 @@ function HardHat(Props) {
   return React.createElement(UilHardHat, tmp);
 }
 
-var make = HardHat;
+var make = React.memo(HardHat);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

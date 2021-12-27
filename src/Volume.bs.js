@@ -18,11 +18,11 @@ function Volume(Props) {
   return React.createElement(UilVolume, tmp);
 }
 
-var make = Volume;
+var make = React.memo(Volume);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

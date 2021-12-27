@@ -18,11 +18,11 @@ function FastMail(Props) {
   return React.createElement(UilFastMail, tmp);
 }
 
-var make = FastMail;
+var make = React.memo(FastMail);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

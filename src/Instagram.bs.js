@@ -18,11 +18,11 @@ function Instagram(Props) {
   return React.createElement(UilInstagram, tmp);
 }
 
-var make = Instagram;
+var make = React.memo(Instagram);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

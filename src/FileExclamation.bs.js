@@ -18,11 +18,11 @@ function FileExclamation(Props) {
   return React.createElement(UilFileExclamation, tmp);
 }
 
-var make = FileExclamation;
+var make = React.memo(FileExclamation);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function AppleAlt(Props) {
   return React.createElement(UilAppleAlt, tmp);
 }
 
-var make = AppleAlt;
+var make = React.memo(AppleAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Paypal(Props) {
   return React.createElement(UilPaypal, tmp);
 }
 
-var make = Paypal;
+var make = React.memo(Paypal);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

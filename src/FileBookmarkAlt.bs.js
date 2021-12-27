@@ -18,11 +18,11 @@ function FileBookmarkAlt(Props) {
   return React.createElement(UilFileBookmarkAlt, tmp);
 }
 
-var make = FileBookmarkAlt;
+var make = React.memo(FileBookmarkAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

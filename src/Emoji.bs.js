@@ -18,11 +18,11 @@ function Emoji(Props) {
   return React.createElement(UilEmoji, tmp);
 }
 
-var make = Emoji;
+var make = React.memo(Emoji);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

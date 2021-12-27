@@ -18,11 +18,11 @@ function StoreSlash(Props) {
   return React.createElement(UilStoreSlash, tmp);
 }
 
-var make = StoreSlash;
+var make = React.memo(StoreSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

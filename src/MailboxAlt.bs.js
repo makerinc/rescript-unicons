@@ -18,11 +18,11 @@ function MailboxAlt(Props) {
   return React.createElement(UilMailboxAlt, tmp);
 }
 
-var make = MailboxAlt;
+var make = React.memo(MailboxAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

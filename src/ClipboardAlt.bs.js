@@ -18,11 +18,11 @@ function ClipboardAlt(Props) {
   return React.createElement(UilClipboardAlt, tmp);
 }
 
-var make = ClipboardAlt;
+var make = React.memo(ClipboardAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

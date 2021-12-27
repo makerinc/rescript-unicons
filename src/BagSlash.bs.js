@@ -18,11 +18,11 @@ function BagSlash(Props) {
   return React.createElement(UilBagSlash, tmp);
 }
 
-var make = BagSlash;
+var make = React.memo(BagSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

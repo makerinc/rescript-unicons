@@ -18,11 +18,11 @@ function ExposureIncrease(Props) {
   return React.createElement(UilExposureIncrease, tmp);
 }
 
-var make = ExposureIncrease;
+var make = React.memo(ExposureIncrease);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

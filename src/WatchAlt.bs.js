@@ -18,11 +18,11 @@ function WatchAlt(Props) {
   return React.createElement(UilWatchAlt, tmp);
 }
 
-var make = WatchAlt;
+var make = React.memo(WatchAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

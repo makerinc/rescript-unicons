@@ -18,11 +18,11 @@ function CloudShowersHeavy(Props) {
   return React.createElement(UilCloudShowersHeavy, tmp);
 }
 
-var make = CloudShowersHeavy;
+var make = React.memo(CloudShowersHeavy);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

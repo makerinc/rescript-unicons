@@ -18,11 +18,11 @@ function Browser(Props) {
   return React.createElement(UilBrowser, tmp);
 }
 
-var make = Browser;
+var make = React.memo(Browser);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

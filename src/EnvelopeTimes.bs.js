@@ -18,11 +18,11 @@ function EnvelopeTimes(Props) {
   return React.createElement(UilEnvelopeTimes, tmp);
 }
 
-var make = EnvelopeTimes;
+var make = React.memo(EnvelopeTimes);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

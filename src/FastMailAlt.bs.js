@@ -18,11 +18,11 @@ function FastMailAlt(Props) {
   return React.createElement(UilFastMailAlt, tmp);
 }
 
-var make = FastMailAlt;
+var make = React.memo(FastMailAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Truck(Props) {
   return React.createElement(UilTruck, tmp);
 }
 
-var make = Truck;
+var make = React.memo(Truck);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

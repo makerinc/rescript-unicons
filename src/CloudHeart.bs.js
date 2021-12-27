@@ -18,11 +18,11 @@ function CloudHeart(Props) {
   return React.createElement(UilCloudHeart, tmp);
 }
 
-var make = CloudHeart;
+var make = React.memo(CloudHeart);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

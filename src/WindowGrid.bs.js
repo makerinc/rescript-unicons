@@ -18,11 +18,11 @@ function WindowGrid(Props) {
   return React.createElement(UilWindowGrid, tmp);
 }
 
-var make = WindowGrid;
+var make = React.memo(WindowGrid);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

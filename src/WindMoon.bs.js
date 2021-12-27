@@ -18,11 +18,11 @@ function WindMoon(Props) {
   return React.createElement(UilWindMoon, tmp);
 }
 
-var make = WindMoon;
+var make = React.memo(WindMoon);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

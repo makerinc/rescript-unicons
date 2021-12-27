@@ -18,11 +18,11 @@ function CloudBlock(Props) {
   return React.createElement(UilCloudBlock, tmp);
 }
 
-var make = CloudBlock;
+var make = React.memo(CloudBlock);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

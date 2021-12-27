@@ -18,11 +18,11 @@ function ShieldCheck(Props) {
   return React.createElement(UilShieldCheck, tmp);
 }
 
-var make = ShieldCheck;
+var make = React.memo(ShieldCheck);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

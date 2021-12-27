@@ -18,11 +18,11 @@ function Thermometer(Props) {
   return React.createElement(UilThermometer, tmp);
 }
 
-var make = Thermometer;
+var make = React.memo(Thermometer);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

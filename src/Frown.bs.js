@@ -18,11 +18,11 @@ function Frown(Props) {
   return React.createElement(UilFrown, tmp);
 }
 
-var make = Frown;
+var make = React.memo(Frown);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

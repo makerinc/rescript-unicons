@@ -18,11 +18,11 @@ function BatteryEmpty(Props) {
   return React.createElement(UilBatteryEmpty, tmp);
 }
 
-var make = BatteryEmpty;
+var make = React.memo(BatteryEmpty);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Whatsapp(Props) {
   return React.createElement(UilWhatsapp, tmp);
 }
 
-var make = Whatsapp;
+var make = React.memo(Whatsapp);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

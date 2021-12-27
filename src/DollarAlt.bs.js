@@ -18,11 +18,11 @@ function DollarAlt(Props) {
   return React.createElement(UilDollarAlt, tmp);
 }
 
-var make = DollarAlt;
+var make = React.memo(DollarAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

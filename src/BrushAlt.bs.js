@@ -18,11 +18,11 @@ function BrushAlt(Props) {
   return React.createElement(UilBrushAlt, tmp);
 }
 
-var make = BrushAlt;
+var make = React.memo(BrushAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

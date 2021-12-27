@@ -18,11 +18,11 @@ function Watch(Props) {
   return React.createElement(UilWatch, tmp);
 }
 
-var make = Watch;
+var make = React.memo(Watch);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Percentage(Props) {
   return React.createElement(UilPercentage, tmp);
 }
 
-var make = Percentage;
+var make = React.memo(Percentage);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function FolderLock(Props) {
   return React.createElement(UilFolderLock, tmp);
 }
 
-var make = FolderLock;
+var make = React.memo(FolderLock);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

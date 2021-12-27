@@ -18,11 +18,11 @@ function CompressPoint(Props) {
   return React.createElement(UilCompressPoint, tmp);
 }
 
-var make = CompressPoint;
+var make = React.memo(CompressPoint);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

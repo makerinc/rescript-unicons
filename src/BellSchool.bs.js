@@ -18,11 +18,11 @@ function BellSchool(Props) {
   return React.createElement(UilBellSchool, tmp);
 }
 
-var make = BellSchool;
+var make = React.memo(BellSchool);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

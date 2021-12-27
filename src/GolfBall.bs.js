@@ -18,11 +18,11 @@ function GolfBall(Props) {
   return React.createElement(UilGolfBall, tmp);
 }
 
-var make = GolfBall;
+var make = React.memo(GolfBall);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

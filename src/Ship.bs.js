@@ -18,11 +18,11 @@ function Ship(Props) {
   return React.createElement(UilShip, tmp);
 }
 
-var make = Ship;
+var make = React.memo(Ship);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

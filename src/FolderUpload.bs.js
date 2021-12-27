@@ -18,11 +18,11 @@ function FolderUpload(Props) {
   return React.createElement(UilFolderUpload, tmp);
 }
 
-var make = FolderUpload;
+var make = React.memo(FolderUpload);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

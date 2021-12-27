@@ -18,11 +18,11 @@ function Rainbow(Props) {
   return React.createElement(UilRainbow, tmp);
 }
 
-var make = Rainbow;
+var make = React.memo(Rainbow);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

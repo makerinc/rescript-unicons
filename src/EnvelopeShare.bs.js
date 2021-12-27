@@ -18,11 +18,11 @@ function EnvelopeShare(Props) {
   return React.createElement(UilEnvelopeShare, tmp);
 }
 
-var make = EnvelopeShare;
+var make = React.memo(EnvelopeShare);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

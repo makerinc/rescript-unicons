@@ -18,11 +18,11 @@ function Box(Props) {
   return React.createElement(UilBox, tmp);
 }
 
-var make = Box;
+var make = React.memo(Box);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

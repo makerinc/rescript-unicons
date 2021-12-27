@@ -18,11 +18,11 @@ function Glass(Props) {
   return React.createElement(UilGlass, tmp);
 }
 
-var make = Glass;
+var make = React.memo(Glass);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

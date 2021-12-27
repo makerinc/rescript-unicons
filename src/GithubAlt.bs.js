@@ -18,11 +18,11 @@ function GithubAlt(Props) {
   return React.createElement(UilGithubAlt, tmp);
 }
 
-var make = GithubAlt;
+var make = React.memo(GithubAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

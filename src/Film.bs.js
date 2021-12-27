@@ -18,11 +18,11 @@ function Film(Props) {
   return React.createElement(UilFilm, tmp);
 }
 
-var make = Film;
+var make = React.memo(Film);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

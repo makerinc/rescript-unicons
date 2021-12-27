@@ -18,11 +18,11 @@ function Flask(Props) {
   return React.createElement(UilFlask, tmp);
 }
 
-var make = Flask;
+var make = React.memo(Flask);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

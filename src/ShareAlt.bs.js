@@ -18,11 +18,11 @@ function ShareAlt(Props) {
   return React.createElement(UilShareAlt, tmp);
 }
 
-var make = ShareAlt;
+var make = React.memo(ShareAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

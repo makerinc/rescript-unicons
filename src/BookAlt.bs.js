@@ -18,11 +18,11 @@ function BookAlt(Props) {
   return React.createElement(UilBookAlt, tmp);
 }
 
-var make = BookAlt;
+var make = React.memo(BookAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

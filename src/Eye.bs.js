@@ -18,11 +18,11 @@ function Eye(Props) {
   return React.createElement(UilEye, tmp);
 }
 
-var make = Eye;
+var make = React.memo(Eye);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

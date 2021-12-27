@@ -18,11 +18,11 @@ function TagAlt(Props) {
   return React.createElement(UilTagAlt, tmp);
 }
 
-var make = TagAlt;
+var make = React.memo(TagAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

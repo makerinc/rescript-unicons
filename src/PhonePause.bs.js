@@ -18,11 +18,11 @@ function PhonePause(Props) {
   return React.createElement(UilPhonePause, tmp);
 }
 
-var make = PhonePause;
+var make = React.memo(PhonePause);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

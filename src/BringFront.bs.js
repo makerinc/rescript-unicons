@@ -18,11 +18,11 @@ function BringFront(Props) {
   return React.createElement(UilBringFront, tmp);
 }
 
-var make = BringFront;
+var make = React.memo(BringFront);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

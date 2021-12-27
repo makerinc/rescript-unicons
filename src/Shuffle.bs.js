@@ -18,11 +18,11 @@ function Shuffle(Props) {
   return React.createElement(UilShuffle, tmp);
 }
 
-var make = Shuffle;
+var make = React.memo(Shuffle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

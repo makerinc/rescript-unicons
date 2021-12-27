@@ -18,11 +18,11 @@ function BedDouble(Props) {
   return React.createElement(UilBedDouble, tmp);
 }
 
-var make = BedDouble;
+var make = React.memo(BedDouble);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

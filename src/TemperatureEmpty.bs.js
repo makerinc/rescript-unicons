@@ -18,11 +18,11 @@ function TemperatureEmpty(Props) {
   return React.createElement(UilTemperatureEmpty, tmp);
 }
 
-var make = TemperatureEmpty;
+var make = React.memo(TemperatureEmpty);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

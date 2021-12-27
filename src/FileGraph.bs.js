@@ -18,11 +18,11 @@ function FileGraph(Props) {
   return React.createElement(UilFileGraph, tmp);
 }
 
-var make = FileGraph;
+var make = React.memo(FileGraph);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function StepBackwardCircle(Props) {
   return React.createElement(UilStepBackwardCircle, tmp);
 }
 
-var make = StepBackwardCircle;
+var make = React.memo(StepBackwardCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

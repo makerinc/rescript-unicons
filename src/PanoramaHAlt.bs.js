@@ -18,11 +18,11 @@ function PanoramaHAlt(Props) {
   return React.createElement(UilPanoramaHAlt, tmp);
 }
 
-var make = PanoramaHAlt;
+var make = React.memo(PanoramaHAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

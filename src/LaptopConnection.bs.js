@@ -18,11 +18,11 @@ function LaptopConnection(Props) {
   return React.createElement(UilLaptopConnection, tmp);
 }
 
-var make = LaptopConnection;
+var make = React.memo(LaptopConnection);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

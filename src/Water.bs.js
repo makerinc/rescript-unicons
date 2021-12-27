@@ -18,11 +18,11 @@ function Water(Props) {
   return React.createElement(UilWater, tmp);
 }
 
-var make = Water;
+var make = React.memo(Water);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

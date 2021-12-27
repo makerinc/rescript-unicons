@@ -18,11 +18,11 @@ function CommentAltUpload(Props) {
   return React.createElement(UilCommentAltUpload, tmp);
 }
 
-var make = CommentAltUpload;
+var make = React.memo(CommentAltUpload);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function CloudBookmark(Props) {
   return React.createElement(UilCloudBookmark, tmp);
 }
 
-var make = CloudBookmark;
+var make = React.memo(CloudBookmark);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

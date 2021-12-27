@@ -18,11 +18,11 @@ function SanitizerAlt(Props) {
   return React.createElement(UilSanitizerAlt, tmp);
 }
 
-var make = SanitizerAlt;
+var make = React.memo(SanitizerAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

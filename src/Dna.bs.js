@@ -18,11 +18,11 @@ function Dna(Props) {
   return React.createElement(UilDna, tmp);
 }
 
-var make = Dna;
+var make = React.memo(Dna);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

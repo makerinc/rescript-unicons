@@ -18,11 +18,11 @@ function SkypeAlt(Props) {
   return React.createElement(UilSkypeAlt, tmp);
 }
 
-var make = SkypeAlt;
+var make = React.memo(SkypeAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

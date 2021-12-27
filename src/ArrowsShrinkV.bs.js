@@ -18,11 +18,11 @@ function ArrowsShrinkV(Props) {
   return React.createElement(UilArrowsShrinkV, tmp);
 }
 
-var make = ArrowsShrinkV;
+var make = React.memo(ArrowsShrinkV);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

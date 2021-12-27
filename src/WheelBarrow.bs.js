@@ -18,11 +18,11 @@ function WheelBarrow(Props) {
   return React.createElement(UilWheelBarrow, tmp);
 }
 
-var make = WheelBarrow;
+var make = React.memo(WheelBarrow);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

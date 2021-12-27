@@ -18,11 +18,11 @@ function Abacus(Props) {
   return React.createElement(UilAbacus, tmp);
 }
 
-var make = Abacus;
+var make = React.memo(Abacus);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function AssistiveListeningSystems(Props) {
   return React.createElement(UilAssistiveListeningSystems, tmp);
 }
 
-var make = AssistiveListeningSystems;
+var make = React.memo(AssistiveListeningSystems);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

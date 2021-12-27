@@ -18,11 +18,11 @@ function FileCheckAlt(Props) {
   return React.createElement(UilFileCheckAlt, tmp);
 }
 
-var make = FileCheckAlt;
+var make = React.memo(FileCheckAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function BoltSlash(Props) {
   return React.createElement(UilBoltSlash, tmp);
 }
 
-var make = BoltSlash;
+var make = React.memo(BoltSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

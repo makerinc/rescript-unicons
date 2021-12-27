@@ -18,11 +18,11 @@ function GoogleHangouts(Props) {
   return React.createElement(UilGoogleHangouts, tmp);
 }
 
-var make = GoogleHangouts;
+var make = React.memo(GoogleHangouts);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

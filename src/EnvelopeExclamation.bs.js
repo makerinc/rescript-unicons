@@ -18,11 +18,11 @@ function EnvelopeExclamation(Props) {
   return React.createElement(UilEnvelopeExclamation, tmp);
 }
 
-var make = EnvelopeExclamation;
+var make = React.memo(EnvelopeExclamation);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

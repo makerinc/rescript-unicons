@@ -18,11 +18,11 @@ function FileMinus(Props) {
   return React.createElement(UilFileMinus, tmp);
 }
 
-var make = FileMinus;
+var make = React.memo(FileMinus);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

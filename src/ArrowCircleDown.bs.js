@@ -18,11 +18,11 @@ function ArrowCircleDown(Props) {
   return React.createElement(UilArrowCircleDown, tmp);
 }
 
-var make = ArrowCircleDown;
+var make = React.memo(ArrowCircleDown);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

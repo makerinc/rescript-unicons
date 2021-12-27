@@ -18,11 +18,11 @@ function LetterChineseA(Props) {
   return React.createElement(UilLetterChineseA, tmp);
 }
 
-var make = LetterChineseA;
+var make = React.memo(LetterChineseA);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Asterisk(Props) {
   return React.createElement(UilAsterisk, tmp);
 }
 
-var make = Asterisk;
+var make = React.memo(Asterisk);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

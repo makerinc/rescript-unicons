@@ -18,11 +18,11 @@ function Microphone(Props) {
   return React.createElement(UilMicrophone, tmp);
 }
 
-var make = Microphone;
+var make = React.memo(Microphone);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

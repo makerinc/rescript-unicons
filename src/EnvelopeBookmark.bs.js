@@ -18,11 +18,11 @@ function EnvelopeBookmark(Props) {
   return React.createElement(UilEnvelopeBookmark, tmp);
 }
 
-var make = EnvelopeBookmark;
+var make = React.memo(EnvelopeBookmark);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

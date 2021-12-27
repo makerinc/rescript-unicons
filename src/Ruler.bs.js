@@ -18,11 +18,11 @@ function Ruler(Props) {
   return React.createElement(UilRuler, tmp);
 }
 
-var make = Ruler;
+var make = React.memo(Ruler);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

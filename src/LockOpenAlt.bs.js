@@ -18,11 +18,11 @@ function LockOpenAlt(Props) {
   return React.createElement(UilLockOpenAlt, tmp);
 }
 
-var make = LockOpenAlt;
+var make = React.memo(LockOpenAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

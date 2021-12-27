@@ -18,11 +18,11 @@ function MoneyWithdraw(Props) {
   return React.createElement(UilMoneyWithdraw, tmp);
 }
 
-var make = MoneyWithdraw;
+var make = React.memo(MoneyWithdraw);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

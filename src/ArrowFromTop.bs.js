@@ -18,11 +18,11 @@ function ArrowFromTop(Props) {
   return React.createElement(UilArrowFromTop, tmp);
 }
 
-var make = ArrowFromTop;
+var make = React.memo(ArrowFromTop);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

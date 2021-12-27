@@ -18,11 +18,11 @@ function BitcoinAlt(Props) {
   return React.createElement(UilBitcoinAlt, tmp);
 }
 
-var make = BitcoinAlt;
+var make = React.memo(BitcoinAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

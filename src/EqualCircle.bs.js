@@ -18,11 +18,11 @@ function EqualCircle(Props) {
   return React.createElement(UilEqualCircle, tmp);
 }
 
-var make = EqualCircle;
+var make = React.memo(EqualCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

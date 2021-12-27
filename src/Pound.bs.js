@@ -18,11 +18,11 @@ function Pound(Props) {
   return React.createElement(UilPound, tmp);
 }
 
-var make = Pound;
+var make = React.memo(Pound);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

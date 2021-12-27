@@ -18,11 +18,11 @@ function FileShareAlt(Props) {
   return React.createElement(UilFileShareAlt, tmp);
 }
 
-var make = FileShareAlt;
+var make = React.memo(FileShareAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

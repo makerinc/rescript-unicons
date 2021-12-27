@@ -18,11 +18,11 @@ function Rss(Props) {
   return React.createElement(UilRss, tmp);
 }
 
-var make = Rss;
+var make = React.memo(Rss);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

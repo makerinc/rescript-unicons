@@ -18,11 +18,11 @@ function FacebookMessengerAlt(Props) {
   return React.createElement(UilFacebookMessengerAlt, tmp);
 }
 
-var make = FacebookMessengerAlt;
+var make = React.memo(FacebookMessengerAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

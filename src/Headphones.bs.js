@@ -18,11 +18,11 @@ function Headphones(Props) {
   return React.createElement(UilHeadphones, tmp);
 }
 
-var make = Headphones;
+var make = React.memo(Headphones);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

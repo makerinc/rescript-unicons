@@ -18,11 +18,11 @@ function Podium(Props) {
   return React.createElement(UilPodium, tmp);
 }
 
-var make = Podium;
+var make = React.memo(Podium);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function FileLanscapeSlash(Props) {
   return React.createElement(UilFileLanscapeSlash, tmp);
 }
 
-var make = FileLanscapeSlash;
+var make = React.memo(FileLanscapeSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

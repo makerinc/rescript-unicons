@@ -18,11 +18,11 @@ function GlassTea(Props) {
   return React.createElement(UilGlassTea, tmp);
 }
 
-var make = GlassTea;
+var make = React.memo(GlassTea);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

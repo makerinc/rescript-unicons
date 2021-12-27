@@ -18,11 +18,11 @@ function SkipForwardCircle(Props) {
   return React.createElement(UilSkipForwardCircle, tmp);
 }
 
-var make = SkipForwardCircle;
+var make = React.memo(SkipForwardCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

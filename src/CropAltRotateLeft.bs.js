@@ -18,11 +18,11 @@ function CropAltRotateLeft(Props) {
   return React.createElement(UilCropAltRotateLeft, tmp);
 }
 
-var make = CropAltRotateLeft;
+var make = React.memo(CropAltRotateLeft);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

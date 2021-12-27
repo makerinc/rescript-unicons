@@ -18,11 +18,11 @@ function TumblrAlt(Props) {
   return React.createElement(UilTumblrAlt, tmp);
 }
 
-var make = TumblrAlt;
+var make = React.memo(TumblrAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

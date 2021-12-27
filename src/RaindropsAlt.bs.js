@@ -18,11 +18,11 @@ function RaindropsAlt(Props) {
   return React.createElement(UilRaindropsAlt, tmp);
 }
 
-var make = RaindropsAlt;
+var make = React.memo(RaindropsAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function RssAlt(Props) {
   return React.createElement(UilRssAlt, tmp);
 }
 
-var make = RssAlt;
+var make = React.memo(RssAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

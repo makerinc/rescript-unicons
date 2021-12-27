@@ -18,11 +18,11 @@ function Comparison(Props) {
   return React.createElement(UilComparison, tmp);
 }
 
-var make = Comparison;
+var make = React.memo(Comparison);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

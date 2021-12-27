@@ -18,11 +18,11 @@ function WordpressSimple(Props) {
   return React.createElement(UilWordpressSimple, tmp);
 }
 
-var make = WordpressSimple;
+var make = React.memo(WordpressSimple);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function DiaryAlt(Props) {
   return React.createElement(UilDiaryAlt, tmp);
 }
 
-var make = DiaryAlt;
+var make = React.memo(DiaryAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Underline(Props) {
   return React.createElement(UilUnderline, tmp);
 }
 
-var make = Underline;
+var make = React.memo(Underline);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

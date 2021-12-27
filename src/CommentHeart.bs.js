@@ -18,11 +18,11 @@ function CommentHeart(Props) {
   return React.createElement(UilCommentHeart, tmp);
 }
 
-var make = CommentHeart;
+var make = React.memo(CommentHeart);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

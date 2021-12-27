@@ -18,11 +18,11 @@ function ImageMinus(Props) {
   return React.createElement(UilImageMinus, tmp);
 }
 
-var make = ImageMinus;
+var make = React.memo(ImageMinus);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

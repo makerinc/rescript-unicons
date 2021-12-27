@@ -18,11 +18,11 @@ function FilesLandscapes(Props) {
   return React.createElement(UilFilesLandscapes, tmp);
 }
 
-var make = FilesLandscapes;
+var make = React.memo(FilesLandscapes);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

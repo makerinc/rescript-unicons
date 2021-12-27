@@ -18,11 +18,11 @@ function LayerGroup(Props) {
   return React.createElement(UilLayerGroup, tmp);
 }
 
-var make = LayerGroup;
+var make = React.memo(LayerGroup);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

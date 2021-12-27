@@ -18,11 +18,11 @@ function MedicalDrip(Props) {
   return React.createElement(UilMedicalDrip, tmp);
 }
 
-var make = MedicalDrip;
+var make = React.memo(MedicalDrip);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

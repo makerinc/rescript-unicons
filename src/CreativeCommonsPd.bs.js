@@ -18,11 +18,11 @@ function CreativeCommonsPd(Props) {
   return React.createElement(UilCreativeCommonsPd, tmp);
 }
 
-var make = CreativeCommonsPd;
+var make = React.memo(CreativeCommonsPd);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

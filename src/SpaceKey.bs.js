@@ -18,11 +18,11 @@ function SpaceKey(Props) {
   return React.createElement(UilSpaceKey, tmp);
 }
 
-var make = SpaceKey;
+var make = React.memo(SpaceKey);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

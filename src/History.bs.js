@@ -18,11 +18,11 @@ function $$History(Props) {
   return React.createElement(UilHistory, tmp);
 }
 
-var make = $$History;
+var make = React.memo($$History);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

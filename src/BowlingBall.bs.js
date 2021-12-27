@@ -18,11 +18,11 @@ function BowlingBall(Props) {
   return React.createElement(UilBowlingBall, tmp);
 }
 
-var make = BowlingBall;
+var make = React.memo(BowlingBall);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

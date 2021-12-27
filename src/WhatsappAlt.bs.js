@@ -18,11 +18,11 @@ function WhatsappAlt(Props) {
   return React.createElement(UilWhatsappAlt, tmp);
 }
 
-var make = WhatsappAlt;
+var make = React.memo(WhatsappAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

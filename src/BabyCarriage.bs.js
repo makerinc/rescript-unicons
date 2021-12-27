@@ -18,11 +18,11 @@ function BabyCarriage(Props) {
   return React.createElement(UilBabyCarriage, tmp);
 }
 
-var make = BabyCarriage;
+var make = React.memo(BabyCarriage);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

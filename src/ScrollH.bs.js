@@ -18,11 +18,11 @@ function ScrollH(Props) {
   return React.createElement(UilScrollH, tmp);
 }
 
-var make = ScrollH;
+var make = React.memo(ScrollH);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

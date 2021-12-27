@@ -18,11 +18,11 @@ function $$Navigator(Props) {
   return React.createElement(UilNavigator, tmp);
 }
 
-var make = $$Navigator;
+var make = React.memo($$Navigator);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

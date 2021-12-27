@@ -18,11 +18,11 @@ function KeyholeCircle(Props) {
   return React.createElement(UilKeyholeCircle, tmp);
 }
 
-var make = KeyholeCircle;
+var make = React.memo(KeyholeCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

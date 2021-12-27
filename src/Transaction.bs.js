@@ -18,11 +18,11 @@ function Transaction(Props) {
   return React.createElement(UilTransaction, tmp);
 }
 
-var make = Transaction;
+var make = React.memo(Transaction);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

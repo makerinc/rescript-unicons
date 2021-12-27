@@ -18,11 +18,11 @@ function WaterGlass(Props) {
   return React.createElement(UilWaterGlass, tmp);
 }
 
-var make = WaterGlass;
+var make = React.memo(WaterGlass);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

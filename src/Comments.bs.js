@@ -18,11 +18,11 @@ function Comments(Props) {
   return React.createElement(UilComments, tmp);
 }
 
-var make = Comments;
+var make = React.memo(Comments);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

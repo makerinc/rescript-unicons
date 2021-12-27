@@ -18,11 +18,11 @@ function Bus(Props) {
   return React.createElement(UilBus, tmp);
 }
 
-var make = Bus;
+var make = React.memo(Bus);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

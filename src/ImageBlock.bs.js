@@ -18,11 +18,11 @@ function ImageBlock(Props) {
   return React.createElement(UilImageBlock, tmp);
 }
 
-var make = ImageBlock;
+var make = React.memo(ImageBlock);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

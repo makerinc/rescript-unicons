@@ -18,11 +18,11 @@ function ChartBar(Props) {
   return React.createElement(UilChartBar, tmp);
 }
 
-var make = ChartBar;
+var make = React.memo(ChartBar);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

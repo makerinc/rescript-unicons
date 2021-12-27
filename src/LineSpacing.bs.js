@@ -18,11 +18,11 @@ function LineSpacing(Props) {
   return React.createElement(UilLineSpacing, tmp);
 }
 
-var make = LineSpacing;
+var make = React.memo(LineSpacing);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

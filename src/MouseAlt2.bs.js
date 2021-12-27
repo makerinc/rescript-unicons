@@ -18,11 +18,11 @@ function MouseAlt2(Props) {
   return React.createElement(UilMouseAlt, tmp);
 }
 
-var make = MouseAlt2;
+var make = React.memo(MouseAlt2);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

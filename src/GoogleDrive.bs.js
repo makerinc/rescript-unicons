@@ -18,11 +18,11 @@ function GoogleDrive(Props) {
   return React.createElement(UilGoogleDrive, tmp);
 }
 
-var make = GoogleDrive;
+var make = React.memo(GoogleDrive);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

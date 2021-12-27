@@ -18,11 +18,11 @@ function SmileBeam(Props) {
   return React.createElement(UilSmileBeam, tmp);
 }
 
-var make = SmileBeam;
+var make = React.memo(SmileBeam);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

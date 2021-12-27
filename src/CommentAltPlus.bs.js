@@ -18,11 +18,11 @@ function CommentAltPlus(Props) {
   return React.createElement(UilCommentAltPlus, tmp);
 }
 
-var make = CommentAltPlus;
+var make = React.memo(CommentAltPlus);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

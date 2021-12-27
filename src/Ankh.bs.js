@@ -18,11 +18,11 @@ function Ankh(Props) {
   return React.createElement(UilAnkh, tmp);
 }
 
-var make = Ankh;
+var make = React.memo(Ankh);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Pause(Props) {
   return React.createElement(UilPause, tmp);
 }
 
-var make = Pause;
+var make = React.memo(Pause);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

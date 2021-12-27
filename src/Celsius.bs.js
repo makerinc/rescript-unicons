@@ -18,11 +18,11 @@ function Celsius(Props) {
   return React.createElement(UilCelsius, tmp);
 }
 
-var make = Celsius;
+var make = React.memo(Celsius);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

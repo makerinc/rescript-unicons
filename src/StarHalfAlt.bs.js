@@ -18,11 +18,11 @@ function StarHalfAlt(Props) {
   return React.createElement(UilStarHalfAlt, tmp);
 }
 
-var make = StarHalfAlt;
+var make = React.memo(StarHalfAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

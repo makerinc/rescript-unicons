@@ -18,11 +18,11 @@ function Paragraph(Props) {
   return React.createElement(UilParagraph, tmp);
 }
 
-var make = Paragraph;
+var make = React.memo(Paragraph);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

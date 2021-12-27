@@ -18,11 +18,11 @@ function Sick(Props) {
   return React.createElement(UilSick, tmp);
 }
 
-var make = Sick;
+var make = React.memo(Sick);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

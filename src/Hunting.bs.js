@@ -18,11 +18,11 @@ function Hunting(Props) {
   return React.createElement(UilHunting, tmp);
 }
 
-var make = Hunting;
+var make = React.memo(Hunting);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

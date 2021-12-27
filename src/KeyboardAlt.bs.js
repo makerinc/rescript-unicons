@@ -18,11 +18,11 @@ function KeyboardAlt(Props) {
   return React.createElement(UilKeyboardAlt, tmp);
 }
 
-var make = KeyboardAlt;
+var make = React.memo(KeyboardAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

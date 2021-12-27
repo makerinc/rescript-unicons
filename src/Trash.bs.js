@@ -18,11 +18,11 @@ function Trash(Props) {
   return React.createElement(UilTrash, tmp);
 }
 
-var make = Trash;
+var make = React.memo(Trash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

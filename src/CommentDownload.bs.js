@@ -18,11 +18,11 @@ function CommentDownload(Props) {
   return React.createElement(UilCommentDownload, tmp);
 }
 
-var make = CommentDownload;
+var make = React.memo(CommentDownload);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

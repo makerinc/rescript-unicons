@@ -18,11 +18,11 @@ function ArrowToBottom(Props) {
   return React.createElement(UilArrowToBottom, tmp);
 }
 
-var make = ArrowToBottom;
+var make = React.memo(ArrowToBottom);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

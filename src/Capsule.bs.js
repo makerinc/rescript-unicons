@@ -18,11 +18,11 @@ function Capsule(Props) {
   return React.createElement(UilCapsule, tmp);
 }
 
-var make = Capsule;
+var make = React.memo(Capsule);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

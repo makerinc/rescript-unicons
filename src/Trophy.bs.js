@@ -18,11 +18,11 @@ function Trophy(Props) {
   return React.createElement(UilTrophy, tmp);
 }
 
-var make = Trophy;
+var make = React.memo(Trophy);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Layers(Props) {
   return React.createElement(UilLayers, tmp);
 }
 
-var make = Layers;
+var make = React.memo(Layers);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

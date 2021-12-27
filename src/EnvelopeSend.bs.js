@@ -18,11 +18,11 @@ function EnvelopeSend(Props) {
   return React.createElement(UilEnvelopeSend, tmp);
 }
 
-var make = EnvelopeSend;
+var make = React.memo(EnvelopeSend);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

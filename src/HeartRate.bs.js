@@ -18,11 +18,11 @@ function HeartRate(Props) {
   return React.createElement(UilHeartRate, tmp);
 }
 
-var make = HeartRate;
+var make = React.memo(HeartRate);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

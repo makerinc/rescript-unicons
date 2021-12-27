@@ -18,11 +18,11 @@ function RecordAudio(Props) {
   return React.createElement(UilRecordAudio, tmp);
 }
 
-var make = RecordAudio;
+var make = React.memo(RecordAudio);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

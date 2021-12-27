@@ -18,11 +18,11 @@ function Discord(Props) {
   return React.createElement(UilDiscord, tmp);
 }
 
-var make = Discord;
+var make = React.memo(Discord);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

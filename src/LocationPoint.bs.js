@@ -18,11 +18,11 @@ function LocationPoint(Props) {
   return React.createElement(UilLocationPoint, tmp);
 }
 
-var make = LocationPoint;
+var make = React.memo(LocationPoint);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

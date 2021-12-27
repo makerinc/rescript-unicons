@@ -18,11 +18,11 @@ function MeetingBoard(Props) {
   return React.createElement(UilMeetingBoard, tmp);
 }
 
-var make = MeetingBoard;
+var make = React.memo(MeetingBoard);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function SliderHRange(Props) {
   return React.createElement(UilSliderHRange, tmp);
 }
 
-var make = SliderHRange;
+var make = React.memo(SliderHRange);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

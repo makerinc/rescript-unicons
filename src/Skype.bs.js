@@ -18,11 +18,11 @@ function Skype(Props) {
   return React.createElement(UilSkype, tmp);
 }
 
-var make = Skype;
+var make = React.memo(Skype);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

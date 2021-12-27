@@ -18,11 +18,11 @@ function FileUploadAlt(Props) {
   return React.createElement(UilFileUploadAlt, tmp);
 }
 
-var make = FileUploadAlt;
+var make = React.memo(FileUploadAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

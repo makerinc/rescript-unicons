@@ -18,11 +18,11 @@ function AngleUp(Props) {
   return React.createElement(UilAngleUp, tmp);
 }
 
-var make = AngleUp;
+var make = React.memo(AngleUp);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

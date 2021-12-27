@@ -18,11 +18,11 @@ function ServerAlt(Props) {
   return React.createElement(UilServerAlt, tmp);
 }
 
-var make = ServerAlt;
+var make = React.memo(ServerAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

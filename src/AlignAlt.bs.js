@@ -18,11 +18,11 @@ function AlignAlt(Props) {
   return React.createElement(UilAlignAlt, tmp);
 }
 
-var make = AlignAlt;
+var make = React.memo(AlignAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function UtensilsAlt(Props) {
   return React.createElement(UilUtensilsAlt, tmp);
 }
 
-var make = UtensilsAlt;
+var make = React.memo(UtensilsAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

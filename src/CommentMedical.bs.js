@@ -18,11 +18,11 @@ function CommentMedical(Props) {
   return React.createElement(UilCommentMedical, tmp);
 }
 
-var make = CommentMedical;
+var make = React.memo(CommentMedical);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

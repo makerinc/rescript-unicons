@@ -18,11 +18,11 @@ function BorderAlt(Props) {
   return React.createElement(UilBorderAlt, tmp);
 }
 
-var make = BorderAlt;
+var make = React.memo(BorderAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

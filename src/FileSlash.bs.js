@@ -18,11 +18,11 @@ function FileSlash(Props) {
   return React.createElement(UilFileSlash, tmp);
 }
 
-var make = FileSlash;
+var make = React.memo(FileSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

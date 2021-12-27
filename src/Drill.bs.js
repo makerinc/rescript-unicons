@@ -18,11 +18,11 @@ function Drill(Props) {
   return React.createElement(UilDrill, tmp);
 }
 
-var make = Drill;
+var make = React.memo(Drill);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

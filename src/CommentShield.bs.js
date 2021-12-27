@@ -18,11 +18,11 @@ function CommentShield(Props) {
   return React.createElement(UilCommentShield, tmp);
 }
 
-var make = CommentShield;
+var make = React.memo(CommentShield);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

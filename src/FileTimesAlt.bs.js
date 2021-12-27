@@ -18,11 +18,11 @@ function FileTimesAlt(Props) {
   return React.createElement(UilFileTimesAlt, tmp);
 }
 
-var make = FileTimesAlt;
+var make = React.memo(FileTimesAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

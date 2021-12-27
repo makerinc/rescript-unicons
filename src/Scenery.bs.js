@@ -18,11 +18,11 @@ function Scenery(Props) {
   return React.createElement(UilScenery, tmp);
 }
 
-var make = Scenery;
+var make = React.memo(Scenery);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

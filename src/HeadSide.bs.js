@@ -18,11 +18,11 @@ function HeadSide(Props) {
   return React.createElement(UilHeadSide, tmp);
 }
 
-var make = HeadSide;
+var make = React.memo(HeadSide);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

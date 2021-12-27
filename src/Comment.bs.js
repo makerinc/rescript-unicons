@@ -18,11 +18,11 @@ function $$Comment(Props) {
   return React.createElement(UilComment, tmp);
 }
 
-var make = $$Comment;
+var make = React.memo($$Comment);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

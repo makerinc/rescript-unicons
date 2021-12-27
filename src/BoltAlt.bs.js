@@ -18,11 +18,11 @@ function BoltAlt(Props) {
   return React.createElement(UilBoltAlt, tmp);
 }
 
-var make = BoltAlt;
+var make = React.memo(BoltAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

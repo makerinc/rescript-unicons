@@ -18,11 +18,11 @@ function WheelchairAlt(Props) {
   return React.createElement(UilWheelchairAlt, tmp);
 }
 
-var make = WheelchairAlt;
+var make = React.memo(WheelchairAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

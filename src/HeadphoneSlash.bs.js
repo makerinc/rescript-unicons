@@ -18,11 +18,11 @@ function HeadphoneSlash(Props) {
   return React.createElement(UilHeadphoneSlash, tmp);
 }
 
-var make = HeadphoneSlash;
+var make = React.memo(HeadphoneSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

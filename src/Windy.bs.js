@@ -18,11 +18,11 @@ function Windy(Props) {
   return React.createElement(UilWindy, tmp);
 }
 
-var make = Windy;
+var make = React.memo(Windy);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

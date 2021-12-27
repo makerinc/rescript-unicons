@@ -18,11 +18,11 @@ function Windows(Props) {
   return React.createElement(UilWindows, tmp);
 }
 
-var make = Windows;
+var make = React.memo(Windows);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function At(Props) {
   return React.createElement(UilAt, tmp);
 }
 
-var make = At;
+var make = React.memo(At);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function CloudComputing(Props) {
   return React.createElement(UilCloudComputing, tmp);
 }
 
-var make = CloudComputing;
+var make = React.memo(CloudComputing);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

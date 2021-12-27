@@ -18,11 +18,11 @@ function FlipHAlt(Props) {
   return React.createElement(UilFlipHAlt, tmp);
 }
 
-var make = FlipHAlt;
+var make = React.memo(FlipHAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

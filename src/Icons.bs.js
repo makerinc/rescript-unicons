@@ -18,11 +18,11 @@ function Icons(Props) {
   return React.createElement(UilIcons, tmp);
 }
 
-var make = Icons;
+var make = React.memo(Icons);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

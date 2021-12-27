@@ -18,11 +18,11 @@ function CloudRedo(Props) {
   return React.createElement(UilCloudRedo, tmp);
 }
 
-var make = CloudRedo;
+var make = React.memo(CloudRedo);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

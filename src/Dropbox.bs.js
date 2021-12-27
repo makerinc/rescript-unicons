@@ -18,11 +18,11 @@ function Dropbox(Props) {
   return React.createElement(UilDropbox, tmp);
 }
 
-var make = Dropbox;
+var make = React.memo(Dropbox);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

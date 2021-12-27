@@ -18,11 +18,11 @@ function BracketsCurly(Props) {
   return React.createElement(UilBracketsCurly, tmp);
 }
 
-var make = BracketsCurly;
+var make = React.memo(BracketsCurly);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function CompressV(Props) {
   return React.createElement(UilCompressV, tmp);
 }
 
-var make = CompressV;
+var make = React.memo(CompressV);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

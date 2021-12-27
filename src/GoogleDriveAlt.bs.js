@@ -18,11 +18,11 @@ function GoogleDriveAlt(Props) {
   return React.createElement(UilGoogleDriveAlt, tmp);
 }
 
-var make = GoogleDriveAlt;
+var make = React.memo(GoogleDriveAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

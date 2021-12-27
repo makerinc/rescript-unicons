@@ -18,11 +18,11 @@ function ParkingSquare(Props) {
   return React.createElement(UilParkingSquare, tmp);
 }
 
-var make = ParkingSquare;
+var make = React.memo(ParkingSquare);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

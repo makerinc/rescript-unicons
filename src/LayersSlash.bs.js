@@ -18,11 +18,11 @@ function LayersSlash(Props) {
   return React.createElement(UilLayersSlash, tmp);
 }
 
-var make = LayersSlash;
+var make = React.memo(LayersSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

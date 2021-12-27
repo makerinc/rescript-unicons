@@ -18,11 +18,11 @@ function Estate(Props) {
   return React.createElement(UilEstate, tmp);
 }
 
-var make = Estate;
+var make = React.memo(Estate);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

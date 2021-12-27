@@ -18,11 +18,11 @@ function PrintSlash(Props) {
   return React.createElement(UilPrintSlash, tmp);
 }
 
-var make = PrintSlash;
+var make = React.memo(PrintSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

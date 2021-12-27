@@ -18,11 +18,11 @@ function CalculatorAlt(Props) {
   return React.createElement(UilCalculatorAlt, tmp);
 }
 
-var make = CalculatorAlt;
+var make = React.memo(CalculatorAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

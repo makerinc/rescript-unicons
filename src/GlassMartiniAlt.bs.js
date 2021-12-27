@@ -18,11 +18,11 @@ function GlassMartiniAlt(Props) {
   return React.createElement(UilGlassMartiniAlt, tmp);
 }
 
-var make = GlassMartiniAlt;
+var make = React.memo(GlassMartiniAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

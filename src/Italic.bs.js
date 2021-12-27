@@ -18,11 +18,11 @@ function Italic(Props) {
   return React.createElement(UilItalic, tmp);
 }
 
-var make = Italic;
+var make = React.memo(Italic);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

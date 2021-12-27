@@ -18,11 +18,11 @@ function Tornado(Props) {
   return React.createElement(UilTornado, tmp);
 }
 
-var make = Tornado;
+var make = React.memo(Tornado);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

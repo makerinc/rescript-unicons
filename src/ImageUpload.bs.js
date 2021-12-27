@@ -18,11 +18,11 @@ function ImageUpload(Props) {
   return React.createElement(UilImageUpload, tmp);
 }
 
-var make = ImageUpload;
+var make = React.memo(ImageUpload);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

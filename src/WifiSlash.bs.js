@@ -18,11 +18,11 @@ function WifiSlash(Props) {
   return React.createElement(UilWifiSlash, tmp);
 }
 
-var make = WifiSlash;
+var make = React.memo(WifiSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

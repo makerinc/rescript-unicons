@@ -18,11 +18,11 @@ function LifeRing(Props) {
   return React.createElement(UilLifeRing, tmp);
 }
 
-var make = LifeRing;
+var make = React.memo(LifeRing);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

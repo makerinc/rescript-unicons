@@ -18,11 +18,11 @@ function LocationArrow(Props) {
   return React.createElement(UilLocationArrow, tmp);
 }
 
-var make = LocationArrow;
+var make = React.memo(LocationArrow);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

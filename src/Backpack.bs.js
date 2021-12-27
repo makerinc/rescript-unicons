@@ -18,11 +18,11 @@ function Backpack(Props) {
   return React.createElement(UilBackpack, tmp);
 }
 
-var make = Backpack;
+var make = React.memo(Backpack);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

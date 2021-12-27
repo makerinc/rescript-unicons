@@ -18,11 +18,11 @@ function Backspace(Props) {
   return React.createElement(UilBackspace, tmp);
 }
 
-var make = Backspace;
+var make = React.memo(Backspace);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Grin(Props) {
   return React.createElement(UilGrin, tmp);
 }
 
-var make = Grin;
+var make = React.memo(Grin);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

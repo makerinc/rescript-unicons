@@ -18,11 +18,11 @@ function Palette(Props) {
   return React.createElement(UilPalette, tmp);
 }
 
-var make = Palette;
+var make = React.memo(Palette);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

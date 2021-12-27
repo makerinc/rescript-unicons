@@ -18,11 +18,11 @@ function AlignLetterRight(Props) {
   return React.createElement(UilAlignLetterRight, tmp);
 }
 
-var make = AlignLetterRight;
+var make = React.memo(AlignLetterRight);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

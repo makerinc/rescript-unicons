@@ -18,11 +18,11 @@ function UserMinus(Props) {
   return React.createElement(UilUserMinus, tmp);
 }
 
-var make = UserMinus;
+var make = React.memo(UserMinus);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

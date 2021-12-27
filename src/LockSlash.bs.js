@@ -18,11 +18,11 @@ function LockSlash(Props) {
   return React.createElement(UilLockSlash, tmp);
 }
 
-var make = LockSlash;
+var make = React.memo(LockSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

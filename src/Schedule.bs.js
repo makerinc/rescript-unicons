@@ -18,11 +18,11 @@ function Schedule(Props) {
   return React.createElement(UilSchedule, tmp);
 }
 
-var make = Schedule;
+var make = React.memo(Schedule);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

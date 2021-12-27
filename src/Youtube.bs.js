@@ -18,11 +18,11 @@ function Youtube(Props) {
   return React.createElement(UilYoutube, tmp);
 }
 
-var make = Youtube;
+var make = React.memo(Youtube);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function ArrowCompressH(Props) {
   return React.createElement(UilArrowCompressH, tmp);
 }
 
-var make = ArrowCompressH;
+var make = React.memo(ArrowCompressH);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function ArchiveAlt(Props) {
   return React.createElement(UilArchiveAlt, tmp);
 }
 
-var make = ArchiveAlt;
+var make = React.memo(ArchiveAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

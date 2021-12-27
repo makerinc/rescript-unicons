@@ -18,11 +18,11 @@ function FolderNetwork(Props) {
   return React.createElement(UilFolderNetwork, tmp);
 }
 
-var make = FolderNetwork;
+var make = React.memo(FolderNetwork);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

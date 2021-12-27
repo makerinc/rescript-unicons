@@ -18,11 +18,11 @@ function Ban(Props) {
   return React.createElement(UilBan, tmp);
 }
 
-var make = Ban;
+var make = React.memo(Ban);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

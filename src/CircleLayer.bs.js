@@ -18,11 +18,11 @@ function CircleLayer(Props) {
   return React.createElement(UilCircleLayer, tmp);
 }
 
-var make = CircleLayer;
+var make = React.memo(CircleLayer);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

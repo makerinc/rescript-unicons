@@ -18,11 +18,11 @@ function Share(Props) {
   return React.createElement(UilShare, tmp);
 }
 
-var make = Share;
+var make = React.memo(Share);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function CommentAltShare(Props) {
   return React.createElement(UilCommentAltShare, tmp);
 }
 
-var make = CommentAltShare;
+var make = React.memo(CommentAltShare);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Database(Props) {
   return React.createElement(UilDatabase, tmp);
 }
 
-var make = Database;
+var make = React.memo(Database);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

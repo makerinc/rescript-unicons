@@ -18,11 +18,11 @@ function ExpandFromCorner(Props) {
   return React.createElement(UilExpandFromCorner, tmp);
 }
 
-var make = ExpandFromCorner;
+var make = React.memo(ExpandFromCorner);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

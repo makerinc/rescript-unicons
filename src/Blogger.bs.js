@@ -18,11 +18,11 @@ function Blogger(Props) {
   return React.createElement(UilBlogger, tmp);
 }
 
-var make = Blogger;
+var make = React.memo(Blogger);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

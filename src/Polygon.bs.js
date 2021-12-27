@@ -18,11 +18,11 @@ function Polygon(Props) {
   return React.createElement(UilPolygon, tmp);
 }
 
-var make = Polygon;
+var make = React.memo(Polygon);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

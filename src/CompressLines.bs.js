@@ -18,11 +18,11 @@ function CompressLines(Props) {
   return React.createElement(UilCompressLines, tmp);
 }
 
-var make = CompressLines;
+var make = React.memo(CompressLines);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

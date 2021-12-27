@@ -18,11 +18,11 @@ function VolumeUp(Props) {
   return React.createElement(UilVolumeUp, tmp);
 }
 
-var make = VolumeUp;
+var make = React.memo(VolumeUp);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

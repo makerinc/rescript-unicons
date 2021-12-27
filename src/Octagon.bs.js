@@ -18,11 +18,11 @@ function Octagon(Props) {
   return React.createElement(UilOctagon, tmp);
 }
 
-var make = Octagon;
+var make = React.memo(Octagon);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

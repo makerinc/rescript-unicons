@@ -18,11 +18,11 @@ function FolderPlus(Props) {
   return React.createElement(UilFolderPlus, tmp);
 }
 
-var make = FolderPlus;
+var make = React.memo(FolderPlus);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

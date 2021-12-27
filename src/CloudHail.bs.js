@@ -18,11 +18,11 @@ function CloudHail(Props) {
   return React.createElement(UilCloudHail, tmp);
 }
 
-var make = CloudHail;
+var make = React.memo(CloudHail);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

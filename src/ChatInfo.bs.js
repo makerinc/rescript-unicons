@@ -18,11 +18,11 @@ function ChatInfo(Props) {
   return React.createElement(UilChatInfo, tmp);
 }
 
-var make = ChatInfo;
+var make = React.memo(ChatInfo);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

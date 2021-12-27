@@ -18,11 +18,11 @@ function ObjectUngroup(Props) {
   return React.createElement(UilObjectUngroup, tmp);
 }
 
-var make = ObjectUngroup;
+var make = React.memo(ObjectUngroup);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

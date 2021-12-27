@@ -18,11 +18,11 @@ function LuggageCart(Props) {
   return React.createElement(UilLuggageCart, tmp);
 }
 
-var make = LuggageCart;
+var make = React.memo(LuggageCart);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

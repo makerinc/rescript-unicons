@@ -18,11 +18,11 @@ function MinusPath(Props) {
   return React.createElement(UilMinusPath, tmp);
 }
 
-var make = MinusPath;
+var make = React.memo(MinusPath);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

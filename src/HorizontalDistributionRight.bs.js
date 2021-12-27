@@ -18,11 +18,11 @@ function HorizontalDistributionRight(Props) {
   return React.createElement(UilHorizontalDistributionRight, tmp);
 }
 
-var make = HorizontalDistributionRight;
+var make = React.memo(HorizontalDistributionRight);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

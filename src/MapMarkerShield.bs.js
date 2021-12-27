@@ -18,11 +18,11 @@ function MapMarkerShield(Props) {
   return React.createElement(UilMapMarkerShield, tmp);
 }
 
-var make = MapMarkerShield;
+var make = React.memo(MapMarkerShield);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

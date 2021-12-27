@@ -18,11 +18,11 @@ function CloudTimes(Props) {
   return React.createElement(UilCloudTimes, tmp);
 }
 
-var make = CloudTimes;
+var make = React.memo(CloudTimes);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

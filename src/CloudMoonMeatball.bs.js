@@ -18,11 +18,11 @@ function CloudMoonMeatball(Props) {
   return React.createElement(UilCloudMoonMeatball, tmp);
 }
 
-var make = CloudMoonMeatball;
+var make = React.memo(CloudMoonMeatball);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Restaurant(Props) {
   return React.createElement(UilRestaurant, tmp);
 }
 
-var make = Restaurant;
+var make = React.memo(Restaurant);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

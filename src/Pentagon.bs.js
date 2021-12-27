@@ -18,11 +18,11 @@ function Pentagon(Props) {
   return React.createElement(UilPentagon, tmp);
 }
 
-var make = Pentagon;
+var make = React.memo(Pentagon);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

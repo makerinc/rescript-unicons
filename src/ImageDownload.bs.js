@@ -18,11 +18,11 @@ function ImageDownload(Props) {
   return React.createElement(UilImageDownload, tmp);
 }
 
-var make = ImageDownload;
+var make = React.memo(ImageDownload);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

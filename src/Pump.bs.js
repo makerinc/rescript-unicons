@@ -18,11 +18,11 @@ function Pump(Props) {
   return React.createElement(UilPump, tmp);
 }
 
-var make = Pump;
+var make = React.memo(Pump);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function WifiRouter(Props) {
   return React.createElement(UilWifiRouter, tmp);
 }
 
-var make = WifiRouter;
+var make = React.memo(WifiRouter);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

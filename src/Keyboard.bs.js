@@ -18,11 +18,11 @@ function Keyboard(Props) {
   return React.createElement(UilKeyboard, tmp);
 }
 
-var make = Keyboard;
+var make = React.memo(Keyboard);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Selfie(Props) {
   return React.createElement(UilSelfie, tmp);
 }
 
-var make = Selfie;
+var make = React.memo(Selfie);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

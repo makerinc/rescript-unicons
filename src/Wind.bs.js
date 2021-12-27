@@ -18,11 +18,11 @@ function Wind(Props) {
   return React.createElement(UilWind, tmp);
 }
 
-var make = Wind;
+var make = React.memo(Wind);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

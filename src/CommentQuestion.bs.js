@@ -18,11 +18,11 @@ function CommentQuestion(Props) {
   return React.createElement(UilCommentQuestion, tmp);
 }
 
-var make = CommentQuestion;
+var make = React.memo(CommentQuestion);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

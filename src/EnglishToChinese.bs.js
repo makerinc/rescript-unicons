@@ -18,11 +18,11 @@ function EnglishToChinese(Props) {
   return React.createElement(UilEnglishToChinese, tmp);
 }
 
-var make = EnglishToChinese;
+var make = React.memo(EnglishToChinese);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

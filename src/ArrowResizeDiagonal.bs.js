@@ -18,11 +18,11 @@ function ArrowResizeDiagonal(Props) {
   return React.createElement(UilArrowResizeDiagonal, tmp);
 }
 
-var make = ArrowResizeDiagonal;
+var make = React.memo(ArrowResizeDiagonal);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

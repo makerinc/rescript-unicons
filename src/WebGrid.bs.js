@@ -18,11 +18,11 @@ function WebGrid(Props) {
   return React.createElement(UilWebGrid, tmp);
 }
 
-var make = WebGrid;
+var make = React.memo(WebGrid);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

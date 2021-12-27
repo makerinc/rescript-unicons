@@ -18,11 +18,11 @@ function CloudCheck(Props) {
   return React.createElement(UilCloudCheck, tmp);
 }
 
-var make = CloudCheck;
+var make = React.memo(CloudCheck);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

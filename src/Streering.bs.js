@@ -18,11 +18,11 @@ function Streering(Props) {
   return React.createElement(UilStreering, tmp);
 }
 
-var make = Streering;
+var make = React.memo(Streering);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

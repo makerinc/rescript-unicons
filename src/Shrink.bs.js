@@ -18,11 +18,11 @@ function Shrink(Props) {
   return React.createElement(UilShrink, tmp);
 }
 
-var make = Shrink;
+var make = React.memo(Shrink);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Sun(Props) {
   return React.createElement(UilSun, tmp);
 }
 
-var make = Sun;
+var make = React.memo(Sun);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function BookReader(Props) {
   return React.createElement(UilBookReader, tmp);
 }
 
-var make = BookReader;
+var make = React.memo(BookReader);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

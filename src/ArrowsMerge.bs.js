@@ -18,11 +18,11 @@ function ArrowsMerge(Props) {
   return React.createElement(UilArrowsMerge, tmp);
 }
 
-var make = ArrowsMerge;
+var make = React.memo(ArrowsMerge);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

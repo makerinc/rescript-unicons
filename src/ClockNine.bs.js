@@ -18,11 +18,11 @@ function ClockNine(Props) {
   return React.createElement(UilClockNine, tmp);
 }
 
-var make = ClockNine;
+var make = React.memo(ClockNine);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

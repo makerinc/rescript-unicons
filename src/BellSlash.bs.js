@@ -18,11 +18,11 @@ function BellSlash(Props) {
   return React.createElement(UilBellSlash, tmp);
 }
 
-var make = BellSlash;
+var make = React.memo(BellSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

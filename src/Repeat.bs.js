@@ -18,11 +18,11 @@ function Repeat(Props) {
   return React.createElement(UilRepeat, tmp);
 }
 
-var make = Repeat;
+var make = React.memo(Repeat);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

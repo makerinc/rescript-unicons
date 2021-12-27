@@ -18,11 +18,11 @@ function Microscope(Props) {
   return React.createElement(UilMicroscope, tmp);
 }
 
-var make = Microscope;
+var make = React.memo(Microscope);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

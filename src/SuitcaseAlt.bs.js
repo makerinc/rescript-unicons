@@ -18,11 +18,11 @@ function SuitcaseAlt(Props) {
   return React.createElement(UilSuitcaseAlt, tmp);
 }
 
-var make = SuitcaseAlt;
+var make = React.memo(SuitcaseAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

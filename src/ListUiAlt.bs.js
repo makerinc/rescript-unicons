@@ -18,11 +18,11 @@ function ListUiAlt(Props) {
   return React.createElement(UilListUiAlt, tmp);
 }
 
-var make = ListUiAlt;
+var make = React.memo(ListUiAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Ear(Props) {
   return React.createElement(UilEar, tmp);
 }
 
-var make = Ear;
+var make = React.memo(Ear);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

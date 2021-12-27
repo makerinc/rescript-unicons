@@ -18,11 +18,11 @@ function MapMarkerQuestion(Props) {
   return React.createElement(UilMapMarkerQuestion, tmp);
 }
 
-var make = MapMarkerQuestion;
+var make = React.memo(MapMarkerQuestion);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Confused(Props) {
   return React.createElement(UilConfused, tmp);
 }
 
-var make = Confused;
+var make = React.memo(Confused);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

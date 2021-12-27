@@ -18,11 +18,11 @@ function MissedCall(Props) {
   return React.createElement(UilMissedCall, tmp);
 }
 
-var make = MissedCall;
+var make = React.memo(MissedCall);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

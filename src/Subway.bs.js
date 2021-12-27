@@ -18,11 +18,11 @@ function Subway(Props) {
   return React.createElement(UilSubway, tmp);
 }
 
-var make = Subway;
+var make = React.memo(Subway);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function PaintTool(Props) {
   return React.createElement(UilPaintTool, tmp);
 }
 
-var make = PaintTool;
+var make = React.memo(PaintTool);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

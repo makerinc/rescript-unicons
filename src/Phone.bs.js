@@ -18,11 +18,11 @@ function Phone(Props) {
   return React.createElement(UilPhone, tmp);
 }
 
-var make = Phone;
+var make = React.memo(Phone);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

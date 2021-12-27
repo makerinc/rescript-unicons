@@ -18,11 +18,11 @@ function FootballAmerican(Props) {
   return React.createElement(UilFootballAmerican, tmp);
 }
 
-var make = FootballAmerican;
+var make = React.memo(FootballAmerican);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

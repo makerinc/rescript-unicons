@@ -18,11 +18,11 @@ function HorizontalDistributionCenter(Props) {
   return React.createElement(UilHorizontalDistributionCenter, tmp);
 }
 
-var make = HorizontalDistributionCenter;
+var make = React.memo(HorizontalDistributionCenter);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

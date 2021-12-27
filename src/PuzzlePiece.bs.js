@@ -18,11 +18,11 @@ function PuzzlePiece(Props) {
   return React.createElement(UilPuzzlePiece, tmp);
 }
 
-var make = PuzzlePiece;
+var make = React.memo(PuzzlePiece);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

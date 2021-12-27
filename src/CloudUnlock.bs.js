@@ -18,11 +18,11 @@ function CloudUnlock(Props) {
   return React.createElement(UilCloudUnlock, tmp);
 }
 
-var make = CloudUnlock;
+var make = React.memo(CloudUnlock);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

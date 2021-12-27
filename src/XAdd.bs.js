@@ -18,11 +18,11 @@ function XAdd(Props) {
   return React.createElement(UilXAdd, tmp);
 }
 
-var make = XAdd;
+var make = React.memo(XAdd);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

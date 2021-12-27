@@ -18,11 +18,11 @@ function Nerd(Props) {
   return React.createElement(UilNerd, tmp);
 }
 
-var make = Nerd;
+var make = React.memo(Nerd);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

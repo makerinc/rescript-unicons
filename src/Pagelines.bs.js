@@ -18,11 +18,11 @@ function Pagelines(Props) {
   return React.createElement(UilPagelines, tmp);
 }
 
-var make = Pagelines;
+var make = React.memo(Pagelines);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

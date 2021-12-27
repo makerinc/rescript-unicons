@@ -18,11 +18,11 @@ function CloudQuestion(Props) {
   return React.createElement(UilCloudQuestion, tmp);
 }
 
-var make = CloudQuestion;
+var make = React.memo(CloudQuestion);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

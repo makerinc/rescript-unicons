@@ -18,11 +18,11 @@ function CodeBranch(Props) {
   return React.createElement(UilCodeBranch, tmp);
 }
 
-var make = CodeBranch;
+var make = React.memo(CodeBranch);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

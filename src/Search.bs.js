@@ -18,11 +18,11 @@ function Search(Props) {
   return React.createElement(UilSearch, tmp);
 }
 
-var make = Search;
+var make = React.memo(Search);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

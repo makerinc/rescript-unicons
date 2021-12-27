@@ -18,11 +18,11 @@ function Calculator(Props) {
   return React.createElement(UilCalculator, tmp);
 }
 
-var make = Calculator;
+var make = React.memo(Calculator);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

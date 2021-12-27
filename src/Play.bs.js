@@ -18,11 +18,11 @@ function Play(Props) {
   return React.createElement(UilPlay, tmp);
 }
 
-var make = Play;
+var make = React.memo(Play);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

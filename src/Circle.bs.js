@@ -18,11 +18,11 @@ function Circle(Props) {
   return React.createElement(UilCircle, tmp);
 }
 
-var make = Circle;
+var make = React.memo(Circle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

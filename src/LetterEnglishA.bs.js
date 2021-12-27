@@ -18,11 +18,11 @@ function LetterEnglishA(Props) {
   return React.createElement(UilLetterEnglishA, tmp);
 }
 
-var make = LetterEnglishA;
+var make = React.memo(LetterEnglishA);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function SnapchatGhost(Props) {
   return React.createElement(UilSnapchatGhost, tmp);
 }
 
-var make = SnapchatGhost;
+var make = React.memo(SnapchatGhost);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

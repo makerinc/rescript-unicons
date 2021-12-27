@@ -18,11 +18,11 @@ function Kayak(Props) {
   return React.createElement(UilKayak, tmp);
 }
 
-var make = Kayak;
+var make = React.memo(Kayak);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

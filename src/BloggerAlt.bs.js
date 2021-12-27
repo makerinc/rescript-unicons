@@ -18,11 +18,11 @@ function BloggerAlt(Props) {
   return React.createElement(UilBloggerAlt, tmp);
 }
 
-var make = BloggerAlt;
+var make = React.memo(BloggerAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

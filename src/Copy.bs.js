@@ -18,11 +18,11 @@ function Copy(Props) {
   return React.createElement(UilCopy, tmp);
 }
 
-var make = Copy;
+var make = React.memo(Copy);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

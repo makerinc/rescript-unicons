@@ -18,11 +18,11 @@ function ScalingRight(Props) {
   return React.createElement(UilScalingRight, tmp);
 }
 
-var make = ScalingRight;
+var make = React.memo(ScalingRight);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function BrightnessHalf(Props) {
   return React.createElement(UilBrightnessHalf, tmp);
 }
 
-var make = BrightnessHalf;
+var make = React.memo(BrightnessHalf);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function VectorSquareAlt(Props) {
   return React.createElement(UilVectorSquareAlt, tmp);
 }
 
-var make = VectorSquareAlt;
+var make = React.memo(VectorSquareAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

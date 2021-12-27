@@ -18,11 +18,11 @@ function LiraSign(Props) {
   return React.createElement(UilLiraSign, tmp);
 }
 
-var make = LiraSign;
+var make = React.memo(LiraSign);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

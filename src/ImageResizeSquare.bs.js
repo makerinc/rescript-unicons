@@ -18,11 +18,11 @@ function ImageResizeSquare(Props) {
   return React.createElement(UilImageResizeSquare, tmp);
 }
 
-var make = ImageResizeSquare;
+var make = React.memo(ImageResizeSquare);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

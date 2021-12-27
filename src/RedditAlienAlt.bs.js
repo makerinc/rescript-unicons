@@ -18,11 +18,11 @@ function RedditAlienAlt(Props) {
   return React.createElement(UilRedditAlienAlt, tmp);
 }
 
-var make = RedditAlienAlt;
+var make = React.memo(RedditAlienAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

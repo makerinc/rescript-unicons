@@ -18,11 +18,11 @@ function Hipchat(Props) {
   return React.createElement(UilHipchat, tmp);
 }
 
-var make = Hipchat;
+var make = React.memo(Hipchat);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

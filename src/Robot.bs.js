@@ -18,11 +18,11 @@ function Robot(Props) {
   return React.createElement(UilRobot, tmp);
 }
 
-var make = Robot;
+var make = React.memo(Robot);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

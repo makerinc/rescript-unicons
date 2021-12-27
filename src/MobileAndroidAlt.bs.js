@@ -18,11 +18,11 @@ function MobileAndroidAlt(Props) {
   return React.createElement(UilMobileAndroidAlt, tmp);
 }
 
-var make = MobileAndroidAlt;
+var make = React.memo(MobileAndroidAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

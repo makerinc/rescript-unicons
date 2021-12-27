@@ -18,11 +18,11 @@ function ProgrammingLanguage(Props) {
   return React.createElement(UilProgrammingLanguage, tmp);
 }
 
-var make = ProgrammingLanguage;
+var make = React.memo(ProgrammingLanguage);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

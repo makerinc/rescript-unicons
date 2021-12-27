@@ -18,11 +18,11 @@ function CameraPlus(Props) {
   return React.createElement(UilCameraPlus, tmp);
 }
 
-var make = CameraPlus;
+var make = React.memo(CameraPlus);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Wifi(Props) {
   return React.createElement(UilWifi, tmp);
 }
 
-var make = Wifi;
+var make = React.memo(Wifi);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

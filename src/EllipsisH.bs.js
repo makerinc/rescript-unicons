@@ -18,11 +18,11 @@ function EllipsisH(Props) {
   return React.createElement(UilEllipsisH, tmp);
 }
 
-var make = EllipsisH;
+var make = React.memo(EllipsisH);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

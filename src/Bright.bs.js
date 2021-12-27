@@ -18,11 +18,11 @@ function Bright(Props) {
   return React.createElement(UilBright, tmp);
 }
 
-var make = Bright;
+var make = React.memo(Bright);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Css3Simple(Props) {
   return React.createElement(UilCss3Simple, tmp);
 }
 
-var make = Css3Simple;
+var make = React.memo(Css3Simple);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

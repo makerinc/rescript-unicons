@@ -18,11 +18,11 @@ function Html3(Props) {
   return React.createElement(UilHtml3, tmp);
 }
 
-var make = Html3;
+var make = React.memo(Html3);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

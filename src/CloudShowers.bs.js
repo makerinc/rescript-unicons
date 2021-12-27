@@ -18,11 +18,11 @@ function CloudShowers(Props) {
   return React.createElement(UilCloudShowers, tmp);
 }
 
-var make = CloudShowers;
+var make = React.memo(CloudShowers);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

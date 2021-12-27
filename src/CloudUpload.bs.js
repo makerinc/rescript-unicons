@@ -18,11 +18,11 @@ function CloudUpload(Props) {
   return React.createElement(UilCloudUpload, tmp);
 }
 
-var make = CloudUpload;
+var make = React.memo(CloudUpload);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

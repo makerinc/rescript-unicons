@@ -18,11 +18,11 @@ function Postcard(Props) {
   return React.createElement(UilPostcard, tmp);
 }
 
-var make = Postcard;
+var make = React.memo(Postcard);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

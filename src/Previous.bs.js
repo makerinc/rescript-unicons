@@ -18,11 +18,11 @@ function Previous(Props) {
   return React.createElement(UilPrevious, tmp);
 }
 
-var make = Previous;
+var make = React.memo(Previous);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

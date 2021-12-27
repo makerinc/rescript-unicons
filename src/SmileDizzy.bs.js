@@ -18,11 +18,11 @@ function SmileDizzy(Props) {
   return React.createElement(UilSmileDizzy, tmp);
 }
 
-var make = SmileDizzy;
+var make = React.memo(SmileDizzy);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

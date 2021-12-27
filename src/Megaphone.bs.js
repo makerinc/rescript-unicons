@@ -18,11 +18,11 @@ function Megaphone(Props) {
   return React.createElement(UilMegaphone, tmp);
 }
 
-var make = Megaphone;
+var make = React.memo(Megaphone);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

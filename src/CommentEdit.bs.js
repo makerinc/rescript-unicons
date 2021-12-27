@@ -18,11 +18,11 @@ function CommentEdit(Props) {
   return React.createElement(UilCommentEdit, tmp);
 }
 
-var make = CommentEdit;
+var make = React.memo(CommentEdit);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

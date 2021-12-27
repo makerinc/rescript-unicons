@@ -18,11 +18,11 @@ function AndroidPhoneSlash(Props) {
   return React.createElement(UilAndroidPhoneSlash, tmp);
 }
 
-var make = AndroidPhoneSlash;
+var make = React.memo(AndroidPhoneSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

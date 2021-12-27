@@ -18,11 +18,11 @@ function Sanitizer(Props) {
   return React.createElement(UilSanitizer, tmp);
 }
 
-var make = Sanitizer;
+var make = React.memo(Sanitizer);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

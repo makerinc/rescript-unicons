@@ -18,11 +18,11 @@ function BorderClear(Props) {
   return React.createElement(UilBorderClear, tmp);
 }
 
-var make = BorderClear;
+var make = React.memo(BorderClear);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

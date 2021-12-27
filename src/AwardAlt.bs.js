@@ -18,11 +18,11 @@ function AwardAlt(Props) {
   return React.createElement(UilAwardAlt, tmp);
 }
 
-var make = AwardAlt;
+var make = React.memo(AwardAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

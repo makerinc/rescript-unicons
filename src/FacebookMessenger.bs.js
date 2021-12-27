@@ -18,11 +18,11 @@ function FacebookMessenger(Props) {
   return React.createElement(UilFacebookMessenger, tmp);
 }
 
-var make = FacebookMessenger;
+var make = React.memo(FacebookMessenger);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

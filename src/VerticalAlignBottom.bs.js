@@ -18,11 +18,11 @@ function VerticalAlignBottom(Props) {
   return React.createElement(UilVerticalAlignBottom, tmp);
 }
 
-var make = VerticalAlignBottom;
+var make = React.memo(VerticalAlignBottom);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

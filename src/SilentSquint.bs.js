@@ -18,11 +18,11 @@ function SilentSquint(Props) {
   return React.createElement(UilSilentSquint, tmp);
 }
 
-var make = SilentSquint;
+var make = React.memo(SilentSquint);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

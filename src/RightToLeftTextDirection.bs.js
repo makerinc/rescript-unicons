@@ -18,11 +18,11 @@ function RightToLeftTextDirection(Props) {
   return React.createElement(UilRightToLeftTextDirection, tmp);
 }
 
-var make = RightToLeftTextDirection;
+var make = React.memo(RightToLeftTextDirection);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

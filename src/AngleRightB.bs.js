@@ -18,11 +18,11 @@ function AngleRightB(Props) {
   return React.createElement(UilAngleRightB, tmp);
 }
 
-var make = AngleRightB;
+var make = React.memo(AngleRightB);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

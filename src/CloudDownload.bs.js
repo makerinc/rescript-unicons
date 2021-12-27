@@ -18,11 +18,11 @@ function CloudDownload(Props) {
   return React.createElement(UilCloudDownload, tmp);
 }
 
-var make = CloudDownload;
+var make = React.memo(CloudDownload);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

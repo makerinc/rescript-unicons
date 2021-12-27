@@ -18,11 +18,11 @@ function EnvelopeReceive(Props) {
   return React.createElement(UilEnvelopeReceive, tmp);
 }
 
-var make = EnvelopeReceive;
+var make = React.memo(EnvelopeReceive);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

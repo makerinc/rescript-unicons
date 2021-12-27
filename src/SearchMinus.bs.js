@@ -18,11 +18,11 @@ function SearchMinus(Props) {
   return React.createElement(UilSearchMinus, tmp);
 }
 
-var make = SearchMinus;
+var make = React.memo(SearchMinus);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

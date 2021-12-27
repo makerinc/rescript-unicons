@@ -18,11 +18,11 @@ function LocationPinAlt(Props) {
   return React.createElement(UilLocationPinAlt, tmp);
 }
 
-var make = LocationPinAlt;
+var make = React.memo(LocationPinAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

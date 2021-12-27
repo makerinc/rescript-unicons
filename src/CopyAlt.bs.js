@@ -18,11 +18,11 @@ function CopyAlt(Props) {
   return React.createElement(UilCopyAlt, tmp);
 }
 
-var make = CopyAlt;
+var make = React.memo(CopyAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

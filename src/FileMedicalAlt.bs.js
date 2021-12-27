@@ -18,11 +18,11 @@ function FileMedicalAlt(Props) {
   return React.createElement(UilFileMedicalAlt, tmp);
 }
 
-var make = FileMedicalAlt;
+var make = React.memo(FileMedicalAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

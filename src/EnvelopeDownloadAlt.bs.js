@@ -18,11 +18,11 @@ function EnvelopeDownloadAlt(Props) {
   return React.createElement(UilEnvelopeDownloadAlt, tmp);
 }
 
-var make = EnvelopeDownloadAlt;
+var make = React.memo(EnvelopeDownloadAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

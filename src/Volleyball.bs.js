@@ -18,11 +18,11 @@ function Volleyball(Props) {
   return React.createElement(UilVolleyball, tmp);
 }
 
-var make = Volleyball;
+var make = React.memo(Volleyball);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

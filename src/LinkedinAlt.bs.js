@@ -18,11 +18,11 @@ function LinkedinAlt(Props) {
   return React.createElement(UilLinkedinAlt, tmp);
 }
 
-var make = LinkedinAlt;
+var make = React.memo(LinkedinAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

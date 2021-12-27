@@ -18,11 +18,11 @@ function Amazon(Props) {
   return React.createElement(UilAmazon, tmp);
 }
 
-var make = Amazon;
+var make = React.memo(Amazon);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

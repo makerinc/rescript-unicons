@@ -18,11 +18,11 @@ function CommentAltVerify(Props) {
   return React.createElement(UilCommentAltVerify, tmp);
 }
 
-var make = CommentAltVerify;
+var make = React.memo(CommentAltVerify);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

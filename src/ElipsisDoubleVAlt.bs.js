@@ -18,11 +18,11 @@ function ElipsisDoubleVAlt(Props) {
   return React.createElement(UilElipsisDoubleVAlt, tmp);
 }
 
-var make = ElipsisDoubleVAlt;
+var make = React.memo(ElipsisDoubleVAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Windsock(Props) {
   return React.createElement(UilWindsock, tmp);
 }
 
-var make = Windsock;
+var make = React.memo(Windsock);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

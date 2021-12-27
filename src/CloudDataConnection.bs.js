@@ -18,11 +18,11 @@ function CloudDataConnection(Props) {
   return React.createElement(UilCloudDataConnection, tmp);
 }
 
-var make = CloudDataConnection;
+var make = React.memo(CloudDataConnection);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

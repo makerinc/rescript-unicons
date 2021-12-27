@@ -18,11 +18,11 @@ function Compress(Props) {
   return React.createElement(UilCompress, tmp);
 }
 
-var make = Compress;
+var make = React.memo(Compress);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

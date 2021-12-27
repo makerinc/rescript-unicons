@@ -18,11 +18,11 @@ function VkAlt(Props) {
   return React.createElement(UilVkAlt, tmp);
 }
 
-var make = VkAlt;
+var make = React.memo(VkAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

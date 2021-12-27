@@ -18,11 +18,11 @@ function WebSectionAlt(Props) {
   return React.createElement(UilWebSectionAlt, tmp);
 }
 
-var make = WebSectionAlt;
+var make = React.memo(WebSectionAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

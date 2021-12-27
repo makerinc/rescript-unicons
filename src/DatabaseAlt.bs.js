@@ -18,11 +18,11 @@ function DatabaseAlt(Props) {
   return React.createElement(UilDatabaseAlt, tmp);
 }
 
-var make = DatabaseAlt;
+var make = React.memo(DatabaseAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

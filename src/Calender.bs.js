@@ -18,11 +18,11 @@ function Calender(Props) {
   return React.createElement(UilCalender, tmp);
 }
 
-var make = Calender;
+var make = React.memo(Calender);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

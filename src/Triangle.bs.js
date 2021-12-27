@@ -18,11 +18,11 @@ function Triangle(Props) {
   return React.createElement(UilTriangle, tmp);
 }
 
-var make = Triangle;
+var make = React.memo(Triangle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function CommentLock(Props) {
   return React.createElement(UilCommentLock, tmp);
 }
 
-var make = CommentLock;
+var make = React.memo(CommentLock);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

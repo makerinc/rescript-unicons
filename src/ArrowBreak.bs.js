@@ -18,11 +18,11 @@ function ArrowBreak(Props) {
   return React.createElement(UilArrowBreak, tmp);
 }
 
-var make = ArrowBreak;
+var make = React.memo(ArrowBreak);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Metro(Props) {
   return React.createElement(UilMetro, tmp);
 }
 
-var make = Metro;
+var make = React.memo(Metro);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

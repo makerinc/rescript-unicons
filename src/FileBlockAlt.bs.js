@@ -18,11 +18,11 @@ function FileBlockAlt(Props) {
   return React.createElement(UilFileBlockAlt, tmp);
 }
 
-var make = FileBlockAlt;
+var make = React.memo(FileBlockAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

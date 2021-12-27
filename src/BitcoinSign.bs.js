@@ -18,11 +18,11 @@ function BitcoinSign(Props) {
   return React.createElement(UilBitcoinSign, tmp);
 }
 
-var make = BitcoinSign;
+var make = React.memo(BitcoinSign);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

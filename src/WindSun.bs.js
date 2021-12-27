@@ -18,11 +18,11 @@ function WindSun(Props) {
   return React.createElement(UilWindSun, tmp);
 }
 
-var make = WindSun;
+var make = React.memo(WindSun);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

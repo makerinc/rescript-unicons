@@ -18,11 +18,11 @@ function Telescope(Props) {
   return React.createElement(UilTelescope, tmp);
 }
 
-var make = Telescope;
+var make = React.memo(Telescope);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

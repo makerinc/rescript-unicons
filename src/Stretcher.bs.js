@@ -18,11 +18,11 @@ function Stretcher(Props) {
   return React.createElement(UilStretcher, tmp);
 }
 
-var make = Stretcher;
+var make = React.memo(Stretcher);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

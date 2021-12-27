@@ -18,11 +18,11 @@ function RulerCombined(Props) {
   return React.createElement(UilRulerCombined, tmp);
 }
 
-var make = RulerCombined;
+var make = React.memo(RulerCombined);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

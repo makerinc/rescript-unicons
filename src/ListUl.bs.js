@@ -18,11 +18,11 @@ function ListUl(Props) {
   return React.createElement(UilListUl, tmp);
 }
 
-var make = ListUl;
+var make = React.memo(ListUl);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

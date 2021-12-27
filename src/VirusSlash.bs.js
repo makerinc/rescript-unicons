@@ -18,11 +18,11 @@ function VirusSlash(Props) {
   return React.createElement(UilVirusSlash, tmp);
 }
 
-var make = VirusSlash;
+var make = React.memo(VirusSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

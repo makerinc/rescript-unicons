@@ -18,11 +18,11 @@ function Clipboard(Props) {
   return React.createElement(UilClipboard, tmp);
 }
 
-var make = Clipboard;
+var make = React.memo(Clipboard);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function TemperatureQuarter(Props) {
   return React.createElement(UilTemperatureQuarter, tmp);
 }
 
-var make = TemperatureQuarter;
+var make = React.memo(TemperatureQuarter);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function InfoCircle(Props) {
   return React.createElement(UilInfoCircle, tmp);
 }
 
-var make = InfoCircle;
+var make = React.memo(InfoCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

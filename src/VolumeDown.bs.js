@@ -18,11 +18,11 @@ function VolumeDown(Props) {
   return React.createElement(UilVolumeDown, tmp);
 }
 
-var make = VolumeDown;
+var make = React.memo(VolumeDown);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

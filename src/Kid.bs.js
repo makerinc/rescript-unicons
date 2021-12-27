@@ -18,11 +18,11 @@ function Kid(Props) {
   return React.createElement(UilKid, tmp);
 }
 
-var make = Kid;
+var make = React.memo(Kid);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

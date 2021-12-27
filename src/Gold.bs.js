@@ -18,11 +18,11 @@ function Gold(Props) {
   return React.createElement(UilGold, tmp);
 }
 
-var make = Gold;
+var make = React.memo(Gold);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

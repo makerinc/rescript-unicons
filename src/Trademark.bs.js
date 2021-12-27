@@ -18,11 +18,11 @@ function Trademark(Props) {
   return React.createElement(UilTrademark, tmp);
 }
 
-var make = Trademark;
+var make = React.memo(Trademark);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

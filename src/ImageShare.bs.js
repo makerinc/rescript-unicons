@@ -18,11 +18,11 @@ function ImageShare(Props) {
   return React.createElement(UilImageShare, tmp);
 }
 
-var make = ImageShare;
+var make = React.memo(ImageShare);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

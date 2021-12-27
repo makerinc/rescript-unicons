@@ -18,11 +18,11 @@ function BriefcaseAlt(Props) {
   return React.createElement(UilBriefcaseAlt, tmp);
 }
 
-var make = BriefcaseAlt;
+var make = React.memo(BriefcaseAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

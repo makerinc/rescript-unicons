@@ -18,11 +18,11 @@ function AdjustHalf(Props) {
   return React.createElement(UilAdjustHalf, tmp);
 }
 
-var make = AdjustHalf;
+var make = React.memo(AdjustHalf);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

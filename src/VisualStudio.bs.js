@@ -18,11 +18,11 @@ function VisualStudio(Props) {
   return React.createElement(UilVisualStudio, tmp);
 }
 
-var make = VisualStudio;
+var make = React.memo(VisualStudio);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

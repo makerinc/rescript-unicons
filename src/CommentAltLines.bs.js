@@ -18,11 +18,11 @@ function CommentAltLines(Props) {
   return React.createElement(UilCommentAltLines, tmp);
 }
 
-var make = CommentAltLines;
+var make = React.memo(CommentAltLines);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

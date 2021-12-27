@@ -18,11 +18,11 @@ function ExternalLinkAlt(Props) {
   return React.createElement(UilExternalLinkAlt, tmp);
 }
 
-var make = ExternalLinkAlt;
+var make = React.memo(ExternalLinkAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

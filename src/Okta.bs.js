@@ -18,11 +18,11 @@ function Okta(Props) {
   return React.createElement(UilOkta, tmp);
 }
 
-var make = Okta;
+var make = React.memo(Okta);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

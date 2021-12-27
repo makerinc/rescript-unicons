@@ -18,11 +18,11 @@ function TextStrikeThrough(Props) {
   return React.createElement(UilTextStrikeThrough, tmp);
 }
 
-var make = TextStrikeThrough;
+var make = React.memo(TextStrikeThrough);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

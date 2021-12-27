@@ -18,11 +18,11 @@ function Dumbbell(Props) {
   return React.createElement(UilDumbbell, tmp);
 }
 
-var make = Dumbbell;
+var make = React.memo(Dumbbell);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

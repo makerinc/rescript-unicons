@@ -18,11 +18,11 @@ function ForwadedCall(Props) {
   return React.createElement(UilForwadedCall, tmp);
 }
 
-var make = ForwadedCall;
+var make = React.memo(ForwadedCall);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

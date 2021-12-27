@@ -18,11 +18,11 @@ function ChartGrowth(Props) {
   return React.createElement(UilChartGrowth, tmp);
 }
 
-var make = ChartGrowth;
+var make = React.memo(ChartGrowth);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

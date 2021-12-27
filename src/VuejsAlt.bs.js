@@ -18,11 +18,11 @@ function VuejsAlt(Props) {
   return React.createElement(UilVuejsAlt, tmp);
 }
 
-var make = VuejsAlt;
+var make = React.memo(VuejsAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

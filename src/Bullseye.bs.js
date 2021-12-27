@@ -18,11 +18,11 @@ function Bullseye(Props) {
   return React.createElement(UilBullseye, tmp);
 }
 
-var make = Bullseye;
+var make = React.memo(Bullseye);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

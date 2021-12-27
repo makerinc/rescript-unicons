@@ -18,11 +18,11 @@ function BagAlt(Props) {
   return React.createElement(UilBagAlt, tmp);
 }
 
-var make = BagAlt;
+var make = React.memo(BagAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

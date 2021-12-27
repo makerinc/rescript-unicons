@@ -18,11 +18,11 @@ function Telegram(Props) {
   return React.createElement(UilTelegram, tmp);
 }
 
-var make = Telegram;
+var make = React.memo(Telegram);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Exclamation(Props) {
   return React.createElement(UilExclamation, tmp);
 }
 
-var make = Exclamation;
+var make = React.memo(Exclamation);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

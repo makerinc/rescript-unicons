@@ -18,11 +18,11 @@ function JavaScript(Props) {
   return React.createElement(UilJavaScript, tmp);
 }
 
-var make = JavaScript;
+var make = React.memo(JavaScript);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

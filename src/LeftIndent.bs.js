@@ -18,11 +18,11 @@ function LeftIndent(Props) {
   return React.createElement(UilLeftIndent, tmp);
 }
 
-var make = LeftIndent;
+var make = React.memo(LeftIndent);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

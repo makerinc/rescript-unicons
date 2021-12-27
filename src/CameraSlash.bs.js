@@ -18,11 +18,11 @@ function CameraSlash(Props) {
   return React.createElement(UilCameraSlash, tmp);
 }
 
-var make = CameraSlash;
+var make = React.memo(CameraSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

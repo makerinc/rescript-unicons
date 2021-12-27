@@ -18,11 +18,11 @@ function DialpadAlt(Props) {
   return React.createElement(UilDialpadAlt, tmp);
 }
 
-var make = DialpadAlt;
+var make = React.memo(DialpadAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

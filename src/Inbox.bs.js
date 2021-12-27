@@ -18,11 +18,11 @@ function Inbox(Props) {
   return React.createElement(UilInbox, tmp);
 }
 
-var make = Inbox;
+var make = React.memo(Inbox);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

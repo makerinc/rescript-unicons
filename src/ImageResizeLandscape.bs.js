@@ -18,11 +18,11 @@ function ImageResizeLandscape(Props) {
   return React.createElement(UilImageResizeLandscape, tmp);
 }
 
-var make = ImageResizeLandscape;
+var make = React.memo(ImageResizeLandscape);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

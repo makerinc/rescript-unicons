@@ -18,11 +18,11 @@ function Twitter(Props) {
   return React.createElement(UilTwitter, tmp);
 }
 
-var make = Twitter;
+var make = React.memo(Twitter);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

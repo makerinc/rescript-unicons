@@ -18,11 +18,11 @@ function WaterDropSlash(Props) {
   return React.createElement(UilWaterDropSlash, tmp);
 }
 
-var make = WaterDropSlash;
+var make = React.memo(WaterDropSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

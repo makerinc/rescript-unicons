@@ -18,11 +18,11 @@ function IntercomAlt(Props) {
   return React.createElement(UilIntercomAlt, tmp);
 }
 
-var make = IntercomAlt;
+var make = React.memo(IntercomAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

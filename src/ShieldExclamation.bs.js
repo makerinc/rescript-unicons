@@ -18,11 +18,11 @@ function ShieldExclamation(Props) {
   return React.createElement(UilShieldExclamation, tmp);
 }
 
-var make = ShieldExclamation;
+var make = React.memo(ShieldExclamation);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

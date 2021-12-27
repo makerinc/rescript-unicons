@@ -18,11 +18,11 @@ function ThumbsDown(Props) {
   return React.createElement(UilThumbsDown, tmp);
 }
 
-var make = ThumbsDown;
+var make = React.memo(ThumbsDown);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

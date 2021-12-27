@@ -18,11 +18,11 @@ function Calling(Props) {
   return React.createElement(UilCalling, tmp);
 }
 
-var make = Calling;
+var make = React.memo(Calling);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

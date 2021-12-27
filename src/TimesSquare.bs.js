@@ -18,11 +18,11 @@ function TimesSquare(Props) {
   return React.createElement(UilTimesSquare, tmp);
 }
 
-var make = TimesSquare;
+var make = React.memo(TimesSquare);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

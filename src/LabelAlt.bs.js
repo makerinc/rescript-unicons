@@ -18,11 +18,11 @@ function LabelAlt(Props) {
   return React.createElement(UilLabelAlt, tmp);
 }
 
-var make = LabelAlt;
+var make = React.memo(LabelAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

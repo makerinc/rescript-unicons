@@ -18,11 +18,11 @@ function CloudShield(Props) {
   return React.createElement(UilCloudShield, tmp);
 }
 
-var make = CloudShield;
+var make = React.memo(CloudShield);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

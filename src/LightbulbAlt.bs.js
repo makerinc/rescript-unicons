@@ -18,11 +18,11 @@ function LightbulbAlt(Props) {
   return React.createElement(UilLightbulbAlt, tmp);
 }
 
-var make = LightbulbAlt;
+var make = React.memo(LightbulbAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

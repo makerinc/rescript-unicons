@@ -18,11 +18,11 @@ function Label(Props) {
   return React.createElement(UilLabel, tmp);
 }
 
-var make = Label;
+var make = React.memo(Label);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

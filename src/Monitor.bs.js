@@ -18,11 +18,11 @@ function Monitor(Props) {
   return React.createElement(UilMonitor, tmp);
 }
 
-var make = Monitor;
+var make = React.memo(Monitor);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

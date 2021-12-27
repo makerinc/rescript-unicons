@@ -18,11 +18,11 @@ function Capture(Props) {
   return React.createElement(UilCapture, tmp);
 }
 
-var make = Capture;
+var make = React.memo(Capture);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

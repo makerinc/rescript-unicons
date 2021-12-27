@@ -18,11 +18,11 @@ function GameStructure(Props) {
   return React.createElement(UilGameStructure, tmp);
 }
 
-var make = GameStructure;
+var make = React.memo(GameStructure);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

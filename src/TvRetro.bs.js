@@ -18,11 +18,11 @@ function TvRetro(Props) {
   return React.createElement(UilTvRetro, tmp);
 }
 
-var make = TvRetro;
+var make = React.memo(TvRetro);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

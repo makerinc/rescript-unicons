@@ -18,11 +18,11 @@ function Circuit(Props) {
   return React.createElement(UilCircuit, tmp);
 }
 
-var make = Circuit;
+var make = React.memo(Circuit);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

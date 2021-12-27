@@ -18,11 +18,11 @@ function PresentationLinesAlt(Props) {
   return React.createElement(UilPresentationLinesAlt, tmp);
 }
 
-var make = PresentationLinesAlt;
+var make = React.memo(PresentationLinesAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function FileShieldAlt(Props) {
   return React.createElement(UilFileShieldAlt, tmp);
 }
 
-var make = FileShieldAlt;
+var make = React.memo(FileShieldAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

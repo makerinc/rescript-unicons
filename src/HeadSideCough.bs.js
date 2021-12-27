@@ -18,11 +18,11 @@ function HeadSideCough(Props) {
   return React.createElement(UilHeadSideCough, tmp);
 }
 
-var make = HeadSideCough;
+var make = React.memo(HeadSideCough);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

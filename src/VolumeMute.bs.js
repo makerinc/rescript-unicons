@@ -18,11 +18,11 @@ function VolumeMute(Props) {
   return React.createElement(UilVolumeMute, tmp);
 }
 
-var make = VolumeMute;
+var make = React.memo(VolumeMute);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

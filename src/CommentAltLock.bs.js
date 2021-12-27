@@ -18,11 +18,11 @@ function CommentAltLock(Props) {
   return React.createElement(UilCommentAltLock, tmp);
 }
 
-var make = CommentAltLock;
+var make = React.memo(CommentAltLock);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

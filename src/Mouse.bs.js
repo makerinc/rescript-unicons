@@ -18,11 +18,11 @@ function Mouse(Props) {
   return React.createElement(UilMouse, tmp);
 }
 
-var make = Mouse;
+var make = React.memo(Mouse);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

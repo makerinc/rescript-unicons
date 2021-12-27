@@ -18,11 +18,11 @@ function Adobe(Props) {
   return React.createElement(UilAdobe, tmp);
 }
 
-var make = Adobe;
+var make = React.memo(Adobe);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Unamused(Props) {
   return React.createElement(UilUnamused, tmp);
 }
 
-var make = Unamused;
+var make = React.memo(Unamused);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

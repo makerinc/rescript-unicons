@@ -18,11 +18,11 @@ function DownloadAlt(Props) {
   return React.createElement(UilDownloadAlt, tmp);
 }
 
-var make = DownloadAlt;
+var make = React.memo(DownloadAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

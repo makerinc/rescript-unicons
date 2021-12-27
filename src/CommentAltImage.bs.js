@@ -18,11 +18,11 @@ function CommentAltImage(Props) {
   return React.createElement(UilCommentAltImage, tmp);
 }
 
-var make = CommentAltImage;
+var make = React.memo(CommentAltImage);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

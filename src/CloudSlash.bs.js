@@ -18,11 +18,11 @@ function CloudSlash(Props) {
   return React.createElement(UilCloudSlash, tmp);
 }
 
-var make = CloudSlash;
+var make = React.memo(CloudSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

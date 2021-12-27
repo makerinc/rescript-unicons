@@ -18,11 +18,11 @@ function Crosshairs(Props) {
   return React.createElement(UilCrosshairs, tmp);
 }
 
-var make = Crosshairs;
+var make = React.memo(Crosshairs);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

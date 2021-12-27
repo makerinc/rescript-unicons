@@ -18,11 +18,11 @@ function $$File(Props) {
   return React.createElement(UilFile, tmp);
 }
 
-var make = $$File;
+var make = React.memo($$File);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

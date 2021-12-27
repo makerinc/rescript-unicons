@@ -18,11 +18,11 @@ function MapPinAlt(Props) {
   return React.createElement(UilMapPinAlt, tmp);
 }
 
-var make = MapPinAlt;
+var make = React.memo(MapPinAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

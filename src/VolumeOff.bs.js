@@ -18,11 +18,11 @@ function VolumeOff(Props) {
   return React.createElement(UilVolumeOff, tmp);
 }
 
-var make = VolumeOff;
+var make = React.memo(VolumeOff);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

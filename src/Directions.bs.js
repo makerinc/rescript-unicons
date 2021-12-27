@@ -18,11 +18,11 @@ function Directions(Props) {
   return React.createElement(UilDirections, tmp);
 }
 
-var make = Directions;
+var make = React.memo(Directions);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

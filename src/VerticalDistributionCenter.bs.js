@@ -18,11 +18,11 @@ function VerticalDistributionCenter(Props) {
   return React.createElement(UilVerticalDistributionCenter, tmp);
 }
 
-var make = VerticalDistributionCenter;
+var make = React.memo(VerticalDistributionCenter);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

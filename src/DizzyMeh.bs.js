@@ -18,11 +18,11 @@ function DizzyMeh(Props) {
   return React.createElement(UilDizzyMeh, tmp);
 }
 
-var make = DizzyMeh;
+var make = React.memo(DizzyMeh);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

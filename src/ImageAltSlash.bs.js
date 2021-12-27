@@ -18,11 +18,11 @@ function ImageAltSlash(Props) {
   return React.createElement(UilImageAltSlash, tmp);
 }
 
-var make = ImageAltSlash;
+var make = React.memo(ImageAltSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

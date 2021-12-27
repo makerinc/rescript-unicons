@@ -18,11 +18,11 @@ function Music(Props) {
   return React.createElement(UilMusic, tmp);
 }
 
-var make = Music;
+var make = React.memo(Music);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

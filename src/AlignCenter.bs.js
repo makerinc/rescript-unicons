@@ -18,11 +18,11 @@ function AlignCenter(Props) {
   return React.createElement(UilAlignCenter, tmp);
 }
 
-var make = AlignCenter;
+var make = React.memo(AlignCenter);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

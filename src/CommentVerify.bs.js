@@ -18,11 +18,11 @@ function CommentVerify(Props) {
   return React.createElement(UilCommentVerify, tmp);
 }
 
-var make = CommentVerify;
+var make = React.memo(CommentVerify);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

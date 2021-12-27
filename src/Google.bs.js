@@ -18,11 +18,11 @@ function Google(Props) {
   return React.createElement(UilGoogle, tmp);
 }
 
-var make = Google;
+var make = React.memo(Google);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

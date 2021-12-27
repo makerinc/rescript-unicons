@@ -18,11 +18,11 @@ function ThLarge(Props) {
   return React.createElement(UilThLarge, tmp);
 }
 
-var make = ThLarge;
+var make = React.memo(ThLarge);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

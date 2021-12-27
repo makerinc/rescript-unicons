@@ -18,11 +18,11 @@ function FileMinusAlt(Props) {
   return React.createElement(UilFileMinusAlt, tmp);
 }
 
-var make = FileMinusAlt;
+var make = React.memo(FileMinusAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

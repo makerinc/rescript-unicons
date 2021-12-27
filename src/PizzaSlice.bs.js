@@ -18,11 +18,11 @@ function PizzaSlice(Props) {
   return React.createElement(UilPizzaSlice, tmp);
 }
 
-var make = PizzaSlice;
+var make = React.memo(PizzaSlice);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

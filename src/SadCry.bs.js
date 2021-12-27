@@ -18,11 +18,11 @@ function SadCry(Props) {
   return React.createElement(UilSadCry, tmp);
 }
 
-var make = SadCry;
+var make = React.memo(SadCry);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

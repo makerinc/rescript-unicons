@@ -18,11 +18,11 @@ function HeadSideMask(Props) {
   return React.createElement(UilHeadSideMask, tmp);
 }
 
-var make = HeadSideMask;
+var make = React.memo(HeadSideMask);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

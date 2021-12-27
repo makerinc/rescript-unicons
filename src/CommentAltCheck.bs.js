@@ -18,11 +18,11 @@ function CommentAltCheck(Props) {
   return React.createElement(UilCommentAltCheck, tmp);
 }
 
-var make = CommentAltCheck;
+var make = React.memo(CommentAltCheck);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

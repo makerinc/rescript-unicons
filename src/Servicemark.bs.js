@@ -18,11 +18,11 @@ function Servicemark(Props) {
   return React.createElement(UilServicemark, tmp);
 }
 
-var make = Servicemark;
+var make = React.memo(Servicemark);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

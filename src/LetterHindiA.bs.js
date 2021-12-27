@@ -18,11 +18,11 @@ function LetterHindiA(Props) {
   return React.createElement(UilLetterHindiA, tmp);
 }
 
-var make = LetterHindiA;
+var make = React.memo(LetterHindiA);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

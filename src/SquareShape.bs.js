@@ -18,11 +18,11 @@ function SquareShape(Props) {
   return React.createElement(UilSquareShape, tmp);
 }
 
-var make = SquareShape;
+var make = React.memo(SquareShape);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

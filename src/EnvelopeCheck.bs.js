@@ -18,11 +18,11 @@ function EnvelopeCheck(Props) {
   return React.createElement(UilEnvelopeCheck, tmp);
 }
 
-var make = EnvelopeCheck;
+var make = React.memo(EnvelopeCheck);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

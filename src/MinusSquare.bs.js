@@ -18,11 +18,11 @@ function MinusSquare(Props) {
   return React.createElement(UilMinusSquare, tmp);
 }
 
-var make = MinusSquare;
+var make = React.memo(MinusSquare);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

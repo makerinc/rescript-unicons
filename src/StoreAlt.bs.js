@@ -18,11 +18,11 @@ function StoreAlt(Props) {
   return React.createElement(UilStoreAlt, tmp);
 }
 
-var make = StoreAlt;
+var make = React.memo(StoreAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

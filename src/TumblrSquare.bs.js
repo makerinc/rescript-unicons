@@ -18,11 +18,11 @@ function TumblrSquare(Props) {
   return React.createElement(UilTumblrSquare, tmp);
 }
 
-var make = TumblrSquare;
+var make = React.memo(TumblrSquare);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

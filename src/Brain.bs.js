@@ -18,11 +18,11 @@ function Brain(Props) {
   return React.createElement(UilBrain, tmp);
 }
 
-var make = Brain;
+var make = React.memo(Brain);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

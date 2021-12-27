@@ -18,11 +18,11 @@ function CommentAltBlock(Props) {
   return React.createElement(UilCommentAltBlock, tmp);
 }
 
-var make = CommentAltBlock;
+var make = React.memo(CommentAltBlock);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

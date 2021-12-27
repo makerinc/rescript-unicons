@@ -18,11 +18,11 @@ function MapMarkerSlash(Props) {
   return React.createElement(UilMapMarkerSlash, tmp);
 }
 
-var make = MapMarkerSlash;
+var make = React.memo(MapMarkerSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

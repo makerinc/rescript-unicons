@@ -18,11 +18,11 @@ function Raindrops(Props) {
   return React.createElement(UilRaindrops, tmp);
 }
 
-var make = Raindrops;
+var make = React.memo(Raindrops);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function SnowflakeAlt(Props) {
   return React.createElement(UilSnowflakeAlt, tmp);
 }
 
-var make = SnowflakeAlt;
+var make = React.memo(SnowflakeAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

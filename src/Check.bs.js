@@ -18,11 +18,11 @@ function Check(Props) {
   return React.createElement(UilCheck, tmp);
 }
 
-var make = Check;
+var make = React.memo(Check);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

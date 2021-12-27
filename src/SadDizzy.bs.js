@@ -18,11 +18,11 @@ function SadDizzy(Props) {
   return React.createElement(UilSadDizzy, tmp);
 }
 
-var make = SadDizzy;
+var make = React.memo(SadDizzy);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

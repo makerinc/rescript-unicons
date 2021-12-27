@@ -18,11 +18,11 @@ function Rocket(Props) {
   return React.createElement(UilRocket, tmp);
 }
 
-var make = Rocket;
+var make = React.memo(Rocket);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

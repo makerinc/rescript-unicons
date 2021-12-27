@@ -18,11 +18,11 @@ function DocumentLayoutCenter(Props) {
   return React.createElement(UilDocumentLayoutCenter, tmp);
 }
 
-var make = DocumentLayoutCenter;
+var make = React.memo(DocumentLayoutCenter);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

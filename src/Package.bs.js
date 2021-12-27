@@ -18,11 +18,11 @@ function Package(Props) {
   return React.createElement(UilPackage, tmp);
 }
 
-var make = Package;
+var make = React.memo(Package);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

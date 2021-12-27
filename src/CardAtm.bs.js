@@ -18,11 +18,11 @@ function CardAtm(Props) {
   return React.createElement(UilCardAtm, tmp);
 }
 
-var make = CardAtm;
+var make = React.memo(CardAtm);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

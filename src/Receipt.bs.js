@@ -18,11 +18,11 @@ function Receipt(Props) {
   return React.createElement(UilReceipt, tmp);
 }
 
-var make = Receipt;
+var make = React.memo(Receipt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

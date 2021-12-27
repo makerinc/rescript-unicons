@@ -18,11 +18,11 @@ function CloudSun(Props) {
   return React.createElement(UilCloudSun, tmp);
 }
 
-var make = CloudSun;
+var make = React.memo(CloudSun);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function CommentAltSlash(Props) {
   return React.createElement(UilCommentAltSlash, tmp);
 }
 
-var make = CommentAltSlash;
+var make = React.memo(CommentAltSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

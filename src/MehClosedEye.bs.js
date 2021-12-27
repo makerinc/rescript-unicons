@@ -18,11 +18,11 @@ function MehClosedEye(Props) {
   return React.createElement(UilMehClosedEye, tmp);
 }
 
-var make = MehClosedEye;
+var make = React.memo(MehClosedEye);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

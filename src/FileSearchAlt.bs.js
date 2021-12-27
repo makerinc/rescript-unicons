@@ -18,11 +18,11 @@ function FileSearchAlt(Props) {
   return React.createElement(UilFileSearchAlt, tmp);
 }
 
-var make = FileSearchAlt;
+var make = React.memo(FileSearchAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

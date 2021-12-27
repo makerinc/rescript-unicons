@@ -18,11 +18,11 @@ function CompressAlt(Props) {
   return React.createElement(UilCompressAlt, tmp);
 }
 
-var make = CompressAlt;
+var make = React.memo(CompressAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

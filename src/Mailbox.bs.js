@@ -18,11 +18,11 @@ function Mailbox(Props) {
   return React.createElement(UilMailbox, tmp);
 }
 
-var make = Mailbox;
+var make = React.memo(Mailbox);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

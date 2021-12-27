@@ -18,11 +18,11 @@ function SignalAlt3(Props) {
   return React.createElement(UilSignalAlt, tmp);
 }
 
-var make = SignalAlt3;
+var make = React.memo(SignalAlt3);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

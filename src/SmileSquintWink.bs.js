@@ -18,11 +18,11 @@ function SmileSquintWink(Props) {
   return React.createElement(UilSmileSquintWink, tmp);
 }
 
-var make = SmileSquintWink;
+var make = React.memo(SmileSquintWink);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

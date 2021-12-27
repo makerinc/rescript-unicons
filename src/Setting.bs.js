@@ -18,11 +18,11 @@ function Setting(Props) {
   return React.createElement(UilSetting, tmp);
 }
 
-var make = Setting;
+var make = React.memo(Setting);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

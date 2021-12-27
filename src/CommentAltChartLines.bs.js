@@ -18,11 +18,11 @@ function CommentAltChartLines(Props) {
   return React.createElement(UilCommentAltChartLines, tmp);
 }
 
-var make = CommentAltChartLines;
+var make = React.memo(CommentAltChartLines);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

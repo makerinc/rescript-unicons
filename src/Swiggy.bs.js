@@ -18,11 +18,11 @@ function Swiggy(Props) {
   return React.createElement(UilSwiggy, tmp);
 }
 
-var make = Swiggy;
+var make = React.memo(Swiggy);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

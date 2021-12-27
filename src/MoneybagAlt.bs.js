@@ -18,11 +18,11 @@ function MoneybagAlt(Props) {
   return React.createElement(UilMoneybagAlt, tmp);
 }
 
-var make = MoneybagAlt;
+var make = React.memo(MoneybagAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

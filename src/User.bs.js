@@ -18,11 +18,11 @@ function User(Props) {
   return React.createElement(UilUser, tmp);
 }
 
-var make = User;
+var make = React.memo(User);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

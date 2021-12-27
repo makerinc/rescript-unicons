@@ -18,11 +18,11 @@ function Opera(Props) {
   return React.createElement(UilOpera, tmp);
 }
 
-var make = Opera;
+var make = React.memo(Opera);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

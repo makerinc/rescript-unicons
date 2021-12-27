@@ -18,11 +18,11 @@ function FolderHeart(Props) {
   return React.createElement(UilFolderHeart, tmp);
 }
 
-var make = FolderHeart;
+var make = React.memo(FolderHeart);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

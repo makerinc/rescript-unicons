@@ -18,11 +18,11 @@ function Servers(Props) {
   return React.createElement(UilServers, tmp);
 }
 
-var make = Servers;
+var make = React.memo(Servers);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

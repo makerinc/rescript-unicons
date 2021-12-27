@@ -18,11 +18,11 @@ function DesktopSlash(Props) {
   return React.createElement(UilDesktopSlash, tmp);
 }
 
-var make = DesktopSlash;
+var make = React.memo(DesktopSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

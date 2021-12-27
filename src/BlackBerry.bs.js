@@ -18,11 +18,11 @@ function BlackBerry(Props) {
   return React.createElement(UilBlackBerry, tmp);
 }
 
-var make = BlackBerry;
+var make = React.memo(BlackBerry);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

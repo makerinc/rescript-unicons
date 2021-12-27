@@ -18,11 +18,11 @@ function StepBackward(Props) {
   return React.createElement(UilStepBackward, tmp);
 }
 
-var make = StepBackward;
+var make = React.memo(StepBackward);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

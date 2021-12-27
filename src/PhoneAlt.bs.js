@@ -18,11 +18,11 @@ function PhoneAlt(Props) {
   return React.createElement(UilPhoneAlt, tmp);
 }
 
-var make = PhoneAlt;
+var make = React.memo(PhoneAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

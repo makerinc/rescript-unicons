@@ -18,11 +18,11 @@ function CarWash(Props) {
   return React.createElement(UilCarWash, tmp);
 }
 
-var make = CarWash;
+var make = React.memo(CarWash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

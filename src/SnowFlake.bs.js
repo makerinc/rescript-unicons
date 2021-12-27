@@ -18,11 +18,11 @@ function SnowFlake(Props) {
   return React.createElement(UilSnowflake, tmp);
 }
 
-var make = SnowFlake;
+var make = React.memo(SnowFlake);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function BorderVertical(Props) {
   return React.createElement(UilBorderVertical, tmp);
 }
 
-var make = BorderVertical;
+var make = React.memo(BorderVertical);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function BorderRight(Props) {
   return React.createElement(UilBorderRight, tmp);
 }
 
-var make = BorderRight;
+var make = React.memo(BorderRight);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

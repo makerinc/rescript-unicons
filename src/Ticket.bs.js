@@ -18,11 +18,11 @@ function Ticket(Props) {
   return React.createElement(UilTicket, tmp);
 }
 
-var make = Ticket;
+var make = React.memo(Ticket);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

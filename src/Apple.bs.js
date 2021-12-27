@@ -18,11 +18,11 @@ function Apple(Props) {
   return React.createElement(UilApple, tmp);
 }
 
-var make = Apple;
+var make = React.memo(Apple);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

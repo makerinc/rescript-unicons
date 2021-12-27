@@ -18,11 +18,11 @@ function Enter(Props) {
   return React.createElement(UilEnter, tmp);
 }
 
-var make = Enter;
+var make = React.memo(Enter);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

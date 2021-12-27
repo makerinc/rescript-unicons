@@ -18,11 +18,11 @@ function ExclamationOctagon(Props) {
   return React.createElement(UilExclamationOctagon, tmp);
 }
 
-var make = ExclamationOctagon;
+var make = React.memo(ExclamationOctagon);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

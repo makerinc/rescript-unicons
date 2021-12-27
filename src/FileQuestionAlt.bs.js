@@ -18,11 +18,11 @@ function FileQuestionAlt(Props) {
   return React.createElement(UilFileQuestionAlt, tmp);
 }
 
-var make = FileQuestionAlt;
+var make = React.memo(FileQuestionAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

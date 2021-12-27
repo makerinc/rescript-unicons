@@ -18,11 +18,11 @@ function WebGridAlt(Props) {
   return React.createElement(UilWebGridAlt, tmp);
 }
 
-var make = WebGridAlt;
+var make = React.memo(WebGridAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

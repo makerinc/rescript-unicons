@@ -18,11 +18,11 @@ function BluetoothB(Props) {
   return React.createElement(UilBluetoothB, tmp);
 }
 
-var make = BluetoothB;
+var make = React.memo(BluetoothB);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

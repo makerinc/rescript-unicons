@@ -18,11 +18,11 @@ function BorderInner(Props) {
   return React.createElement(UilBorderInner, tmp);
 }
 
-var make = BorderInner;
+var make = React.memo(BorderInner);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

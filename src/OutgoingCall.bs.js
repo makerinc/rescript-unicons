@@ -18,11 +18,11 @@ function OutgoingCall(Props) {
   return React.createElement(UilOutgoingCall, tmp);
 }
 
-var make = OutgoingCall;
+var make = React.memo(OutgoingCall);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

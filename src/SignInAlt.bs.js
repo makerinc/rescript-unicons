@@ -18,11 +18,11 @@ function SignInAlt(Props) {
   return React.createElement(UilSignInAlt, tmp);
 }
 
-var make = SignInAlt;
+var make = React.memo(SignInAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

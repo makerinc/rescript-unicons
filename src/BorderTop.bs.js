@@ -18,11 +18,11 @@ function BorderTop(Props) {
   return React.createElement(UilBorderTop, tmp);
 }
 
-var make = BorderTop;
+var make = React.memo(BorderTop);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

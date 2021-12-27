@@ -18,11 +18,11 @@ function Diamond(Props) {
   return React.createElement(UilDiamond, tmp);
 }
 
-var make = Diamond;
+var make = React.memo(Diamond);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

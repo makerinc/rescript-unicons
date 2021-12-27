@@ -18,11 +18,11 @@ function Registered(Props) {
   return React.createElement(UilRegistered, tmp);
 }
 
-var make = Registered;
+var make = React.memo(Registered);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

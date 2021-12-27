@@ -18,11 +18,11 @@ function Padlock(Props) {
   return React.createElement(UilPadlock, tmp);
 }
 
-var make = Padlock;
+var make = React.memo(Padlock);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

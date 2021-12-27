@@ -18,11 +18,11 @@ function Forward(Props) {
   return React.createElement(UilForward, tmp);
 }
 
-var make = Forward;
+var make = React.memo(Forward);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

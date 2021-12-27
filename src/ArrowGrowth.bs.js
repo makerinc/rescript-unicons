@@ -18,11 +18,11 @@ function ArrowGrowth(Props) {
   return React.createElement(UilArrowGrowth, tmp);
 }
 
-var make = ArrowGrowth;
+var make = React.memo(ArrowGrowth);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

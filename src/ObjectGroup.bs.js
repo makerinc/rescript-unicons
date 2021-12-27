@@ -18,11 +18,11 @@ function ObjectGroup(Props) {
   return React.createElement(UilObjectGroup, tmp);
 }
 
-var make = ObjectGroup;
+var make = React.memo(ObjectGroup);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function PrescriptionBottle(Props) {
   return React.createElement(UilPrescriptionBottle, tmp);
 }
 
-var make = PrescriptionBottle;
+var make = React.memo(PrescriptionBottle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

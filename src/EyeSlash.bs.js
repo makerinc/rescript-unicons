@@ -18,11 +18,11 @@ function EyeSlash(Props) {
   return React.createElement(UilEyeSlash, tmp);
 }
 
-var make = EyeSlash;
+var make = React.memo(EyeSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

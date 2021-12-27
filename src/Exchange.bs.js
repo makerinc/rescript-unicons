@@ -18,11 +18,11 @@ function Exchange(Props) {
   return React.createElement(UilExchange, tmp);
 }
 
-var make = Exchange;
+var make = React.memo(Exchange);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

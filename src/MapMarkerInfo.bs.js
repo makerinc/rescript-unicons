@@ -18,11 +18,11 @@ function MapMarkerInfo(Props) {
   return React.createElement(UilMapMarkerInfo, tmp);
 }
 
-var make = MapMarkerInfo;
+var make = React.memo(MapMarkerInfo);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

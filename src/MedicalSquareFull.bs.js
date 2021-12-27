@@ -18,11 +18,11 @@ function MedicalSquareFull(Props) {
   return React.createElement(UilMedicalSquareFull, tmp);
 }
 
-var make = MedicalSquareFull;
+var make = React.memo(MedicalSquareFull);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

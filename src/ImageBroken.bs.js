@@ -18,11 +18,11 @@ function ImageBroken(Props) {
   return React.createElement(UilImageBroken, tmp);
 }
 
-var make = ImageBroken;
+var make = React.memo(ImageBroken);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

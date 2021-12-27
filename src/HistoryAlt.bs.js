@@ -18,11 +18,11 @@ function HistoryAlt(Props) {
   return React.createElement(UilHistoryAlt, tmp);
 }
 
-var make = HistoryAlt;
+var make = React.memo(HistoryAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

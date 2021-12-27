@@ -18,11 +18,11 @@ function SearchAlt(Props) {
   return React.createElement(UilSearchAlt, tmp);
 }
 
-var make = SearchAlt;
+var make = React.memo(SearchAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function WindowSection(Props) {
   return React.createElement(UilWindowSection, tmp);
 }
 
-var make = WindowSection;
+var make = React.memo(WindowSection);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

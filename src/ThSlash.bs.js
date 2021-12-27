@@ -18,11 +18,11 @@ function ThSlash(Props) {
   return React.createElement(UilThSlash, tmp);
 }
 
-var make = ThSlash;
+var make = React.memo(ThSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function CornerDownRightAlt(Props) {
   return React.createElement(UilCornerDownRightAlt, tmp);
 }
 
-var make = CornerDownRightAlt;
+var make = React.memo(CornerDownRightAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

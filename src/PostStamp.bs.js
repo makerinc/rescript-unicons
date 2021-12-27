@@ -18,11 +18,11 @@ function PostStamp(Props) {
   return React.createElement(UilPostStamp, tmp);
 }
 
-var make = PostStamp;
+var make = React.memo(PostStamp);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

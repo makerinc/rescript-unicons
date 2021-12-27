@@ -18,11 +18,11 @@ function CloudSunRainAlt(Props) {
   return React.createElement(UilCloudSunRainAlt, tmp);
 }
 
-var make = CloudSunRainAlt;
+var make = React.memo(CloudSunRainAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

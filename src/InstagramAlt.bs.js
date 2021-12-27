@@ -18,11 +18,11 @@ function InstagramAlt(Props) {
   return React.createElement(UilInstagramAlt, tmp);
 }
 
-var make = InstagramAlt;
+var make = React.memo(InstagramAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

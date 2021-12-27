@@ -18,11 +18,11 @@ function SimCard(Props) {
   return React.createElement(UilSimCard, tmp);
 }
 
-var make = SimCard;
+var make = React.memo(SimCard);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

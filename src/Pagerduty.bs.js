@@ -18,11 +18,11 @@ function Pagerduty(Props) {
   return React.createElement(UilPagerduty, tmp);
 }
 
-var make = Pagerduty;
+var make = React.memo(Pagerduty);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

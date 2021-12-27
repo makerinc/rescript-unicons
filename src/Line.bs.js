@@ -18,11 +18,11 @@ function Line(Props) {
   return React.createElement(UilLine, tmp);
 }
 
-var make = Line;
+var make = React.memo(Line);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

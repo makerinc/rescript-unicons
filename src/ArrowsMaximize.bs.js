@@ -18,11 +18,11 @@ function ArrowsMaximize(Props) {
   return React.createElement(UilArrowsMaximize, tmp);
 }
 
-var make = ArrowsMaximize;
+var make = React.memo(ArrowsMaximize);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

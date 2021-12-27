@@ -18,11 +18,11 @@ function FolderOpen(Props) {
   return React.createElement(UilFolderOpen, tmp);
 }
 
-var make = FolderOpen;
+var make = React.memo(FolderOpen);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

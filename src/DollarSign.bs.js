@@ -18,11 +18,11 @@ function DollarSign(Props) {
   return React.createElement(UilDollarSign, tmp);
 }
 
-var make = DollarSign;
+var make = React.memo(DollarSign);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

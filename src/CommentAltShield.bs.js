@@ -18,11 +18,11 @@ function CommentAltShield(Props) {
   return React.createElement(UilCommentAltShield, tmp);
 }
 
-var make = CommentAltShield;
+var make = React.memo(CommentAltShield);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

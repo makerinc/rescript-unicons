@@ -18,11 +18,11 @@ function Linkedin(Props) {
   return React.createElement(UilLinkedin, tmp);
 }
 
-var make = Linkedin;
+var make = React.memo(Linkedin);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

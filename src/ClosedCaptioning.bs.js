@@ -18,11 +18,11 @@ function ClosedCaptioning(Props) {
   return React.createElement(UilClosedCaptioning, tmp);
 }
 
-var make = ClosedCaptioning;
+var make = React.memo(ClosedCaptioning);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

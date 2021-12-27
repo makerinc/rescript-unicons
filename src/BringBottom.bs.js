@@ -18,11 +18,11 @@ function BringBottom(Props) {
   return React.createElement(UilBringBottom, tmp);
 }
 
-var make = BringBottom;
+var make = React.memo(BringBottom);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

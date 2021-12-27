@@ -18,11 +18,11 @@ function CornerUpRight(Props) {
   return React.createElement(UilCornerUpRight, tmp);
 }
 
-var make = CornerUpRight;
+var make = React.memo(CornerUpRight);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

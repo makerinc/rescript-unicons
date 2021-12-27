@@ -18,11 +18,11 @@ function VideoSlash(Props) {
   return React.createElement(UilVideoSlash, tmp);
 }
 
-var make = VideoSlash;
+var make = React.memo(VideoSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

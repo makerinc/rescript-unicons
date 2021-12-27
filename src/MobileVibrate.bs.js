@@ -18,11 +18,11 @@ function MobileVibrate(Props) {
   return React.createElement(UilMobileVibrate, tmp);
 }
 
-var make = MobileVibrate;
+var make = React.memo(MobileVibrate);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

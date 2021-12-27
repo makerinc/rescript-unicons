@@ -18,11 +18,11 @@ function Copyright(Props) {
   return React.createElement(UilCopyright, tmp);
 }
 
-var make = Copyright;
+var make = React.memo(Copyright);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

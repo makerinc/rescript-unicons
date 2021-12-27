@@ -18,11 +18,11 @@ function SortAmountDown(Props) {
   return React.createElement(UilSortAmountDown, tmp);
 }
 
-var make = SortAmountDown;
+var make = React.memo(SortAmountDown);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

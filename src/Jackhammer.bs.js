@@ -18,11 +18,11 @@ function Jackhammer(Props) {
   return React.createElement(UilJackhammer, tmp);
 }
 
-var make = Jackhammer;
+var make = React.memo(Jackhammer);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

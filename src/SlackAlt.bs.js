@@ -18,11 +18,11 @@ function SlackAlt(Props) {
   return React.createElement(UilSlackAlt, tmp);
 }
 
-var make = SlackAlt;
+var make = React.memo(SlackAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

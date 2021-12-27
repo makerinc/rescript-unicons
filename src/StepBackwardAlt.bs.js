@@ -18,11 +18,11 @@ function StepBackwardAlt(Props) {
   return React.createElement(UilStepBackwardAlt, tmp);
 }
 
-var make = StepBackwardAlt;
+var make = React.memo(StepBackwardAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Bing(Props) {
   return React.createElement(UilBing, tmp);
 }
 
-var make = Bing;
+var make = React.memo(Bing);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

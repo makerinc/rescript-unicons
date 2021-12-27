@@ -18,11 +18,11 @@ function ShieldSlash(Props) {
   return React.createElement(UilShieldSlash, tmp);
 }
 
-var make = ShieldSlash;
+var make = React.memo(ShieldSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

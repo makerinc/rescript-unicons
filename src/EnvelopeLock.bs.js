@@ -18,11 +18,11 @@ function EnvelopeLock(Props) {
   return React.createElement(UilEnvelopeLock, tmp);
 }
 
-var make = EnvelopeLock;
+var make = React.memo(EnvelopeLock);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

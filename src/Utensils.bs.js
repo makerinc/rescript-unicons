@@ -18,11 +18,11 @@ function Utensils(Props) {
   return React.createElement(UilUtensils, tmp);
 }
 
-var make = Utensils;
+var make = React.memo(Utensils);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

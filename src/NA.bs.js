@@ -18,11 +18,11 @@ function NA(Props) {
   return React.createElement(UilNA, tmp);
 }
 
-var make = NA;
+var make = React.memo(NA);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

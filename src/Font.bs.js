@@ -18,11 +18,11 @@ function Font(Props) {
   return React.createElement(UilFont, tmp);
 }
 
-var make = Font;
+var make = React.memo(Font);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

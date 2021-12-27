@@ -18,11 +18,11 @@ function SkipForward(Props) {
   return React.createElement(UilSkipForward, tmp);
 }
 
-var make = SkipForward;
+var make = React.memo(SkipForward);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

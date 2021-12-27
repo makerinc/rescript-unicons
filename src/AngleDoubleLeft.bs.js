@@ -18,11 +18,11 @@ function AngleDoubleLeft(Props) {
   return React.createElement(UilAngleDoubleLeft, tmp);
 }
 
-var make = AngleDoubleLeft;
+var make = React.memo(AngleDoubleLeft);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

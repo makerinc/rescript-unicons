@@ -18,11 +18,11 @@ function ArrowRandom(Props) {
   return React.createElement(UilArrowRandom, tmp);
 }
 
-var make = ArrowRandom;
+var make = React.memo(ArrowRandom);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

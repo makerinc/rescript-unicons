@@ -18,11 +18,11 @@ function FolderExclamation(Props) {
   return React.createElement(UilFolderExclamation, tmp);
 }
 
-var make = FolderExclamation;
+var make = React.memo(FolderExclamation);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

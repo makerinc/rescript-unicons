@@ -18,11 +18,11 @@ function Euro(Props) {
   return React.createElement(UilEuro, tmp);
 }
 
-var make = Euro;
+var make = React.memo(Euro);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

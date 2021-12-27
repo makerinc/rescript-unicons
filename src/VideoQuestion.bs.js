@@ -18,11 +18,11 @@ function VideoQuestion(Props) {
   return React.createElement(UilVideoQuestion, tmp);
 }
 
-var make = VideoQuestion;
+var make = React.memo(VideoQuestion);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Angry(Props) {
   return React.createElement(UilAngry, tmp);
 }
 
-var make = Angry;
+var make = React.memo(Angry);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

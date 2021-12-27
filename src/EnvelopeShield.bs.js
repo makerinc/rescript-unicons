@@ -18,11 +18,11 @@ function EnvelopeShield(Props) {
   return React.createElement(UilEnvelopeShield, tmp);
 }
 
-var make = EnvelopeShield;
+var make = React.memo(EnvelopeShield);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

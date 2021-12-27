@@ -18,11 +18,11 @@ function Voicemail(Props) {
   return React.createElement(UilVoicemail, tmp);
 }
 
-var make = Voicemail;
+var make = React.memo(Voicemail);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

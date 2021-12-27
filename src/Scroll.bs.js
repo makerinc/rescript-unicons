@@ -18,11 +18,11 @@ function Scroll(Props) {
   return React.createElement(UilScroll, tmp);
 }
 
-var make = Scroll;
+var make = React.memo(Scroll);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

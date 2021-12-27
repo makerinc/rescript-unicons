@@ -18,11 +18,11 @@ function Stethoscope(Props) {
   return React.createElement(UilStethoscope, tmp);
 }
 
-var make = Stethoscope;
+var make = React.memo(Stethoscope);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

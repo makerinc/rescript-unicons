@@ -18,11 +18,11 @@ function DocumentLayoutLeft(Props) {
   return React.createElement(UilDocumentLayoutLeft, tmp);
 }
 
-var make = DocumentLayoutLeft;
+var make = React.memo(DocumentLayoutLeft);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

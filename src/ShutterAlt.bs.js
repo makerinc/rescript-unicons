@@ -18,11 +18,11 @@ function ShutterAlt(Props) {
   return React.createElement(UilShutterAlt, tmp);
 }
 
-var make = ShutterAlt;
+var make = React.memo(ShutterAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

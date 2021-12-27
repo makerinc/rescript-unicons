@@ -18,11 +18,11 @@ function CommentShare(Props) {
   return React.createElement(UilCommentShare, tmp);
 }
 
-var make = CommentShare;
+var make = React.memo(CommentShare);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

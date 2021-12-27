@@ -18,11 +18,11 @@ function FileImport(Props) {
   return React.createElement(UilFileImport, tmp);
 }
 
-var make = FileImport;
+var make = React.memo(FileImport);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

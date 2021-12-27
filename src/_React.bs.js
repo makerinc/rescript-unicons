@@ -18,11 +18,11 @@ function _React(Props) {
   return React.createElement(UilReact, tmp);
 }
 
-var make = _React;
+var make = React.memo(_React);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

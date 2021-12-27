@@ -18,11 +18,11 @@ function LockAccess(Props) {
   return React.createElement(UilLockAccess, tmp);
 }
 
-var make = LockAccess;
+var make = React.memo(LockAccess);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

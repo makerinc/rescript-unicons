@@ -18,11 +18,11 @@ function Bold(Props) {
   return React.createElement(UilBold, tmp);
 }
 
-var make = Bold;
+var make = React.memo(Bold);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

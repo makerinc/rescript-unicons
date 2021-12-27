@@ -18,11 +18,11 @@ function FileHeart(Props) {
   return React.createElement(UilFileHeart, tmp);
 }
 
-var make = FileHeart;
+var make = React.memo(FileHeart);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

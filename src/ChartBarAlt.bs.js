@@ -18,11 +18,11 @@ function ChartBarAlt(Props) {
   return React.createElement(UilChartBarAlt, tmp);
 }
 
-var make = ChartBarAlt;
+var make = React.memo(ChartBarAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

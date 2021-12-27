@@ -18,11 +18,11 @@ function Tape(Props) {
   return React.createElement(UilTape, tmp);
 }
 
-var make = Tape;
+var make = React.memo(Tape);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

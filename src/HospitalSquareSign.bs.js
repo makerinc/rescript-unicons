@@ -18,11 +18,11 @@ function HospitalSquareSign(Props) {
   return React.createElement(UilHospitalSquareSign, tmp);
 }
 
-var make = HospitalSquareSign;
+var make = React.memo(HospitalSquareSign);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

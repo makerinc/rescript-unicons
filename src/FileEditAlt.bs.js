@@ -18,11 +18,11 @@ function FileEditAlt(Props) {
   return React.createElement(UilFileEditAlt, tmp);
 }
 
-var make = FileEditAlt;
+var make = React.memo(FileEditAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

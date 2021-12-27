@@ -18,11 +18,11 @@ function UserPlus(Props) {
   return React.createElement(UilUserPlus, tmp);
 }
 
-var make = UserPlus;
+var make = React.memo(UserPlus);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

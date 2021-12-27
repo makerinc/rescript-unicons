@@ -18,11 +18,11 @@ function SocialDistancing(Props) {
   return React.createElement(UilSocialDistancing, tmp);
 }
 
-var make = SocialDistancing;
+var make = React.memo(SocialDistancing);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

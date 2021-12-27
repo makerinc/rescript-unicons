@@ -18,11 +18,11 @@ function GrinTongueWink(Props) {
   return React.createElement(UilGrinTongueWink, tmp);
 }
 
-var make = GrinTongueWink;
+var make = React.memo(GrinTongueWink);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function UserNurse(Props) {
   return React.createElement(UilUserNurse, tmp);
 }
 
-var make = UserNurse;
+var make = React.memo(UserNurse);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function ExpandAlt(Props) {
   return React.createElement(UilExpandAlt, tmp);
 }
 
-var make = ExpandAlt;
+var make = React.memo(ExpandAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Sperms(Props) {
   return React.createElement(UilSperms, tmp);
 }
 
-var make = Sperms;
+var make = React.memo(Sperms);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

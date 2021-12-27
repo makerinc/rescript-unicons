@@ -18,11 +18,11 @@ function TextFields(Props) {
   return React.createElement(UilTextFields, tmp);
 }
 
-var make = TextFields;
+var make = React.memo(TextFields);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

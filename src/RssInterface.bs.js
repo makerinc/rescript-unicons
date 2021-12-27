@@ -18,11 +18,11 @@ function RssInterface(Props) {
   return React.createElement(UilRssInterface, tmp);
 }
 
-var make = RssInterface;
+var make = React.memo(RssInterface);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

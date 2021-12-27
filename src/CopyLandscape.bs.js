@@ -18,11 +18,11 @@ function CopyLandscape(Props) {
   return React.createElement(UilCopyLandscape, tmp);
 }
 
-var make = CopyLandscape;
+var make = React.memo(CopyLandscape);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

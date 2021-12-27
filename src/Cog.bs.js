@@ -18,11 +18,11 @@ function Cog(Props) {
   return React.createElement(UilCog, tmp);
 }
 
-var make = Cog;
+var make = React.memo(Cog);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

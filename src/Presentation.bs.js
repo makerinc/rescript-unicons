@@ -18,11 +18,11 @@ function Presentation(Props) {
   return React.createElement(UilPresentation, tmp);
 }
 
-var make = Presentation;
+var make = React.memo(Presentation);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function CreditCardSearch(Props) {
   return React.createElement(UilCreditCardSearch, tmp);
 }
 
-var make = CreditCardSearch;
+var make = React.memo(CreditCardSearch);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Paperclip(Props) {
   return React.createElement(UilPaperclip, tmp);
 }
 
-var make = Paperclip;
+var make = React.memo(Paperclip);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

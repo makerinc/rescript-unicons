@@ -18,11 +18,11 @@ function AdobeAlt(Props) {
   return React.createElement(UilAdobeAlt, tmp);
 }
 
-var make = AdobeAlt;
+var make = React.memo(AdobeAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

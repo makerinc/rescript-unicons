@@ -18,11 +18,11 @@ function AndroidAlt(Props) {
   return React.createElement(UilAndroidAlt, tmp);
 }
 
-var make = AndroidAlt;
+var make = React.memo(AndroidAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

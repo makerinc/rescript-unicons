@@ -18,11 +18,11 @@ function Cube(Props) {
   return React.createElement(UilCube, tmp);
 }
 
-var make = Cube;
+var make = React.memo(Cube);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

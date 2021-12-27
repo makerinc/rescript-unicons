@@ -18,11 +18,11 @@ function UnlockAlt(Props) {
   return React.createElement(UilUnlockAlt, tmp);
 }
 
-var make = UnlockAlt;
+var make = React.memo(UnlockAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

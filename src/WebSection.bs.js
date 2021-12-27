@@ -18,11 +18,11 @@ function WebSection(Props) {
   return React.createElement(UilWebSection, tmp);
 }
 
-var make = WebSection;
+var make = React.memo(WebSection);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Picture(Props) {
   return React.createElement(UilPicture, tmp);
 }
 
-var make = Picture;
+var make = React.memo(Picture);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function TimesCircle(Props) {
   return React.createElement(UilTimesCircle, tmp);
 }
 
-var make = TimesCircle;
+var make = React.memo(TimesCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Medal(Props) {
   return React.createElement(UilMedal, tmp);
 }
 
-var make = Medal;
+var make = React.memo(Medal);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

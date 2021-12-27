@@ -18,11 +18,11 @@ function CommentLines(Props) {
   return React.createElement(UilCommentLines, tmp);
 }
 
-var make = CommentLines;
+var make = React.memo(CommentLines);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

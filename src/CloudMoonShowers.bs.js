@@ -18,11 +18,11 @@ function CloudMoonShowers(Props) {
   return React.createElement(UilCloudMoonShowers, tmp);
 }
 
-var make = CloudMoonShowers;
+var make = React.memo(CloudMoonShowers);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

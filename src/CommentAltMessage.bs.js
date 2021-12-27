@@ -18,11 +18,11 @@ function CommentAltMessage(Props) {
   return React.createElement(UilCommentAltMessage, tmp);
 }
 
-var make = CommentAltMessage;
+var make = React.memo(CommentAltMessage);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

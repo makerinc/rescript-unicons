@@ -18,11 +18,11 @@ function Tablet(Props) {
   return React.createElement(UilTablet, tmp);
 }
 
-var make = Tablet;
+var make = React.memo(Tablet);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

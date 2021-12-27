@@ -18,11 +18,11 @@ function Club(Props) {
   return React.createElement(UilClub, tmp);
 }
 
-var make = Club;
+var make = React.memo(Club);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

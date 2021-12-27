@@ -10,3 +10,5 @@ module Impl = {
 let make = (~className: option<string>=?, ~size: option<int>=?) => {
   <Impl ?className ?size />
 }
+
+let make = React.memo(make)

@@ -18,11 +18,11 @@ function Star(Props) {
   return React.createElement(UilStar, tmp);
 }
 
-var make = Star;
+var make = React.memo(Star);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

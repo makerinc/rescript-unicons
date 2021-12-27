@@ -18,11 +18,11 @@ function Tag(Props) {
   return React.createElement(UilTag, tmp);
 }
 
-var make = Tag;
+var make = React.memo(Tag);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Spade(Props) {
   return React.createElement(UilSpade, tmp);
 }
 
-var make = Spade;
+var make = React.memo(Spade);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

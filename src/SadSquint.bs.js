@@ -18,11 +18,11 @@ function SadSquint(Props) {
   return React.createElement(UilSadSquint, tmp);
 }
 
-var make = SadSquint;
+var make = React.memo(SadSquint);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

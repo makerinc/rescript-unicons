@@ -18,11 +18,11 @@ function Video(Props) {
   return React.createElement(UilVideo, tmp);
 }
 
-var make = Video;
+var make = React.memo(Video);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

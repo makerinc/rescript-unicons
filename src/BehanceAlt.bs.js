@@ -18,11 +18,11 @@ function BehanceAlt(Props) {
   return React.createElement(UilBehanceAlt, tmp);
 }
 
-var make = BehanceAlt;
+var make = React.memo(BehanceAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

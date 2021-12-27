@@ -18,11 +18,11 @@ function FolderInfo(Props) {
   return React.createElement(UilFolderInfo, tmp);
 }
 
-var make = FolderInfo;
+var make = React.memo(FolderInfo);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

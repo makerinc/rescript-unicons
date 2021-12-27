@@ -18,11 +18,11 @@ function TextSize(Props) {
   return React.createElement(UilTextSize, tmp);
 }
 
-var make = TextSize;
+var make = React.memo(TextSize);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Docker(Props) {
   return React.createElement(UilDocker, tmp);
 }
 
-var make = Docker;
+var make = React.memo(Docker);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

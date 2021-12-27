@@ -18,11 +18,11 @@ function Channel(Props) {
   return React.createElement(UilChannel, tmp);
 }
 
-var make = Channel;
+var make = React.memo(Channel);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Wrench(Props) {
   return React.createElement(UilWrench, tmp);
 }
 
-var make = Wrench;
+var make = React.memo(Wrench);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

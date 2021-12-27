@@ -18,11 +18,11 @@ function ExposureAlt(Props) {
   return React.createElement(UilExposureAlt, tmp);
 }
 
-var make = ExposureAlt;
+var make = React.memo(ExposureAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

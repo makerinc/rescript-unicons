@@ -18,11 +18,11 @@ function Redo(Props) {
   return React.createElement(UilRedo, tmp);
 }
 
-var make = Redo;
+var make = React.memo(Redo);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

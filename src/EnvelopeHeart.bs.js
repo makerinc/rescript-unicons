@@ -18,11 +18,11 @@ function EnvelopeHeart(Props) {
   return React.createElement(UilEnvelopeHeart, tmp);
 }
 
-var make = EnvelopeHeart;
+var make = React.memo(EnvelopeHeart);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

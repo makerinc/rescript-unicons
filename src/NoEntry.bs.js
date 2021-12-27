@@ -18,11 +18,11 @@ function NoEntry(Props) {
   return React.createElement(UilNoEntry, tmp);
 }
 
-var make = NoEntry;
+var make = React.memo(NoEntry);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function GraduationCap(Props) {
   return React.createElement(UilGraduationCap, tmp);
 }
 
-var make = GraduationCap;
+var make = React.memo(GraduationCap);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

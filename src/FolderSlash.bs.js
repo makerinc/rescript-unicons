@@ -18,11 +18,11 @@ function FolderSlash(Props) {
   return React.createElement(UilFolderSlash, tmp);
 }
 
-var make = FolderSlash;
+var make = React.memo(FolderSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

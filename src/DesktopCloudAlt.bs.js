@@ -18,11 +18,11 @@ function DesktopCloudAlt(Props) {
   return React.createElement(UilDesktopCloudAlt, tmp);
 }
 
-var make = DesktopCloudAlt;
+var make = React.memo(DesktopCloudAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

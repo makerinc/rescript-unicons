@@ -18,11 +18,11 @@ function OperaAlt(Props) {
   return React.createElement(UilOperaAlt, tmp);
 }
 
-var make = OperaAlt;
+var make = React.memo(OperaAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

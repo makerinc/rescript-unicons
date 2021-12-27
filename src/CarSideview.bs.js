@@ -18,11 +18,11 @@ function CarSideview(Props) {
   return React.createElement(UilCarSideview, tmp);
 }
 
-var make = CarSideview;
+var make = React.memo(CarSideview);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

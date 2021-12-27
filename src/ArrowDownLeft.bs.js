@@ -18,11 +18,11 @@ function ArrowDownLeft(Props) {
   return React.createElement(UilArrowDownLeft, tmp);
 }
 
-var make = ArrowDownLeft;
+var make = React.memo(ArrowDownLeft);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

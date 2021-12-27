@@ -18,11 +18,11 @@ function Dribbble(Props) {
   return React.createElement(UilDribbble, tmp);
 }
 
-var make = Dribbble;
+var make = React.memo(Dribbble);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function GraphBar(Props) {
   return React.createElement(UilGraphBar, tmp);
 }
 
-var make = GraphBar;
+var make = React.memo(GraphBar);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Ninja(Props) {
   return React.createElement(UilNinja, tmp);
 }
 
-var make = Ninja;
+var make = React.memo(Ninja);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

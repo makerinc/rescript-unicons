@@ -18,11 +18,11 @@ function CreditCard(Props) {
   return React.createElement(UilCreditCard, tmp);
 }
 
-var make = CreditCard;
+var make = React.memo(CreditCard);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

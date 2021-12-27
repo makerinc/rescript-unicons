@@ -18,11 +18,11 @@ function KeyholeSquareFull(Props) {
   return React.createElement(UilKeyholeSquareFull, tmp);
 }
 
-var make = KeyholeSquareFull;
+var make = React.memo(KeyholeSquareFull);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

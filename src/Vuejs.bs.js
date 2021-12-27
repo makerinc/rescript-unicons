@@ -18,11 +18,11 @@ function Vuejs(Props) {
   return React.createElement(UilVuejs, tmp);
 }
 
-var make = Vuejs;
+var make = React.memo(Vuejs);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

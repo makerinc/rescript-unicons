@@ -18,11 +18,11 @@ function Signal(Props) {
   return React.createElement(UilSignal, tmp);
 }
 
-var make = Signal;
+var make = React.memo(Signal);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

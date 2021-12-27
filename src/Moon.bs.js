@@ -18,11 +18,11 @@ function Moon(Props) {
   return React.createElement(UilMoon, tmp);
 }
 
-var make = Moon;
+var make = React.memo(Moon);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

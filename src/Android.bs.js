@@ -18,11 +18,11 @@ function Android(Props) {
   return React.createElement(UilAndroid, tmp);
 }
 
-var make = Android;
+var make = React.memo(Android);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

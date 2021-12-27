@@ -18,11 +18,11 @@ function KeySkeleton(Props) {
   return React.createElement(UilKeySkeleton, tmp);
 }
 
-var make = KeySkeleton;
+var make = React.memo(KeySkeleton);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

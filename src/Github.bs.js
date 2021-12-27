@@ -18,11 +18,11 @@ function Github(Props) {
   return React.createElement(UilGithub, tmp);
 }
 
-var make = Github;
+var make = React.memo(Github);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

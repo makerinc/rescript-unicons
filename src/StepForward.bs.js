@@ -18,11 +18,11 @@ function StepForward(Props) {
   return React.createElement(UilStepForward, tmp);
 }
 
-var make = StepForward;
+var make = React.memo(StepForward);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

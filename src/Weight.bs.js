@@ -18,11 +18,11 @@ function Weight(Props) {
   return React.createElement(UilWeight, tmp);
 }
 
-var make = Weight;
+var make = React.memo(Weight);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

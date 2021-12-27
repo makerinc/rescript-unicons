@@ -18,11 +18,11 @@ function FilesLandscapesAlt(Props) {
   return React.createElement(UilFilesLandscapesAlt, tmp);
 }
 
-var make = FilesLandscapesAlt;
+var make = React.memo(FilesLandscapesAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

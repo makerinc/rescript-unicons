@@ -18,11 +18,11 @@ function Microsoft(Props) {
   return React.createElement(UilMicrosoft, tmp);
 }
 
-var make = Microsoft;
+var make = React.memo(Microsoft);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

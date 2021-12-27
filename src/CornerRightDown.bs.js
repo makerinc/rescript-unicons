@@ -18,11 +18,11 @@ function CornerRightDown(Props) {
   return React.createElement(UilCornerRightDown, tmp);
 }
 
-var make = CornerRightDown;
+var make = React.memo(CornerRightDown);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

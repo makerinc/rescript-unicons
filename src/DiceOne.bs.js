@@ -18,11 +18,11 @@ function DiceOne(Props) {
   return React.createElement(UilDiceOne, tmp);
 }
 
-var make = DiceOne;
+var make = React.memo(DiceOne);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

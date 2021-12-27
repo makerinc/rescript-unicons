@@ -18,11 +18,11 @@ function $$Map(Props) {
   return React.createElement(UilMap, tmp);
 }
 
-var make = $$Map;
+var make = React.memo($$Map);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Refresh(Props) {
   return React.createElement(UilRefresh, tmp);
 }
 
-var make = Refresh;
+var make = React.memo(Refresh);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

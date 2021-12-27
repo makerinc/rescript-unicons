@@ -18,11 +18,11 @@ function HeartBreak(Props) {
   return React.createElement(UilHeartBreak, tmp);
 }
 
-var make = HeartBreak;
+var make = React.memo(HeartBreak);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

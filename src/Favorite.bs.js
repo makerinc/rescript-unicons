@@ -18,11 +18,11 @@ function Favorite(Props) {
   return React.createElement(UilFavorite, tmp);
 }
 
-var make = Favorite;
+var make = React.memo(Favorite);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

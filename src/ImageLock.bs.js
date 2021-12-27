@@ -18,11 +18,11 @@ function ImageLock(Props) {
   return React.createElement(UilImageLock, tmp);
 }
 
-var make = ImageLock;
+var make = React.memo(ImageLock);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

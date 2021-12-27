@@ -18,11 +18,11 @@ function $$Window(Props) {
   return React.createElement(UilWindow, tmp);
 }
 
-var make = $$Window;
+var make = React.memo($$Window);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

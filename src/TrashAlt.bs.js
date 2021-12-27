@@ -18,11 +18,11 @@ function TrashAlt(Props) {
   return React.createElement(UilTrashAlt, tmp);
 }
 
-var make = TrashAlt;
+var make = React.memo(TrashAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

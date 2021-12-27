@@ -18,11 +18,11 @@ function PoundCircle(Props) {
   return React.createElement(UilPoundCircle, tmp);
 }
 
-var make = PoundCircle;
+var make = React.memo(PoundCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

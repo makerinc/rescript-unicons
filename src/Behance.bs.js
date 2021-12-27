@@ -18,11 +18,11 @@ function Behance(Props) {
   return React.createElement(UilBehance, tmp);
 }
 
-var make = Behance;
+var make = React.memo(Behance);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Html5Alt(Props) {
   return React.createElement(UilHtml5Alt, tmp);
 }
 
-var make = Html5Alt;
+var make = React.memo(Html5Alt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

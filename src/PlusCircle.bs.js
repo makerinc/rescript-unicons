@@ -18,11 +18,11 @@ function PlusCircle(Props) {
   return React.createElement(UilPlusCircle, tmp);
 }
 
-var make = PlusCircle;
+var make = React.memo(PlusCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

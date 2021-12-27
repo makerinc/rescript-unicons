@@ -18,11 +18,11 @@ function Cell(Props) {
   return React.createElement(UilCell, tmp);
 }
 
-var make = Cell;
+var make = React.memo(Cell);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

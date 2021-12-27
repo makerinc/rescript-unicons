@@ -18,11 +18,11 @@ function Power(Props) {
   return React.createElement(UilPower, tmp);
 }
 
-var make = Power;
+var make = React.memo(Power);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

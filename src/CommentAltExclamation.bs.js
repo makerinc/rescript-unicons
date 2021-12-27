@@ -18,11 +18,11 @@ function CommentAltExclamation(Props) {
   return React.createElement(UilCommentAltExclamation, tmp);
 }
 
-var make = CommentAltExclamation;
+var make = React.memo(CommentAltExclamation);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function LinkAdd(Props) {
   return React.createElement(UilLinkAdd, tmp);
 }
 
-var make = LinkAdd;
+var make = React.memo(LinkAdd);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

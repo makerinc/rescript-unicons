@@ -18,11 +18,11 @@ function BitcoinCircle(Props) {
   return React.createElement(UilBitcoinCircle, tmp);
 }
 
-var make = BitcoinCircle;
+var make = React.memo(BitcoinCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

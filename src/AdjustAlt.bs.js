@@ -18,11 +18,11 @@ function AdjustAlt(Props) {
   return React.createElement(UilAdjustAlt, tmp);
 }
 
-var make = AdjustAlt;
+var make = React.memo(AdjustAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

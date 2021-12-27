@@ -18,11 +18,11 @@ function Process(Props) {
   return React.createElement(UilProcess, tmp);
 }
 
-var make = Process;
+var make = React.memo(Process);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

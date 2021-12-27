@@ -18,11 +18,11 @@ function CompactDisc(Props) {
   return React.createElement(UilCompactDisc, tmp);
 }
 
-var make = CompactDisc;
+var make = React.memo(CompactDisc);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

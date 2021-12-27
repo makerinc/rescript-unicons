@@ -18,11 +18,11 @@ function Facebook(Props) {
   return React.createElement(UilFacebook, tmp);
 }
 
-var make = Facebook;
+var make = React.memo(Facebook);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

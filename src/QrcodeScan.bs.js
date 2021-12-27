@@ -18,11 +18,11 @@ function QrcodeScan(Props) {
   return React.createElement(UilQrcodeScan, tmp);
 }
 
-var make = QrcodeScan;
+var make = React.memo(QrcodeScan);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

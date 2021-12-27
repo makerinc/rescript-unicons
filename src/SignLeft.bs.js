@@ -18,11 +18,11 @@ function SignLeft(Props) {
   return React.createElement(UilSignLeft, tmp);
 }
 
-var make = SignLeft;
+var make = React.memo(SignLeft);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

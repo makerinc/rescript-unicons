@@ -18,11 +18,11 @@ function RupeeSign(Props) {
   return React.createElement(UilRupeeSign, tmp);
 }
 
-var make = RupeeSign;
+var make = React.memo(RupeeSign);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

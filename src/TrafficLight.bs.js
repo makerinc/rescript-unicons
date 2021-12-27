@@ -18,11 +18,11 @@ function TrafficLight(Props) {
   return React.createElement(UilTrafficLight, tmp);
 }
 
-var make = TrafficLight;
+var make = React.memo(TrafficLight);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

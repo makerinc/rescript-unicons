@@ -18,11 +18,11 @@ function VectorSquare(Props) {
   return React.createElement(UilVectorSquare, tmp);
 }
 
-var make = VectorSquare;
+var make = React.memo(VectorSquare);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

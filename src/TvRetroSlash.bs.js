@@ -18,11 +18,11 @@ function TvRetroSlash(Props) {
   return React.createElement(UilTvRetroSlash, tmp);
 }
 
-var make = TvRetroSlash;
+var make = React.memo(TvRetroSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

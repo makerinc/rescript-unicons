@@ -18,11 +18,11 @@ function ChartDown(Props) {
   return React.createElement(UilChartDown, tmp);
 }
 
-var make = ChartDown;
+var make = React.memo(ChartDown);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

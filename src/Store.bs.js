@@ -18,11 +18,11 @@ function Store(Props) {
   return React.createElement(UilStore, tmp);
 }
 
-var make = Store;
+var make = React.memo(Store);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

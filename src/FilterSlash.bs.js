@@ -18,11 +18,11 @@ function FilterSlash(Props) {
   return React.createElement(UilFilterSlash, tmp);
 }
 
-var make = FilterSlash;
+var make = React.memo(FilterSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

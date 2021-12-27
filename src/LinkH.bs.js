@@ -18,11 +18,11 @@ function LinkH(Props) {
   return React.createElement(UilLinkH, tmp);
 }
 
-var make = LinkH;
+var make = React.memo(LinkH);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

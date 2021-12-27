@@ -18,11 +18,11 @@ function BatteryBolt(Props) {
   return React.createElement(UilBatteryBolt, tmp);
 }
 
-var make = BatteryBolt;
+var make = React.memo(BatteryBolt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

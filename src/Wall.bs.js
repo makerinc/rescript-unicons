@@ -18,11 +18,11 @@ function Wall(Props) {
   return React.createElement(UilWall, tmp);
 }
 
-var make = Wall;
+var make = React.memo(Wall);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

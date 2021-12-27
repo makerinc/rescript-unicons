@@ -18,11 +18,11 @@ function AccessibleIconAlt(Props) {
   return React.createElement(UilAccessibleIconAlt, tmp);
 }
 
-var make = AccessibleIconAlt;
+var make = React.memo(AccessibleIconAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

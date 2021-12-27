@@ -18,11 +18,11 @@ function Pen(Props) {
   return React.createElement(UilPen, tmp);
 }
 
-var make = Pen;
+var make = React.memo(Pen);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

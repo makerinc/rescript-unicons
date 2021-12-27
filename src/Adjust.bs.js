@@ -18,11 +18,11 @@ function Adjust(Props) {
   return React.createElement(UilAdjust, tmp);
 }
 
-var make = Adjust;
+var make = React.memo(Adjust);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

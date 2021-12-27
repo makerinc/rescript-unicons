@@ -18,11 +18,11 @@ function Backward(Props) {
   return React.createElement(UilBackward, tmp);
 }
 
-var make = Backward;
+var make = React.memo(Backward);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

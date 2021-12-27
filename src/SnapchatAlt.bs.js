@@ -18,11 +18,11 @@ function SnapchatAlt(Props) {
   return React.createElement(UilSnapchatAlt, tmp);
 }
 
-var make = SnapchatAlt;
+var make = React.memo(SnapchatAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

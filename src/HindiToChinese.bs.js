@@ -18,11 +18,11 @@ function HindiToChinese(Props) {
   return React.createElement(UilHindiToChinese, tmp);
 }
 
-var make = HindiToChinese;
+var make = React.memo(HindiToChinese);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

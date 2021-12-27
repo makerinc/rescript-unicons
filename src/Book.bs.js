@@ -18,11 +18,11 @@ function Book(Props) {
   return React.createElement(UilBook, tmp);
 }
 
-var make = Book;
+var make = React.memo(Book);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

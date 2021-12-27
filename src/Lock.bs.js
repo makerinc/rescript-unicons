@@ -18,11 +18,11 @@ function Lock(Props) {
   return React.createElement(UilLock, tmp);
 }
 
-var make = Lock;
+var make = React.memo(Lock);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

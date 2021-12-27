@@ -18,11 +18,11 @@ function PlayCircle(Props) {
   return React.createElement(UilPlayCircle, tmp);
 }
 
-var make = PlayCircle;
+var make = React.memo(PlayCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

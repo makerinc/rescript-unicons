@@ -18,11 +18,11 @@ function ImageTimes(Props) {
   return React.createElement(UilImageTimes, tmp);
 }
 
-var make = ImageTimes;
+var make = React.memo(ImageTimes);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

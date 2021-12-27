@@ -18,11 +18,11 @@ function LayerGroupSlash(Props) {
   return React.createElement(UilLayerGroupSlash, tmp);
 }
 
-var make = LayerGroupSlash;
+var make = React.memo(LayerGroupSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

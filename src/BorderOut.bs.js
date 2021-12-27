@@ -18,11 +18,11 @@ function BorderOut(Props) {
   return React.createElement(UilBorderOut, tmp);
 }
 
-var make = BorderOut;
+var make = React.memo(BorderOut);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

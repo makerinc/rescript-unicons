@@ -18,11 +18,11 @@ function LinkAlt(Props) {
   return React.createElement(UilLinkAlt, tmp);
 }
 
-var make = LinkAlt;
+var make = React.memo(LinkAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

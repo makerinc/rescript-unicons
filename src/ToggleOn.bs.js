@@ -18,11 +18,11 @@ function ToggleOn(Props) {
   return React.createElement(UilToggleOn, tmp);
 }
 
-var make = ToggleOn;
+var make = React.memo(ToggleOn);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

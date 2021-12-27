@@ -18,11 +18,11 @@ function Clouds(Props) {
   return React.createElement(UilClouds, tmp);
 }
 
-var make = Clouds;
+var make = React.memo(Clouds);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

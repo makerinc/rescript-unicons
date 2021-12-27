@@ -18,11 +18,11 @@ function Compass(Props) {
   return React.createElement(UilCompass, tmp);
 }
 
-var make = Compass;
+var make = React.memo(Compass);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

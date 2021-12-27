@@ -18,11 +18,11 @@ function Stopwatch(Props) {
   return React.createElement(UilStopwatch, tmp);
 }
 
-var make = Stopwatch;
+var make = React.memo(Stopwatch);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

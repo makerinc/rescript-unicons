@@ -18,11 +18,11 @@ function Screw(Props) {
   return React.createElement(UilScrew, tmp);
 }
 
-var make = Screw;
+var make = React.memo(Screw);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Subject(Props) {
   return React.createElement(UilSubject, tmp);
 }
 
-var make = Subject;
+var make = React.memo(Subject);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

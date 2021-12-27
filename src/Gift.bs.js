@@ -18,11 +18,11 @@ function Gift(Props) {
   return React.createElement(UilGift, tmp);
 }
 
-var make = Gift;
+var make = React.memo(Gift);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

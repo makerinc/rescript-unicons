@@ -18,11 +18,11 @@ function SyncSlash(Props) {
   return React.createElement(UilSyncSlash, tmp);
 }
 
-var make = SyncSlash;
+var make = React.memo(SyncSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

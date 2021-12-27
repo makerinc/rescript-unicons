@@ -18,11 +18,11 @@ function ExpandArrows(Props) {
   return React.createElement(UilExpandArrows, tmp);
 }
 
-var make = ExpandArrows;
+var make = React.memo(ExpandArrows);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

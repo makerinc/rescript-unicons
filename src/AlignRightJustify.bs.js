@@ -18,11 +18,11 @@ function AlignRightJustify(Props) {
   return React.createElement(UilAlignRightJustify, tmp);
 }
 
-var make = AlignRightJustify;
+var make = React.memo(AlignRightJustify);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

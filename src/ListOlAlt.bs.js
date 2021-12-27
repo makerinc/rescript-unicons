@@ -18,11 +18,11 @@ function ListOlAlt(Props) {
   return React.createElement(UilListOlAlt, tmp);
 }
 
-var make = ListOlAlt;
+var make = React.memo(ListOlAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

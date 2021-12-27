@@ -18,11 +18,11 @@ function PathfinderUnite(Props) {
   return React.createElement(UilPathfinderUnite, tmp);
 }
 
-var make = PathfinderUnite;
+var make = React.memo(PathfinderUnite);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

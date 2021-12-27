@@ -18,11 +18,11 @@ function ClapperBoard(Props) {
   return React.createElement(UilClapperBoard, tmp);
 }
 
-var make = ClapperBoard;
+var make = React.memo(ClapperBoard);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

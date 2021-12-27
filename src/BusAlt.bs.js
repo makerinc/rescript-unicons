@@ -18,11 +18,11 @@ function BusAlt(Props) {
   return React.createElement(UilBusAlt, tmp);
 }
 
-var make = BusAlt;
+var make = React.memo(BusAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

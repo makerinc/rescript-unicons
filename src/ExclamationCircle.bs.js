@@ -18,11 +18,11 @@ function ExclamationCircle(Props) {
   return React.createElement(UilExclamationCircle, tmp);
 }
 
-var make = ExclamationCircle;
+var make = React.memo(ExclamationCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

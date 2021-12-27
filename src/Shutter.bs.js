@@ -18,11 +18,11 @@ function Shutter(Props) {
   return React.createElement(UilShutter, tmp);
 }
 
-var make = Shutter;
+var make = React.memo(Shutter);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

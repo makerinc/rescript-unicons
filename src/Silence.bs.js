@@ -18,11 +18,11 @@ function Silence(Props) {
   return React.createElement(UilSilence, tmp);
 }
 
-var make = Silence;
+var make = React.memo(Silence);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

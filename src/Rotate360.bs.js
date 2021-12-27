@@ -18,11 +18,11 @@ function Rotate360(Props) {
   return React.createElement(UilRotate, tmp);
 }
 
-var make = Rotate360;
+var make = React.memo(Rotate360);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

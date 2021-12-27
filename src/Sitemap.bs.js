@@ -18,11 +18,11 @@ function Sitemap(Props) {
   return React.createElement(UilSitemap, tmp);
 }
 
-var make = Sitemap;
+var make = React.memo(Sitemap);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

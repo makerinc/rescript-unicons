@@ -18,11 +18,11 @@ function PricetagAlt(Props) {
   return React.createElement(UilPricetagAlt, tmp);
 }
 
-var make = PricetagAlt;
+var make = React.memo(PricetagAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

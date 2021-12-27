@@ -18,11 +18,11 @@ function Venus(Props) {
   return React.createElement(UilVenus, tmp);
 }
 
-var make = Venus;
+var make = React.memo(Venus);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

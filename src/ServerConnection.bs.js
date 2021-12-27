@@ -18,11 +18,11 @@ function ServerConnection(Props) {
   return React.createElement(UilServerConnection, tmp);
 }
 
-var make = ServerConnection;
+var make = React.memo(ServerConnection);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

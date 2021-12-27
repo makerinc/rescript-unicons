@@ -18,11 +18,11 @@ function WindowMaximize(Props) {
   return React.createElement(UilWindowMaximize, tmp);
 }
 
-var make = WindowMaximize;
+var make = React.memo(WindowMaximize);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

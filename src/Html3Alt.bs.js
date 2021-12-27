@@ -18,11 +18,11 @@ function Html3Alt(Props) {
   return React.createElement(UilHtml3Alt, tmp);
 }
 
-var make = Html3Alt;
+var make = React.memo(Html3Alt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

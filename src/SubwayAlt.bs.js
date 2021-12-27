@@ -18,11 +18,11 @@ function SubwayAlt(Props) {
   return React.createElement(UilSubwayAlt, tmp);
 }
 
-var make = SubwayAlt;
+var make = React.memo(SubwayAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function ChartGrowthAlt(Props) {
   return React.createElement(UilChartGrowthAlt, tmp);
 }
 
-var make = ChartGrowthAlt;
+var make = React.memo(ChartGrowthAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

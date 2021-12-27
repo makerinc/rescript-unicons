@@ -18,11 +18,11 @@ function Archive(Props) {
   return React.createElement(UilArchive, tmp);
 }
 
-var make = Archive;
+var make = React.memo(Archive);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Edit(Props) {
   return React.createElement(UilEdit, tmp);
 }
 
-var make = Edit;
+var make = React.memo(Edit);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

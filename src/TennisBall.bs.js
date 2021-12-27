@@ -18,11 +18,11 @@ function TennisBall(Props) {
   return React.createElement(UilTennisBall, tmp);
 }
 
-var make = TennisBall;
+var make = React.memo(TennisBall);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

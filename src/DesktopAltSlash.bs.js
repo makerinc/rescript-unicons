@@ -18,11 +18,11 @@ function DesktopAltSlash(Props) {
   return React.createElement(UilDesktopAltSlash, tmp);
 }
 
-var make = DesktopAltSlash;
+var make = React.memo(DesktopAltSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

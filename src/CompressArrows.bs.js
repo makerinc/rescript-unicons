@@ -18,11 +18,11 @@ function CompressArrows(Props) {
   return React.createElement(UilCompressArrows, tmp);
 }
 
-var make = CompressArrows;
+var make = React.memo(CompressArrows);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

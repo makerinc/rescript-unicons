@@ -18,11 +18,11 @@ function DesktopAlt(Props) {
   return React.createElement(UilDesktopAlt, tmp);
 }
 
-var make = DesktopAlt;
+var make = React.memo(DesktopAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

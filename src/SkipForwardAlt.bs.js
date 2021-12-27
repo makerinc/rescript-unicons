@@ -18,11 +18,11 @@ function SkipForwardAlt(Props) {
   return React.createElement(UilSkipForwardAlt, tmp);
 }
 
-var make = SkipForwardAlt;
+var make = React.memo(SkipForwardAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

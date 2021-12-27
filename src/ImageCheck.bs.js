@@ -18,11 +18,11 @@ function ImageCheck(Props) {
   return React.createElement(UilImageCheck, tmp);
 }
 
-var make = ImageCheck;
+var make = React.memo(ImageCheck);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

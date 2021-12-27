@@ -18,11 +18,11 @@ function FidgetSpinner(Props) {
   return React.createElement(UilFidgetSpinner, tmp);
 }
 
-var make = FidgetSpinner;
+var make = React.memo(FidgetSpinner);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

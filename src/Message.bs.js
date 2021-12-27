@@ -18,11 +18,11 @@ function Message(Props) {
   return React.createElement(UilMessage, tmp);
 }
 
-var make = Message;
+var make = React.memo(Message);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

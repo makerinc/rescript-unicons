@@ -18,11 +18,11 @@ function CloudSunTear(Props) {
   return React.createElement(UilCloudSunTear, tmp);
 }
 
-var make = CloudSunTear;
+var make = React.memo(CloudSunTear);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

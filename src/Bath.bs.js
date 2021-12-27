@@ -18,11 +18,11 @@ function Bath(Props) {
   return React.createElement(UilBath, tmp);
 }
 
-var make = Bath;
+var make = React.memo(Bath);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

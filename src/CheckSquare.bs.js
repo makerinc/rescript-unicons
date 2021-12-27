@@ -18,11 +18,11 @@ function CheckSquare(Props) {
   return React.createElement(UilCheckSquare, tmp);
 }
 
-var make = CheckSquare;
+var make = React.memo(CheckSquare);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

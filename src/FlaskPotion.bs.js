@@ -18,11 +18,11 @@ function FlaskPotion(Props) {
   return React.createElement(UilFlaskPotion, tmp);
 }
 
-var make = FlaskPotion;
+var make = React.memo(FlaskPotion);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

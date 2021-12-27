@@ -18,11 +18,11 @@ function FileCheck(Props) {
   return React.createElement(UilFileCheck, tmp);
 }
 
-var make = FileCheck;
+var make = React.memo(FileCheck);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

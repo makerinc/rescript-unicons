@@ -18,11 +18,11 @@ function CloudShare(Props) {
   return React.createElement(UilCloudShare, tmp);
 }
 
-var make = CloudShare;
+var make = React.memo(CloudShare);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function ChatBubbleUser(Props) {
   return React.createElement(UilChatBubbleUser, tmp);
 }
 
-var make = ChatBubbleUser;
+var make = React.memo(ChatBubbleUser);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

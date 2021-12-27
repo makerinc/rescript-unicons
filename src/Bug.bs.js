@@ -18,11 +18,11 @@ function Bug(Props) {
   return React.createElement(UilBug, tmp);
 }
 
-var make = Bug;
+var make = React.memo(Bug);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

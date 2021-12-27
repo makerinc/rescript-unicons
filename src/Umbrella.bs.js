@@ -18,11 +18,11 @@ function Umbrella(Props) {
   return React.createElement(UilUmbrella, tmp);
 }
 
-var make = Umbrella;
+var make = React.memo(Umbrella);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

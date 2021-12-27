@@ -18,11 +18,11 @@ function UsdCircle(Props) {
   return React.createElement(UilUsdCircle, tmp);
 }
 
-var make = UsdCircle;
+var make = React.memo(UsdCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

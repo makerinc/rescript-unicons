@@ -18,11 +18,11 @@ function Linux(Props) {
   return React.createElement(UilLinux, tmp);
 }
 
-var make = Linux;
+var make = React.memo(Linux);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

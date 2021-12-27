@@ -18,11 +18,11 @@ function EllipsisV(Props) {
   return React.createElement(UilEllipsisV, tmp);
 }
 
-var make = EllipsisV;
+var make = React.memo(EllipsisV);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

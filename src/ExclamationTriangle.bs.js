@@ -18,11 +18,11 @@ function ExclamationTriangle(Props) {
   return React.createElement(UilExclamationTriangle, tmp);
 }
 
-var make = ExclamationTriangle;
+var make = React.memo(ExclamationTriangle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

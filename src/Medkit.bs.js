@@ -18,11 +18,11 @@ function Medkit(Props) {
   return React.createElement(UilMedkit, tmp);
 }
 
-var make = Medkit;
+var make = React.memo(Medkit);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

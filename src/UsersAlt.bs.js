@@ -18,11 +18,11 @@ function UsersAlt(Props) {
   return React.createElement(UilUsersAlt, tmp);
 }
 
-var make = UsersAlt;
+var make = React.memo(UsersAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

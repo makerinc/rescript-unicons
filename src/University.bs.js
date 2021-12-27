@@ -18,11 +18,11 @@ function University(Props) {
   return React.createElement(UilUniversity, tmp);
 }
 
-var make = University;
+var make = React.memo(University);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

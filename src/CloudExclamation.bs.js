@@ -18,11 +18,11 @@ function CloudExclamation(Props) {
   return React.createElement(UilCloudExclamation, tmp);
 }
 
-var make = CloudExclamation;
+var make = React.memo(CloudExclamation);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

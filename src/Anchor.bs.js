@@ -18,11 +18,11 @@ function Anchor(Props) {
   return React.createElement(UilAnchor, tmp);
 }
 
-var make = Anchor;
+var make = React.memo(Anchor);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

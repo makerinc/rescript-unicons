@@ -18,11 +18,11 @@ function AdjustCircle(Props) {
   return React.createElement(UilAdjustCircle, tmp);
 }
 
-var make = AdjustCircle;
+var make = React.memo(AdjustCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

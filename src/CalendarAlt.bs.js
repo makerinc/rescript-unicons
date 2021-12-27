@@ -18,11 +18,11 @@ function CalendarAlt(Props) {
   return React.createElement(UilCalendarAlt, tmp);
 }
 
-var make = CalendarAlt;
+var make = React.memo(CalendarAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

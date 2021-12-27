@@ -18,11 +18,11 @@ function ChartPieAlt(Props) {
   return React.createElement(UilChartPieAlt, tmp);
 }
 
-var make = ChartPieAlt;
+var make = React.memo(ChartPieAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

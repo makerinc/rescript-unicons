@@ -18,11 +18,11 @@ function _0Plus(Props) {
   return React.createElement(UilPlus, tmp);
 }
 
-var make = _0Plus;
+var make = React.memo(_0Plus);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

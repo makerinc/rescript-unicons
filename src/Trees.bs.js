@@ -18,11 +18,11 @@ function Trees(Props) {
   return React.createElement(UilTrees, tmp);
 }
 
-var make = Trees;
+var make = React.memo(Trees);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

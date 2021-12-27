@@ -18,11 +18,11 @@ function ChartLine(Props) {
   return React.createElement(UilChartLine, tmp);
 }
 
-var make = ChartLine;
+var make = React.memo(ChartLine);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

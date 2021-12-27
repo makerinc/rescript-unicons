@@ -18,11 +18,11 @@ function Archway(Props) {
   return React.createElement(UilArchway, tmp);
 }
 
-var make = Archway;
+var make = React.memo(Archway);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

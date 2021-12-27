@@ -18,11 +18,11 @@ function HeartSign(Props) {
   return React.createElement(UilHeartSign, tmp);
 }
 
-var make = HeartSign;
+var make = React.memo(HeartSign);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

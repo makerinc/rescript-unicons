@@ -18,11 +18,11 @@ function Swatchbook(Props) {
   return React.createElement(UilSwatchbook, tmp);
 }
 
-var make = Swatchbook;
+var make = React.memo(Swatchbook);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function CloudInfo(Props) {
   return React.createElement(UilCloudInfo, tmp);
 }
 
-var make = CloudInfo;
+var make = React.memo(CloudInfo);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

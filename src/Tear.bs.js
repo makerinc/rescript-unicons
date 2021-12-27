@@ -18,11 +18,11 @@ function Tear(Props) {
   return React.createElement(UilTear, tmp);
 }
 
-var make = Tear;
+var make = React.memo(Tear);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

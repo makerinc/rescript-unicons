@@ -18,11 +18,11 @@ function CheckCircle(Props) {
   return React.createElement(UilCheckCircle, tmp);
 }
 
-var make = CheckCircle;
+var make = React.memo(CheckCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

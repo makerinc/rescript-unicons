@@ -18,11 +18,11 @@ function ImageShield(Props) {
   return React.createElement(UilImageShield, tmp);
 }
 
-var make = ImageShield;
+var make = React.memo(ImageShield);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

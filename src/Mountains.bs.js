@@ -18,11 +18,11 @@ function Mountains(Props) {
   return React.createElement(UilMountains, tmp);
 }
 
-var make = Mountains;
+var make = React.memo(Mountains);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

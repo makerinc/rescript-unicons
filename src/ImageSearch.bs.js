@@ -18,11 +18,11 @@ function ImageSearch(Props) {
   return React.createElement(UilImageSearch, tmp);
 }
 
-var make = ImageSearch;
+var make = React.memo(ImageSearch);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

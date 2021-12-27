@@ -18,11 +18,11 @@ function SyncExclamation(Props) {
   return React.createElement(UilSyncExclamation, tmp);
 }
 
-var make = SyncExclamation;
+var make = React.memo(SyncExclamation);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Plug(Props) {
   return React.createElement(UilPlug, tmp);
 }
 
-var make = Plug;
+var make = React.memo(Plug);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

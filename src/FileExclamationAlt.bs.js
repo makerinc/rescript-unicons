@@ -18,11 +18,11 @@ function FileExclamationAlt(Props) {
   return React.createElement(UilFileExclamationAlt, tmp);
 }
 
-var make = FileExclamationAlt;
+var make = React.memo(FileExclamationAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

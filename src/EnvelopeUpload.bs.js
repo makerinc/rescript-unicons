@@ -18,11 +18,11 @@ function EnvelopeUpload(Props) {
   return React.createElement(UilEnvelopeUpload, tmp);
 }
 
-var make = EnvelopeUpload;
+var make = React.memo(EnvelopeUpload);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

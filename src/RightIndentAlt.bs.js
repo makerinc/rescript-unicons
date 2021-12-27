@@ -18,11 +18,11 @@ function RightIndentAlt(Props) {
   return React.createElement(UilRightIndentAlt, tmp);
 }
 
-var make = RightIndentAlt;
+var make = React.memo(RightIndentAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

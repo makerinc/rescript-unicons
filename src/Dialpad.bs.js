@@ -18,11 +18,11 @@ function Dialpad(Props) {
   return React.createElement(UilDialpad, tmp);
 }
 
-var make = Dialpad;
+var make = React.memo(Dialpad);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

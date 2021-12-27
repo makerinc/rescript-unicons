@@ -18,11 +18,11 @@ function GripHorizontalLine(Props) {
   return React.createElement(UilGripHorizontalLine, tmp);
 }
 
-var make = GripHorizontalLine;
+var make = React.memo(GripHorizontalLine);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

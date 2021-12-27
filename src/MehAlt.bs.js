@@ -18,11 +18,11 @@ function MehAlt(Props) {
   return React.createElement(UilMehAlt, tmp);
 }
 
-var make = MehAlt;
+var make = React.memo(MehAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

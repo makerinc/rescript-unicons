@@ -18,11 +18,11 @@ function Slack(Props) {
   return React.createElement(UilSlack, tmp);
 }
 
-var make = Slack;
+var make = React.memo(Slack);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

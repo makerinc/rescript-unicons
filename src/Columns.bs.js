@@ -18,11 +18,11 @@ function Columns(Props) {
   return React.createElement(UilColumns, tmp);
 }
 
-var make = Columns;
+var make = React.memo(Columns);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

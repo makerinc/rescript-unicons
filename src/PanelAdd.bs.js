@@ -18,11 +18,11 @@ function PanelAdd(Props) {
   return React.createElement(UilPanelAdd, tmp);
 }
 
-var make = PanelAdd;
+var make = React.memo(PanelAdd);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

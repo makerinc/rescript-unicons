@@ -18,11 +18,11 @@ function MoneyBillSlash(Props) {
   return React.createElement(UilMoneyBillSlash, tmp);
 }
 
-var make = MoneyBillSlash;
+var make = React.memo(MoneyBillSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

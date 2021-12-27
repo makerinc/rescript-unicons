@@ -18,11 +18,11 @@ function Multiply(Props) {
   return React.createElement(UilMultiply, tmp);
 }
 
-var make = Multiply;
+var make = React.memo(Multiply);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

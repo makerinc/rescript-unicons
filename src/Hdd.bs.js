@@ -18,11 +18,11 @@ function Hdd(Props) {
   return React.createElement(UilHdd, tmp);
 }
 
-var make = Hdd;
+var make = React.memo(Hdd);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

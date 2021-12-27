@@ -18,11 +18,11 @@ function Modem(Props) {
   return React.createElement(UilModem, tmp);
 }
 
-var make = Modem;
+var make = React.memo(Modem);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

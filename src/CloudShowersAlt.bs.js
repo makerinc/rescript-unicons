@@ -18,11 +18,11 @@ function CloudShowersAlt(Props) {
   return React.createElement(UilCloudShowersAlt, tmp);
 }
 
-var make = CloudShowersAlt;
+var make = React.memo(CloudShowersAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

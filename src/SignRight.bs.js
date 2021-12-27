@@ -18,11 +18,11 @@ function SignRight(Props) {
   return React.createElement(UilSignRight, tmp);
 }
 
-var make = SignRight;
+var make = React.memo(SignRight);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

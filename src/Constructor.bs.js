@@ -18,11 +18,11 @@ function Constructor(Props) {
   return React.createElement(UilConstructor, tmp);
 }
 
-var make = Constructor;
+var make = React.memo(Constructor);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

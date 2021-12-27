@@ -18,11 +18,11 @@ function Suitcase(Props) {
   return React.createElement(UilSuitcase, tmp);
 }
 
-var make = Suitcase;
+var make = React.memo(Suitcase);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

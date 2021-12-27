@@ -18,11 +18,11 @@ function PhoneSlash(Props) {
   return React.createElement(UilPhoneSlash, tmp);
 }
 
-var make = PhoneSlash;
+var make = React.memo(PhoneSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

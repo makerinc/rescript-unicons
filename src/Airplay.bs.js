@@ -18,11 +18,11 @@ function Airplay(Props) {
   return React.createElement(UilAirplay, tmp);
 }
 
-var make = Airplay;
+var make = React.memo(Airplay);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

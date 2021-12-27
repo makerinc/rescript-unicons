@@ -18,11 +18,11 @@ function Annoyed(Props) {
   return React.createElement(UilAnnoyed, tmp);
 }
 
-var make = Annoyed;
+var make = React.memo(Annoyed);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

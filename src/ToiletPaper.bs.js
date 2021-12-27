@@ -18,11 +18,11 @@ function ToiletPaper(Props) {
   return React.createElement(UilToiletPaper, tmp);
 }
 
-var make = ToiletPaper;
+var make = React.memo(ToiletPaper);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

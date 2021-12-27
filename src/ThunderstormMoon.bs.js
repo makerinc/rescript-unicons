@@ -18,11 +18,11 @@ function ThunderstormMoon(Props) {
   return React.createElement(UilThunderstormMoon, tmp);
 }
 
-var make = ThunderstormMoon;
+var make = React.memo(ThunderstormMoon);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

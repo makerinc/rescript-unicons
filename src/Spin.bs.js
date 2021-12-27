@@ -18,11 +18,11 @@ function Spin(Props) {
   return React.createElement(UilSpin, tmp);
 }
 
-var make = Spin;
+var make = React.memo(Spin);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

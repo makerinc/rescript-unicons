@@ -18,11 +18,11 @@ function FileLockAlt(Props) {
   return React.createElement(UilFileLockAlt, tmp);
 }
 
-var make = FileLockAlt;
+var make = React.memo(FileLockAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

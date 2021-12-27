@@ -18,11 +18,11 @@ function PlaneDeparture(Props) {
   return React.createElement(UilPlaneDeparture, tmp);
 }
 
-var make = PlaneDeparture;
+var make = React.memo(PlaneDeparture);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

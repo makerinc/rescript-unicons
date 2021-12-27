@@ -18,11 +18,11 @@ function CreateDashboard(Props) {
   return React.createElement(UilCreateDashboard, tmp);
 }
 
-var make = CreateDashboard;
+var make = React.memo(CreateDashboard);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

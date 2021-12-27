@@ -18,11 +18,11 @@ function StopwatchSlash(Props) {
   return React.createElement(UilStopwatchSlash, tmp);
 }
 
-var make = StopwatchSlash;
+var make = React.memo(StopwatchSlash);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

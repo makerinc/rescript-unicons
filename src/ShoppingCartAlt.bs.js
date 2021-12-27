@@ -18,11 +18,11 @@ function ShoppingCartAlt(Props) {
   return React.createElement(UilShoppingCartAlt, tmp);
 }
 
-var make = ShoppingCartAlt;
+var make = React.memo(ShoppingCartAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function CropAlt(Props) {
   return React.createElement(UilCropAlt, tmp);
 }
 
-var make = CropAlt;
+var make = React.memo(CropAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

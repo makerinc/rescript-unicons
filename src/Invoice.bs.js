@@ -18,11 +18,11 @@ function Invoice(Props) {
   return React.createElement(UilInvoice, tmp);
 }
 
-var make = Invoice;
+var make = React.memo(Invoice);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

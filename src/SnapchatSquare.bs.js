@@ -18,11 +18,11 @@ function SnapchatSquare(Props) {
   return React.createElement(UilSnapchatSquare, tmp);
 }
 
-var make = SnapchatSquare;
+var make = React.memo(SnapchatSquare);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

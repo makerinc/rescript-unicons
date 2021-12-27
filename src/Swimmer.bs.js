@@ -18,11 +18,11 @@ function Swimmer(Props) {
   return React.createElement(UilSwimmer, tmp);
 }
 
-var make = Swimmer;
+var make = React.memo(Swimmer);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

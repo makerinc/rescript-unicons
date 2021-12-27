@@ -18,11 +18,11 @@ function FolderMinus(Props) {
   return React.createElement(UilFolderMinus, tmp);
 }
 
-var make = FolderMinus;
+var make = React.memo(FolderMinus);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

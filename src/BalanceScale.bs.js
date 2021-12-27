@@ -18,11 +18,11 @@ function BalanceScale(Props) {
   return React.createElement(UilBalanceScale, tmp);
 }
 
-var make = BalanceScale;
+var make = React.memo(BalanceScale);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

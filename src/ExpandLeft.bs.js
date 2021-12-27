@@ -18,11 +18,11 @@ function ExpandLeft(Props) {
   return React.createElement(UilExpandLeft, tmp);
 }
 
-var make = ExpandLeft;
+var make = React.memo(ExpandLeft);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

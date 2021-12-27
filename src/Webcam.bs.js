@@ -18,11 +18,11 @@ function Webcam(Props) {
   return React.createElement(UilWebcam, tmp);
 }
 
-var make = Webcam;
+var make = React.memo(Webcam);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

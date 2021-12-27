@@ -18,11 +18,11 @@ function Print(Props) {
   return React.createElement(UilPrint, tmp);
 }
 
-var make = Print;
+var make = React.memo(Print);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

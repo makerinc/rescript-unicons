@@ -18,11 +18,11 @@ function TwitterAlt(Props) {
   return React.createElement(UilTwitterAlt, tmp);
 }
 
-var make = TwitterAlt;
+var make = React.memo(TwitterAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

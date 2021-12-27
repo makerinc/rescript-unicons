@@ -18,11 +18,11 @@ function _500px(Props) {
   return React.createElement(UilPx, tmp);
 }
 
-var make = _500px;
+var make = React.memo(_500px);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

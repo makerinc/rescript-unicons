@@ -18,11 +18,11 @@ function ImageRedo(Props) {
   return React.createElement(UilImageRedo, tmp);
 }
 
-var make = ImageRedo;
+var make = React.memo(ImageRedo);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

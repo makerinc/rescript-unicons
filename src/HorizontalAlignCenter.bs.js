@@ -18,11 +18,11 @@ function HorizontalAlignCenter(Props) {
   return React.createElement(UilHorizontalAlignCenter, tmp);
 }
 
-var make = HorizontalAlignCenter;
+var make = React.memo(HorizontalAlignCenter);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

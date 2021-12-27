@@ -18,11 +18,11 @@ function WrapText(Props) {
   return React.createElement(UilWrapText, tmp);
 }
 
-var make = WrapText;
+var make = React.memo(WrapText);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

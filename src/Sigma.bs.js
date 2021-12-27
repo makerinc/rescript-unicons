@@ -18,11 +18,11 @@ function Sigma(Props) {
   return React.createElement(UilSigma, tmp);
 }
 
-var make = Sigma;
+var make = React.memo(Sigma);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

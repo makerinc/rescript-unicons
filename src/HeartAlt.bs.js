@@ -18,11 +18,11 @@ function HeartAlt(Props) {
   return React.createElement(UilHeartAlt, tmp);
 }
 
-var make = HeartAlt;
+var make = React.memo(HeartAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

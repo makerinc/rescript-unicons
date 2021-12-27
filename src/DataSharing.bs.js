@@ -18,11 +18,11 @@ function DataSharing(Props) {
   return React.createElement(UilDataSharing, tmp);
 }
 
-var make = DataSharing;
+var make = React.memo(DataSharing);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

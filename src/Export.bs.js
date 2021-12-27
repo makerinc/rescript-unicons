@@ -18,11 +18,11 @@ function Export(Props) {
   return React.createElement(UilExport, tmp);
 }
 
-var make = Export;
+var make = React.memo(Export);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

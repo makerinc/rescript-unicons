@@ -18,11 +18,11 @@ function FolderCheck(Props) {
   return React.createElement(UilFolderCheck, tmp);
 }
 
-var make = FolderCheck;
+var make = React.memo(FolderCheck);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

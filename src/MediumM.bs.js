@@ -18,11 +18,11 @@ function MediumM(Props) {
   return React.createElement(UilMediumM, tmp);
 }
 
-var make = MediumM;
+var make = React.memo(MediumM);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

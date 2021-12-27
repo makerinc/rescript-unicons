@@ -18,11 +18,11 @@ function Signin(Props) {
   return React.createElement(UilSignin, tmp);
 }
 
-var make = Signin;
+var make = React.memo(Signin);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

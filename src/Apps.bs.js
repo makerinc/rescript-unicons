@@ -18,11 +18,11 @@ function Apps(Props) {
   return React.createElement(UilApps, tmp);
 }
 
-var make = Apps;
+var make = React.memo(Apps);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

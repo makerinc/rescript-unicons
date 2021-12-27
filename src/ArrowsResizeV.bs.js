@@ -18,11 +18,11 @@ function ArrowsResizeV(Props) {
   return React.createElement(UilArrowsResizeV, tmp);
 }
 
-var make = ArrowsResizeV;
+var make = React.memo(ArrowsResizeV);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

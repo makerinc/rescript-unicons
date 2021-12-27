@@ -18,11 +18,11 @@ function UserCircle(Props) {
   return React.createElement(UilUserCircle, tmp);
 }
 
-var make = UserCircle;
+var make = React.memo(UserCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

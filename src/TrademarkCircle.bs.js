@@ -18,11 +18,11 @@ function TrademarkCircle(Props) {
   return React.createElement(UilTrademarkCircle, tmp);
 }
 
-var make = TrademarkCircle;
+var make = React.memo(TrademarkCircle);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

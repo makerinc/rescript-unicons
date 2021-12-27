@@ -18,11 +18,11 @@ function Boombox(Props) {
   return React.createElement(UilBoombox, tmp);
 }
 
-var make = Boombox;
+var make = React.memo(Boombox);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

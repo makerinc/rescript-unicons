@@ -18,11 +18,11 @@ function Desert(Props) {
   return React.createElement(UilDesert, tmp);
 }
 
-var make = Desert;
+var make = React.memo(Desert);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Filter(Props) {
   return React.createElement(UilFilter, tmp);
 }
 
-var make = Filter;
+var make = React.memo(Filter);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

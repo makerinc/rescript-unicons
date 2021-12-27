@@ -18,11 +18,11 @@ function LetterJapaneseA(Props) {
   return React.createElement(UilLetterJapaneseA, tmp);
 }
 
-var make = LetterJapaneseA;
+var make = React.memo(LetterJapaneseA);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

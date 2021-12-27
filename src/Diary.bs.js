@@ -18,11 +18,11 @@ function Diary(Props) {
   return React.createElement(UilDiary, tmp);
 }
 
-var make = Diary;
+var make = React.memo(Diary);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

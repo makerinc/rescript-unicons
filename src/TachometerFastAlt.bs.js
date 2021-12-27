@@ -18,11 +18,11 @@ function TachometerFastAlt(Props) {
   return React.createElement(UilTachometerFastAlt, tmp);
 }
 
-var make = TachometerFastAlt;
+var make = React.memo(TachometerFastAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

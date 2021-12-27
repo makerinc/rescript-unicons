@@ -18,11 +18,11 @@ function $$Text(Props) {
   return React.createElement(UilText, tmp);
 }
 
-var make = $$Text;
+var make = React.memo($$Text);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Newspaper(Props) {
   return React.createElement(UilNewspaper, tmp);
 }
 
-var make = Newspaper;
+var make = React.memo(Newspaper);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

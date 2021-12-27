@@ -18,11 +18,11 @@ function EnvelopeSearch(Props) {
   return React.createElement(UilEnvelopeSearch, tmp);
 }
 
-var make = EnvelopeSearch;
+var make = React.memo(EnvelopeSearch);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

@@ -18,11 +18,11 @@ function Syringe(Props) {
   return React.createElement(UilSyringe, tmp);
 }
 
-var make = Syringe;
+var make = React.memo(Syringe);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

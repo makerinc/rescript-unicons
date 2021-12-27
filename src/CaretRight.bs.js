@@ -18,11 +18,11 @@ function CaretRight(Props) {
   return React.createElement(UilCaretRight, tmp);
 }
 
-var make = CaretRight;
+var make = React.memo(CaretRight);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */

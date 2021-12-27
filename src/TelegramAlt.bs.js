@@ -18,11 +18,11 @@ function TelegramAlt(Props) {
   return React.createElement(UilTelegramAlt, tmp);
 }
 
-var make = TelegramAlt;
+var make = React.memo(TelegramAlt);
 
 export {
   Impl ,
   make ,
   
 }
-/* react Not a pure module */
+/* make Not a pure module */
