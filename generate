@@ -19,29 +19,27 @@ let invalidNames = [
   "6Plus",
 ]
 
+let allCode = ""
+
 dir.forEach(fname => {
   let moduleName = humps.pascalize(fname.slice(4, -3))
 
   if (invalidNames.includes(moduleName)) {
-    moduleName = "_"+moduleName
+    return
+    // moduleName = "_"+moduleName
   }
   
   let code =  `
-module Impl = {
+module ${moduleName} = {
   @react.component
   @module("@iconscout/react-unicons/icons/${fname.slice(0, -3)}")
   external make: (~className: string=?, ~size:int=?) => React.element = "default"
 }
-  
-
-@react.component
-let make = (~className: option<string>=?, ~size: option<int>=?) => {
-  <Impl ?className ?size />
-}
-
-let make = React.memo(make)
 `
 
-  fs.writeFileSync(`./src/${moduleName}.res`, code)
+  allCode += code
 })
+
+
+fs.writeFileSync(`./src/Unicons.res`, allCode)
 

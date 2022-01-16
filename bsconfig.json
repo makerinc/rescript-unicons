@@ -1,6 +1,6 @@
 {
-  "name": "rescript-unicons",
-  "namespace": "unicons",
+  "name": "unicons",
+  "namespace": false,
   "reason": { "react-jsx": 3 },
   "bsc-flags": ["-bs-super-errors"],
   "sources": [
