@@ -94,18 +94,18 @@ __metadata:
     "@iconscout/react-unicons": ^1.1.6
     "@rescript/react": ^0.10.3
     humps: ^2.0.1
-    rescript: ^9.1.4
+    rescript: 10.1.4
   languageName: unknown
   linkType: soft
 
-"rescript@npm:^9.1.4":
-  version: 9.1.4
-  resolution: "rescript@npm:9.1.4"
+"rescript@npm:10.1.4":
+  version: 10.1.4
+  resolution: "rescript@npm:10.1.4"
   bin:
     bsc: bsc
     bsrefmt: bsrefmt
     bstracing: lib/bstracing
     rescript: rescript
-  checksum: 3c503580f968b4d4409830093c57f85b5590f7372250345427b3a7c1f5ccb08009e1edd89b4a3dcbb3ee95ee4dcad9c337ece4d1f8fdaa10e22ed04b8a7495c0
+  checksum: 5bd4b17a9671bc91f369ef56fbd03bba73b4a2cfeab9e09d92f8133f70b62028754914afede07f18d2c1dd877a38a14b2ff5a3b6b90783ea2306b29ff3de54f0
   languageName: node
   linkType: hard
