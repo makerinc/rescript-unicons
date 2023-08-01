@@ -3578,6 +3578,5 @@ export {
   Yen ,
   YinYang ,
   Youtube ,
-  
 }
 /* No side effect */
